@@ -1,7 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { initialState } from "./initialState";
+import { HYDRATE } from "next-redux-wrapper";
 
-// export the rducer functions
+// export the reducer functions
 export const mainSlice = createSlice({
   name: "main",
   initialState,
@@ -45,6 +46,16 @@ export const mainSlice = createSlice({
     // change password
     changePassword: (state, action) => {
       state.passwordChange = action.payload;
+    },
+  },
+
+  // Special reducer for hydrating the state. Special case for next-redux-wrapper
+  extraReducers: {
+    [HYDRATE]: (state, action) => {
+      return {
+        ...state,
+        ...action.payload.auth,
+      };
     },
   },
 });
