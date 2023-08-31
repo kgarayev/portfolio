@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import ReduxProvider from "@/app/store/ReduxProvider";
 
+// main layout component
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
