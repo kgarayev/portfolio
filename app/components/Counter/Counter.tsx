@@ -1,7 +1,7 @@
-'use client'
+"use client";
 
 /* Core */
-import { useState } from 'react'
+import { useState } from "react";
 
 /* Instruments */
 import {
@@ -11,13 +11,13 @@ import {
   selectCount,
   incrementAsync,
   incrementIfOddAsync,
-} from '@/lib/redux'
-import styles from './counter.module.css'
+} from "@/lib/redux";
+import styles from "./counter.module.css";
 
 export const Counter = () => {
-  const dispatch = useDispatch()
-  const count = useSelector(selectCount)
-  const [incrementAmount, setIncrementAmount] = useState(2)
+  const dispatch = useDispatch();
+  const count = useSelector(selectCount);
+  const [incrementAmount, setIncrementAmount] = useState(2);
 
   return (
     <div>
@@ -29,7 +29,7 @@ export const Counter = () => {
         >
           -
         </button>
-        <span className={styles.value}>{count}</span>
+        <span className="text-3xl font-bold underline">{count}</span>
         <button
           className={styles.button}
           aria-label="Increment value"
@@ -67,5 +67,5 @@ export const Counter = () => {
         </button>
       </div>
     </div>
-  )
-}
+  );
+};

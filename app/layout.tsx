@@ -1,10 +1,11 @@
 /* Components */
-import { Providers } from '@/lib/providers'
-import { Nav } from './components/Nav'
+import { Providers } from "@/lib/providers";
+import { Nav } from "./components/Nav";
 
 /* Instruments */
-import styles from './styles/layout.module.css'
-import './styles/globals.css'
+import "tailwindcss/tailwind.css";
+import "./styles/globals.css";
+import styles from "./styles/layout.module.css";
 
 export default function RootLayout(props: React.PropsWithChildren) {
   return (
@@ -21,7 +22,7 @@ export default function RootLayout(props: React.PropsWithChildren) {
             <main className={styles.main}>{props.children}</main>
 
             <footer className={styles.footer}>
-              <span>Learn </span>
+              <span className="text-3xl font-bold underline">Learn </span>
               <a
                 className={styles.link}
                 href="https://reactjs.org/"
@@ -62,5 +63,5 @@ export default function RootLayout(props: React.PropsWithChildren) {
         </body>
       </html>
     </Providers>
-  )
+  );
 }
