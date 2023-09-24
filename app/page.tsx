@@ -1,7 +1,10 @@
-import Image from "next/image";
+/* Components */
+import { Counter } from './components/Counter/Counter'
 
-console.log("testing");
+export default function IndexPage() {
+  return <Counter />
+}
 
-export default function Home() {
-  return <h1>My Portfolio Page</h1>;
+export const metadata = {
+  title: 'Redux Toolkit',
 }
