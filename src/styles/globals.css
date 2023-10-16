@@ -1,11 +1,13 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono");
 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  font-family: "ibmPlexMono", "monospace";
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,4 +26,8 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.code {
+  font-family: "IBM Plex Mono", "monospace";
 }

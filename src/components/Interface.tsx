@@ -3,7 +3,7 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 const Interface = () => {
   return (
     <>
-      <div>
+      <div className={"font-ibmPlexMono"}>
         Hello World
         {/* includes routes here  */}
       </div>
