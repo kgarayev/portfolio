@@ -8,9 +8,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      fonts: {
-        // ibmPlexMono: ["./public/fonts/IBM_Plex_Mono/*.ttf"],
-      },
+      fonts: {},
     },
   },
   plugins: [],
