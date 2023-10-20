@@ -8,7 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      fonts: {},
+      fontFamily: {
+        ibmPlexMono: ["IBM Plex Mono", "monospace"],
+      },
     },
   },
   plugins: [],
