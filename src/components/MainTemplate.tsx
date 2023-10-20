@@ -1,9 +1,11 @@
 import Header from "./Header";
+import StickyFooter from "./StickyFooter";
 
 const MainTemplate = () => {
   return (
-    <div className="border border-gray-500 w-full">
+    <div className="w-full">
       <Header></Header>
+      <StickyFooter></StickyFooter>
     </div>
   );
 };
