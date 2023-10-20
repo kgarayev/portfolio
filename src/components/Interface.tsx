@@ -1,11 +1,13 @@
 import { Routes, Route, useNavigate } from "react-router-dom";
+import MainTemplate from "./MainTemplate";
 
 const Interface = () => {
   return (
     <>
-      <div className={"font-nunito"}>
+      <div>
         Hello World
-        {/* includes routes here  */}
+        <MainTemplate />
+        {/* include routes here  */}
       </div>
 
       {/* <Routes>
