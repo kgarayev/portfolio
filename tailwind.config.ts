@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         ibmPlexMono: ["IBM Plex Mono", "monospace"],
+        nunito: ["Nunito", "sans-serif"],
       },
     },
   },
