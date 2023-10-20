@@ -2,9 +2,8 @@ import Header from "./Header";
 
 const MainTemplate = () => {
   return (
-    <div>
+    <div className="border border-gray-500 w-full">
       <Header></Header>
-      <h1 className={"font-ibmPlexMono"}>Kenan Garayev</h1>
     </div>
   );
 };

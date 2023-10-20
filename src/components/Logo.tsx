@@ -1,7 +1,7 @@
 const Logo = () => {
   return (
-    <div>
-      <img src="/5.gif" alt="logo" />
+    <div className="h-full">
+      <img src="/5.gif" alt="logo" className="h-full" />
     </div>
   );
 };
