@@ -1,8 +1,7 @@
 const Logo = () => {
   return (
-    <div className="h-full">
-      <img src="/5.gif" alt="logo" className="h-full" />
-      {/* <img src="/4.png" alt="logo" className="h-full" /> */}
+    <div className="h-8">
+      <img src="/5.gif" alt="Trimmed Image" className="w-full h-full" />
     </div>
   );
 };

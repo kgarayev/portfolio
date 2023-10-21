@@ -1,7 +1,7 @@
 const Photo = () => {
   return (
-    <div className="h-full">
-      <div className="w-24 h-24 rounded-full overflow-hidden">
+    <div className="w-28 h-28">
+      <div className="w-full h-full rounded-full overflow-hidden">
         <img
           src="/profile2.jpg"
           alt="Circular Image"
