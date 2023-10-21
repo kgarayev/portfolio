@@ -3,8 +3,13 @@ import Box from "./Box";
 const Work = () => {
   return (
     <div>
-      {" "}
-      <div className="p-8">
+      <div className="flex flex-wrap gap-4 p-8">
+        <Box
+          title="Hello"
+          description="My project."
+          tag="Hey"
+          buttonText="Link"
+        />
         <Box
           title="Hello"
           description="My project."
