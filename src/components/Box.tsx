@@ -20,8 +20,17 @@ const Box: React.FC<BoxProps> = ({ title, description, tag, buttonText }) => {
         <div className="m-4">
           <h2 className="text-xl font-bold">{title}</h2>
           <p className="mt-2">{description}</p>
-          <p className="mt-4 text-sm text-purple-500">{tag}</p>
-          <a className="link link-hover">I'm a simple link</a>
+          <div className="flex items-center justify-between border">
+            <div className="border h-full">
+              <p className="mt-4 text-sm text-purple-500">{tag}</p>
+            </div>
+
+            <div className="border h-full">
+              <a className="cursor-pointer hover:text-gray-500 font-bold">
+                see my work
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
