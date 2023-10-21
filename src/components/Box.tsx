@@ -21,14 +21,7 @@ const Box: React.FC<BoxProps> = ({ title, description, tag, buttonText }) => {
           <h2 className="text-xl font-bold">{title}</h2>
           <p className="mt-2">{description}</p>
           <p className="mt-4 text-sm text-purple-500">{tag}</p>
-          <div className="grid h-screen place-items-center font-extrabold">
-            <a
-              href="#"
-              className="relative text-black hover:before:scale-x-100 before:scale-x-0 transition-transform transform ease-in-out duration-500 before:absolute before:inset-0 before:origin-right before:bg-yellow-300 before:z-[-1]"
-            >
-              Link text
-            </a>
-          </div>
+          <a className="link link-hover">I'm a simple link</a>
         </div>
       </div>
     </div>
