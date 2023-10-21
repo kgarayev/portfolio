@@ -16,6 +16,18 @@ const Work = () => {
           tag="Hey"
           buttonText="Link"
         />
+        <Box
+          title="Hello"
+          description="My project."
+          tag="Hey"
+          buttonText="Link"
+        />
+        <Box
+          title="Hello"
+          description="My project."
+          tag="Hey"
+          buttonText="Link"
+        />
       </div>
     </div>
   );

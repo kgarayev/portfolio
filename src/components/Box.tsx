@@ -7,7 +7,7 @@ interface BoxProps {
 
 const Box: React.FC<BoxProps> = ({ title, description, tag, buttonText }) => {
   return (
-    <div className="relative max-w-lg mx-auto">
+    <div className="relative min-w-[300px] max-w-[600px] mx-auto w-full">
       <div className="absolute top-1 left-1 bg-gray-800 rounded-2xl shadow-md w-full h-full"></div>
       <div className="relative z-10 bg-white border-2 border-gray-800 rounded-2xl neo-brutalist hover:-translate-y-1 hover:-translate-x-1 transition-transform">
         <div className="flex items-center space-x-2 mb-4 mt-4 ml-4">

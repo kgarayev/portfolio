@@ -1,7 +1,8 @@
 const Photo = () => {
   return (
-    <div className="w-28 h-28">
-      <div className="w-full h-full rounded-full overflow-hidden">
+    <div className="relative w-28 h-28">
+      <div className="absolute top-1 left-1 bg-black rounded-full w-full h-full "></div>
+      <div className="relative z-10 w-full h-full rounded-full overflow-hidden border border-2">
         <img
           src="/profile2.jpg"
           alt="Circular Image"
