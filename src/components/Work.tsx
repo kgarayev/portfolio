@@ -3,7 +3,7 @@ import Box from "./Box";
 const Work = () => {
   return (
     <div>
-      <div className="flex flex-wrap items-center justify-center  gap-4 p-8">
+      <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-6 p-8">
         <Box
           title="Hello"
           description="My project."
