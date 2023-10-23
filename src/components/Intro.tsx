@@ -2,14 +2,13 @@ import Photo from "./Photo";
 
 const Intro = () => {
   return (
-    <div className="p-5">
-      <p className="mb-5">Hi, my name is Kenan.</p>
+    <div className="p-5 mt-5">
       <h1 className="mb-5 text-2xl font-bold">I am a Software Engineer.</h1>
       <p className="mb-5">
-        With a wealth of expertise in solving real-world problems and with a
-        strong foundation in computer science, my proficiency lies in utilising
-        Node.js, React, Python, C, SQL and NoSQL for backend and frontend
-        development.
+        With a strong foundation in computer science and extensive expertise in
+        solving real-world problems, I specialise in backend and frontend
+        development using Node.js, React, Python, C, and both SQL and NoSQL
+        databases.
       </p>
       <div>
         <Photo></Photo>
