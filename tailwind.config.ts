@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 import daisyui from "daisyui";
+import aspectRatio from "@tailwindcss/aspect-ratio";
 
 const config: Config = {
   content: [
@@ -24,6 +25,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [daisyui],
+  plugins: [daisyui, aspectRatio],
 };
 export default config;

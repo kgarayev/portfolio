@@ -1,8 +1,8 @@
 const Photo = () => {
   return (
-    <div className="relative w-full h-full9.gif">
-      <div className="absolute top-1 left-1 bg-black rounded-full w-full h-full "></div>
-      <div className="relative z-10 w-full h-full rounded-full overflow-hidden border border-2">
+    <div className="flex justify-center relative w-full h-full ">
+      <div className="flex justify-center absolute top-1 left-1 bg-black rounded-full w-full h-full "></div>
+      <div className="flex justify-center relative z-10 w-full h-full rounded-full overflow-hidden border border-2">
         <img
           src="/profile2.jpg"
           alt="Circular Image"
