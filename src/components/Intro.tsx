@@ -10,8 +10,10 @@ const Intro = () => {
         development using Node.js, React, Python, C, and both SQL and NoSQL
         databases.
       </p>
-      <div className="flex justify-center border h-24">
-        <Photo></Photo>
+      <div className="flex justify-center">
+        <div className="max-h-[240px] max-w-[240px]">
+          <Photo></Photo>
+        </div>
       </div>
     </div>
   );
