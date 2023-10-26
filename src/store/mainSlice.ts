@@ -4,6 +4,27 @@ const mainSlice = createSlice({
   name: "main",
   initialState: {
     count: 0,
+
+    projectList: [
+      {
+        title: "Stash",
+        description: "fintech App",
+        tag: "ts, react, node",
+        buttonText: "some link",
+      },
+      {
+        title: "Carbon Intensity Bot",
+        description: "cabron intensity bot",
+        tag: "js, vanilla, rest, node",
+        buttonText: "some link",
+      },
+      {
+        title: "Ricks & Morties",
+        description: "fan App",
+        tag: "js, react, rest, node",
+        buttonText: "some link",
+      },
+    ],
   },
 
   reducers: {
@@ -28,6 +49,7 @@ const mainSlice = createSlice({
 
 export const { increment, decrement } = mainSlice.actions;
 
-export const selectCount = (state: any) => state.main.count;
+export const selectCount = (state: any) => state.count;
+export const selectProjectList = (state: any) => state.projectList;
 
 export default mainSlice.reducer;
