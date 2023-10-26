@@ -25,6 +25,19 @@ const mainSlice = createSlice({
         buttonText: "some link",
       },
     ],
+
+    skillsList: [
+      {
+        title: "Frontend",
+        iconLink: [
+          "/js.svg",
+          "/ts.svg",
+          "/react.svg",
+          "/redux.svg",
+          "/next.svg",
+        ],
+      },
+    ],
   },
 
   reducers: {
@@ -51,5 +64,6 @@ export const { increment, decrement } = mainSlice.actions;
 
 export const selectCount = (state: any) => state.count;
 export const selectProjectList = (state: any) => state.projectList;
+export const selectSkillsList = (state: any) => state.skillsList;
 
 export default mainSlice.reducer;
