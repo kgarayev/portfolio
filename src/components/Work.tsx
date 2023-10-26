@@ -3,8 +3,8 @@ import Box from "./Box";
 const Work = () => {
   return (
     <div>
-      <div>
-        <h2>my work</h2>
+      <div className="w-full text-center">
+        <h2 className="text-xl font-bold">Work</h2>
       </div>
       <div className="mb-16 grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-6 p-5">
         <Box
