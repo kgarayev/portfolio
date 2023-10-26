@@ -10,17 +10,16 @@ const SkillBox: React.FC<SkillBoxProps> = ({
   description,
 }) => {
   return (
-    <div className="relative min-w-[225px] max-w-[600px] mx-auto w-full">
-      <div className="absolute top-1 left-1 bg-gray-800 rounded-2xl shadow-md w-full h-full"></div>
-      <div className="relative z-10 bg-white border-2 border-gray-800 rounded-2xl neo-brutalist hover:-translate-y-1 hover:-translate-x-1 transition-transform">
+    <div className="relative min-w-[100px] max-w-[300px] mx-auto w-full">
+      <div className="absolute top-1 left-1 bg-gray-800 rounded-full shadow-md w-full h-full p-6"></div>
+      <div className="relative z-10 bg-white border-2 border-gray-800 rounded-full neo-brutalist hover:-translate-y-1 hover:-translate-x-1 transition-transform p-2">
         <div className="flex items-center space-x-2"></div>
 
-        <div className="m-4">
-          <div className="h-18 w-18">
-            <img src={iconLink} alt="icon" />
-          </div>
+        <div className="flex flex-col items-center">
           <h2 className="text-xl font-bold">{title}</h2>
-          <p className="mt-2">{description}</p>
+          <div className="h-12 w-12">
+            <img src={iconLink} alt="icon" className="h-full w-full" />
+          </div>
         </div>
       </div>
     </div>

@@ -10,7 +10,7 @@ const Work = () => {
         <SkillBox
           title="JS"
           description="JavaScipt"
-          iconLink="/24.png"
+          iconLink="/js.png"
         ></SkillBox>
       </div>
     </div>
