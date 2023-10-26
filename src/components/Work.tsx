@@ -8,9 +8,9 @@ const Work = () => {
       </div>
       <div className="mb-16 grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-6 p-5">
         <SkillBox
-          title="JS"
+          title="Frontend"
           description="JavaScipt"
-          iconLink="/js.png"
+          iconLink={["/js.png", "/ts.png"]}
         ></SkillBox>
       </div>
     </div>
