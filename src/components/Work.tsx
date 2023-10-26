@@ -16,12 +16,14 @@ const Work = () => {
       <div className="w-full text-center">
         <h2 className="text-xl font-bold">What I do</h2>
       </div>
-      <div className="mb-16 grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-6 p-5">
-        {skills.map((item: SkillItem) => {
-          return (
-            <SkillBox title={item.title} iconLink={item.iconLink}></SkillBox>
-          );
-        })}
+      <div className="flex justify-center items-center p-5 ">
+        <div className="grid gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center w-full">
+          {skills.map((item: SkillItem) => (
+            <div className="w-[235px] h-[230px] m-2">
+              <SkillBox title={item.title} iconLink={item.iconLink} />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
