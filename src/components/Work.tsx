@@ -2,7 +2,7 @@ import Box from "./Box";
 
 const Work = () => {
   return (
-    <div>
+    <div className="mt-6">
       <div className="w-full text-center">
         <h2 className="text-xl font-bold">Work</h2>
       </div>
