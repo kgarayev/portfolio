@@ -1,6 +1,7 @@
 import Header from "./Header";
 import Intro from "./Intro";
 import StickyFooter from "./StickyFooter";
+import Projects from "./Projects";
 import Work from "./Work";
 
 const MainTemplate = () => {
@@ -9,6 +10,7 @@ const MainTemplate = () => {
       <Header></Header>
       <Intro></Intro>
       <Work></Work>
+      <Projects></Projects>
       <StickyFooter></StickyFooter>
     </div>
   );
