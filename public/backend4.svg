@@ -3,17 +3,17 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#D73735;}
-	.st1{fill:#F85252;}
-	.st2{fill:#EDAF85;}
-	.st3{fill:#F7C09A;}
+	.st0{fill:#004d00;} <!-- Dark Green -->
+	.st1{fill:#008000;} <!-- Green -->
+	.st2{fill:#50c878;} <!-- Emerald -->
+	.st3{fill:#50c878;} <!-- Emerald -->
 	.st4{fill:#D8D6D7;}
 	.st5{fill:#FFFFFF;}
-	.st6{fill:#1C868E;}
-	.st7{fill:#40C4DF;}
+	.st6{fill:#004d00;} <!-- Dark Green -->
+	.st7{fill:#008000;} <!-- Green -->
 	.st8{fill:#491352;}
-	.st9{fill:#56C1B3;}
-	.st10{fill:#7BEFE4;}
+	.st9{fill:#004d00;} <!-- Dark Green -->
+	.st10{fill:#50c878;} <!-- Emerald -->
 </style>
 <g>
 	<path class="st6" d="M190.24,128.031c0,31.91-24.02,58.21-54.97,61.81c-2.38,0.29-4.81,0.43-7.27,0.43

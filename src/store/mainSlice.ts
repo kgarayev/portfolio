@@ -29,19 +29,19 @@ const mainSlice = createSlice({
     skillsList: [
       {
         title: ["Frontend", "Development"],
-        iconLink: ["/frontend2.svg"],
+        iconLink: ["/frontend5.svg"],
       },
       {
-        title: ["Frontend", "Development"],
-        iconLink: ["/js.svg"],
+        title: ["Backend", "Development"],
+        iconLink: ["/backend4.svg"],
       },
       {
-        title: ["Frontend", "Development"],
-        iconLink: ["/js.svg"],
+        title: ["DevOps"],
+        iconLink: ["/cloud3.svg"],
       },
       {
-        title: ["Frontend", "Development"],
-        iconLink: ["/js.svg"],
+        title: ["Coaching"],
+        iconLink: ["/target.svg"],
       },
     ],
   },
