@@ -69,6 +69,20 @@ const mainSlice = createSlice({
           "/tailwind.svg",
         ],
       },
+      {
+        title: "Coaching",
+        iconLink: [
+          "/js.svg",
+          "/ts.svg",
+          "/react.svg",
+          "/redux.svg",
+          "/next.svg",
+          "/d3.svg",
+          "/css.svg",
+          "/sass.svg",
+          "/tailwind.svg",
+        ],
+      },
     ],
   },
 
