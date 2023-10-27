@@ -1,11 +1,15 @@
 const Logo = () => {
   return (
-    <div className="">
-      <h1 className="text-5xl text-blue-900 font-ibmPlexMono font-bold">
+    <div className="relative">
+      {/* This is the main text */}
+      <h1 className="relative z-10 text-6xl text-blue-600 font-ibmPlexMono font-bold">
         Kenan
       </h1>
 
-      {/* <img src="/24.png" alt="logo" className="max-h-[40px]" /> */}
+      {/* This is the shadow */}
+      <h1 className="absolute top-[4px] left-[4px] text-6xl font-ibmPlexMono font-bold">
+        Kenan
+      </h1>
     </div>
   );
 };
