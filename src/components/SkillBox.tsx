@@ -1,6 +1,6 @@
 interface SkillBoxProps {
   iconLink: string[];
-  title: string;
+  title: string[];
 }
 
 const SkillBox: React.FC<SkillBoxProps> = ({ iconLink, title }) => {
@@ -11,12 +11,16 @@ const SkillBox: React.FC<SkillBoxProps> = ({ iconLink, title }) => {
         <div className="flex items-center space-x-2"></div>
 
         <div className="flex flex-col items-center">
-          <h2 className="text-lg font-semibold m-2">{title}</h2>
+          <div className="text-center mb-2">
+            {title.map((item) => {
+              return <h2 className="text-lg font-semibold">{item}</h2>;
+            })}
+          </div>
 
-          <div className="grid grid-cols-3 gap-4">
+          <div className="flex justify-center items-center">
             {iconLink.map((item, index) => {
               return (
-                <div className="h-9 w-9">
+                <div className="h-24 w-24">
                   <img src={item} alt="icon" className="h-full w-full" />
                 </div>
               );
