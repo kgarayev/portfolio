@@ -2,7 +2,7 @@ import Interface from "@/components/Interface";
 
 const Home = () => {
   return (
-    <main className={`flex min-h-screen bg-yellow-100`}>
+    <main className={`flex min-h-screen bg-amber-50`}>
       <Interface />
     </main>
   );

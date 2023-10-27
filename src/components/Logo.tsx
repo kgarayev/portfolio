@@ -7,7 +7,7 @@ const Logo = () => {
       </h1>
 
       {/* This is the shadow */}
-      <h1 className="absolute top-[4px] left-[4px] text-6xl font-ibmPlexMono font-bold">
+      <h1 className="absolute top-[3px] left-[3px] text-6xl font-ibmPlexMono font-bold">
         Kenan
       </h1>
     </div>
