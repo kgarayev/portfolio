@@ -3,8 +3,8 @@ import Photo from "./Photo";
 
 const Header = () => {
   return (
-    <div className="p-5">
-      <p className="mb-3">Hi, my name is</p>
+    <div className="p-5 pb-2">
+      <p className="mb-2">Hi, my name is</p>
       <Logo></Logo>
     </div>
   );

@@ -11,18 +11,21 @@ const mainSlice = createSlice({
         description: "fintech App",
         tag: "ts, react, node",
         buttonText: "some link",
+        imageLink: "/stash2.png",
       },
       {
         title: "Carbon Intensity Bot",
         description: "cabron intensity bot",
         tag: "js, vanilla, rest, node",
         buttonText: "some link",
+        imageLink: "/carbon.png",
       },
       {
         title: "Ricks & Morties",
         description: "fan App",
         tag: "js, react, rest, node",
         buttonText: "some link",
+        imageLink: "/ricks.png",
       },
     ],
 

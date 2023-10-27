@@ -7,6 +7,7 @@ interface ProjectItem {
   description: string;
   tag: string;
   buttonText: string;
+  imageLink: string;
 }
 
 const Projects = () => {
@@ -25,6 +26,7 @@ const Projects = () => {
               description={item.description}
               tag={item.tag}
               buttonText={item.buttonText}
+              imageLink={item.imageLink}
             />
           );
         })}

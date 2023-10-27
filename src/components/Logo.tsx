@@ -1,7 +1,11 @@
 const Logo = () => {
   return (
     <div className="">
-      <img src="/24.png" alt="logo" className="max-h-[40px]" />
+      <h1 className="text-5xl text-blue-900 font-ibmPlexMono font-bold">
+        Kenan
+      </h1>
+
+      {/* <img src="/24.png" alt="logo" className="max-h-[40px]" /> */}
     </div>
   );
 };

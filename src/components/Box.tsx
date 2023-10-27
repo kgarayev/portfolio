@@ -3,9 +3,16 @@ interface BoxProps {
   description: string;
   tag: string;
   buttonText: string;
+  imageLink: string;
 }
 
-const Box: React.FC<BoxProps> = ({ title, description, tag, buttonText }) => {
+const Box: React.FC<BoxProps> = ({
+  title,
+  description,
+  tag,
+  buttonText,
+  imageLink,
+}) => {
   return (
     <div className="relative min-w-[225px] max-w-[600px] mx-auto w-full">
       <div className="absolute top-1 left-1 bg-gray-800 rounded-2xl shadow-md w-full h-full"></div>
@@ -19,28 +26,20 @@ const Box: React.FC<BoxProps> = ({ title, description, tag, buttonText }) => {
 
         <div className="m-4">
           <h2 className="text-xl font-bold">{title}</h2>
+          <div className="aspect-w-1 aspect-h-1">
+            <img
+              src={imageLink}
+              alt="image"
+              className="border-2 mt-2 mb-2 object-cover aspect-content"
+            />
+          </div>
+
           <p className="mt-2">{description}</p>
           <div className="mt-2 flex items-center justify-between ">
-            <div className="h-full flex">
-              <p className="">{tag}</p>
-            </div>
+            <div className="h-full flex">{/* <p className="">{tag}</p> */}</div>
 
             <div className="flex items-center gap-2 h-full cursor-pointer hover:text-gray-500 font-bold ">
               <a className="">see my work</a>
-              {/* <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                className="w-6 h-6 mt-1"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                />
-              </svg> */}
 
               <svg
                 xmlns="http://www.w3.org/2000/svg"

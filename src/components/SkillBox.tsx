@@ -18,7 +18,7 @@ const SkillBox: React.FC<SkillBoxProps> = ({ iconLink, title }) => {
           </div>
 
           <div className="flex flex-col justify-around items-center h-full mb-3 ">
-            <div className="flex justify-center items-center  h-24 w-24">
+            <div className="flex justify-center items-center git add h-24 w-24">
               {iconLink.map((item, index) => {
                 return (
                   <div className="h-full w-full flex justify-center items-center ">
