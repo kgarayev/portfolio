@@ -26,11 +26,11 @@ const Box: React.FC<BoxProps> = ({
 
         <div className="m-4">
           <h2 className="text-xl font-bold">{title}</h2>
-          <div className="aspect-w-1 aspect-h-1">
+          <div className="aspect-w-1 aspect-h-1 ">
             <img
               src={imageLink}
               alt="image"
-              className="border-2 mt-2 mb-2 object-cover aspect-content"
+              className=" border-2 mt-2 mb-2 object-cover aspect-content"
             />
           </div>
 
