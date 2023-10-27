@@ -11,8 +11,9 @@ const config: Config = {
   theme: {
     screens: {
       xs: "325px",
-      sm: "600px", // overriding the default sm size
+      sm: "600px",
       md: "800px",
+      "2md": "900px",
       lg: "1000px",
       xl: "1300px",
       "2xl": "1500px",
