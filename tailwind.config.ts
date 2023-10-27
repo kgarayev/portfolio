@@ -23,6 +23,11 @@ const config: Config = {
       fontFamily: {
         ibmPlexMono: ["IBM Plex Mono", "monospace"],
         nunito: ["Nunito", "sans-serif"],
+        oi: ["Oi", "serif"],
+        fredoka: ["Fredoka", "sans-serif"],
+        ultra: ["Ultra", "serif"],
+        erica: ["Erica One", "sans-serif"],
+        darkerGrotesque: ["Darker Grotesque", "sans-serif"],
       },
     },
   },
