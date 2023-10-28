@@ -4,6 +4,8 @@ import StickyFooter from "./StickyFooter";
 import Projects from "./Projects";
 import Work from "./Work";
 
+console.log("hello");
+
 const MainTemplate = () => {
   return (
     <div className="w-full">
