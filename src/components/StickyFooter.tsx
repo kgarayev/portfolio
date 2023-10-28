@@ -53,7 +53,7 @@ const StickyFooter = () => {
           />
         </svg>
 
-        <p>my work</p>
+        <p className="text-md font-bold">my work</p>
       </div>
       <div className="flex flex-col items-center justify-center">
         <svg
@@ -71,7 +71,7 @@ const StickyFooter = () => {
           />
         </svg>
 
-        <p>contact</p>
+        <p className="text-md font-bold">contact</p>
       </div>
     </div>
   );
