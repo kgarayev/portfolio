@@ -2,8 +2,11 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const mainSlice = createSlice({
   name: "main",
+
   initialState: {
     count: 0,
+
+    screenMode: 0,
 
     projectList: [
       {
@@ -49,12 +52,19 @@ const mainSlice = createSlice({
     ],
   },
 
+  // these are functions
   reducers: {
-    increment(state) {
+    increment: (state) => {
       state.count++;
     },
-    decrement(state) {
+
+    decrement: (state) => {
       state.count--;
+    },
+
+    // set screen mode
+    setScreenMode: (state, action) => {
+      state.screenMode = action.payload;
     },
 
     // change password
@@ -69,10 +79,11 @@ const mainSlice = createSlice({
   },
 });
 
-export const { increment, decrement } = mainSlice.actions;
+export const { increment, decrement, setScreenMode } = mainSlice.actions;
 
 export const selectCount = (state: any) => state.count;
 export const selectProjectList = (state: any) => state.projectList;
 export const selectSkillsList = (state: any) => state.skillsList;
+export const selectScreenMode = (state: any) => state.screenMode;
 
 export default mainSlice.reducer;
