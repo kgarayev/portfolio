@@ -6,14 +6,15 @@ const Contact = () => {
       <div className="w-full text-center p-5">
         <h2 className="text-3xl font-bold">Get in touch</h2>
       </div>
-      <div className="mb-8 p-5">
+
+      <div className="mb-8 p-5 w-full">
         <ContactForm></ContactForm>
       </div>
 
       <div className="flex items-center gap-1 max-w-[500px] w-3/4">
         <div className="relative mx-auto w-full h-16 w-16">
           <div className="absolute top-1 left-1 bg-gray-800 rounded-full shadow-md w-full h-full p-3"></div>
-          <div className="relative z-10 bg-white border-2 border-gray-800 rounded-full neo-brutalist hover:-translate-y-1 hover:-translate-x-1 transition-transform p-3 h-full w-full">
+          <div className="relative z-10 bg-white border-2 border-gray-800 rounded-full neo-brutalist hover:-translate-y-1 hover:-translate-x-1 transition-transform p-3 h-full w-full hover:bg-blue-200">
             <div className="flex items-center space-x-2"></div>
 
             <a href="https://www.linkedin.com/in/garayevk/" target="_blank">
@@ -24,7 +25,7 @@ const Contact = () => {
 
         <div className="relative mx-auto w-full h-16 w-16">
           <div className="absolute top-1 left-1 bg-gray-800 rounded-full shadow-md w-full h-full p-3"></div>
-          <div className="relative z-10 bg-white border-2 border-gray-800 rounded-full neo-brutalist hover:-translate-y-1 hover:-translate-x-1 transition-transform p-3 h-full w-full">
+          <div className="relative z-10 bg-white border-2 border-gray-800 rounded-full neo-brutalist hover:-translate-y-1 hover:-translate-x-1 transition-transform p-3 h-full w-full hover:bg-stone-200">
             <div className="flex items-center space-x-2"></div>
 
             <a href="https://github.com/kgarayev" target="_blank">
@@ -35,7 +36,7 @@ const Contact = () => {
 
         <div className="relative mx-auto w-full h-16 w-16">
           <div className="absolute top-1 left-1 bg-gray-800 rounded-full shadow-md w-full h-full p-3"></div>
-          <div className="relative z-10 bg-white border-2 border-gray-800 rounded-full neo-brutalist hover:-translate-y-1 hover:-translate-x-1 transition-transform p-3 h-full w-full">
+          <div className="relative z-10 bg-white border-2 border-gray-800 rounded-full neo-brutalist hover:-translate-y-1 hover:-translate-x-1 transition-transform p-3 h-full w-full hover:bg-red-200">
             <div className="flex items-center space-x-2"></div>
 
             <a
