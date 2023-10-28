@@ -12,7 +12,7 @@ const Work = () => {
   const skills = useSelector(selectSkillsList);
 
   return (
-    <div className="mt-6">
+    <div className="mt-6 pt-20 pb-20 bg-fuchsia-100">
       <div className="w-full text-center">
         <h2 className="text-xl font-bold">What I do</h2>
       </div>

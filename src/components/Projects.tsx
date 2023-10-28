@@ -14,7 +14,7 @@ const Projects = () => {
   const projectList = useSelector(selectProjectList);
 
   return (
-    <div className="mt-6">
+    <div className="pt-20 pb-20 bg-amber-100">
       <div className="w-full text-center">
         <h2 className="text-xl font-bold">Featured Projects</h2>
       </div>
