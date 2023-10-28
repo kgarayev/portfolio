@@ -35,7 +35,7 @@ const StickyFooter = () => {
           />
         </svg>
 
-        <p>what I do</p>
+        <p className="text-md font-bold">what I do</p>
       </div>
       <div className="flex flex-col items-center justify-center">
         <svg
