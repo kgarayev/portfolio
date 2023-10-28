@@ -6,6 +6,7 @@ import Intro from "./Intro";
 import StickyFooter from "./StickyFooter";
 import Projects from "./Projects";
 import Work from "./Work";
+import About from "./About";
 
 const MainTemplate = () => {
   return (
@@ -15,6 +16,8 @@ const MainTemplate = () => {
 
       <Work></Work>
       <Projects></Projects>
+      <About></About>
+
       <StickyFooter></StickyFooter>
     </div>
   );

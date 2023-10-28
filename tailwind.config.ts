@@ -21,7 +21,7 @@ const config: Config = {
     },
     extend: {
       colors: {
-        mainBackground: "rgb(255, 251, 241)",
+        mainBackground: "rgb(240, 240, 240)",
       },
       fontFamily: {
         ibmPlexMono: ["IBM Plex Mono", "monospace"],

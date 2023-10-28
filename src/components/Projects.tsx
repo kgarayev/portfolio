@@ -14,9 +14,9 @@ const Projects = () => {
   const projectList = useSelector(selectProjectList);
 
   return (
-    <div className="pt-20 pb-20 bg-amber-100">
-      <div className="w-full text-center">
-        <h2 className="text-xl font-bold">Featured Projects</h2>
+    <div className="pt-20 pb-20 bg-amber-50">
+      <div className="w-full text-center p-5">
+        <h2 className="text-3xl font-bold">Featured Projects</h2>
       </div>
       <div className="mb-16 grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-6 p-5">
         {projectList.map((item: ProjectItem) => {

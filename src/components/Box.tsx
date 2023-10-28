@@ -24,8 +24,8 @@ const Box: React.FC<BoxProps> = ({
         </div>
         <div className="border-t-2 border-black mb-4"></div>
 
-        <div className="m-4">
-          <h2 className="text-xl font-bold">{title}</h2>
+        <div className="m-4 font-nunito">
+          <h2 className="text-xl font-bold font-ibmPlexMono">{title}</h2>
           <div className="aspect-w-1 aspect-h-1 ">
             <img
               src={imageLink}
