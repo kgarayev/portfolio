@@ -13,7 +13,11 @@ const SkillBox: React.FC<SkillBoxProps> = ({ iconLink, title }) => {
         <div className="flex flex-col items-center justify-between h-full w-full">
           <div className="text-center mb-3">
             {title.map((item) => {
-              return <h2 className="text-lg font-semibold">{item}</h2>;
+              return (
+                <h2 className="text-lg font-semibold" key={item}>
+                  {item}
+                </h2>
+              );
             })}
           </div>
 
@@ -21,7 +25,10 @@ const SkillBox: React.FC<SkillBoxProps> = ({ iconLink, title }) => {
             <div className="flex justify-center items-center git add h-24 w-24">
               {iconLink.map((item, index) => {
                 return (
-                  <div className="h-full w-full flex justify-center items-center ">
+                  <div
+                    className="h-full w-full flex justify-center items-center "
+                    key={item}
+                  >
                     <img src={item} alt="icon" className="h-full w-full" />
                   </div>
                 );

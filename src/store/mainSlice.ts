@@ -30,6 +30,13 @@ const mainSlice = createSlice({
         buttonText: "some link",
         imageLink: "/ricks.png",
       },
+      {
+        title: "Easy Nutrition",
+        description: "Food App",
+        tag: "js, react, rest, node",
+        buttonText: "some link",
+        imageLink: "/js.png",
+      },
     ],
 
     skillsList: [

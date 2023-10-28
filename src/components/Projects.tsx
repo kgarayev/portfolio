@@ -27,6 +27,7 @@ const Projects = () => {
               tag={item.tag}
               buttonText={item.buttonText}
               imageLink={item.imageLink}
+              key={item.title}
             />
           );
         })}
