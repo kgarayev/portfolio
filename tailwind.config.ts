@@ -20,6 +20,9 @@ const config: Config = {
       dark: { raw: "(prefers-color-scheme: dark)" },
     },
     extend: {
+      colors: {
+        mainBackground: "rgb(255, 251, 241)",
+      },
       fontFamily: {
         ibmPlexMono: ["IBM Plex Mono", "monospace"],
         nunito: ["Nunito", "sans-serif"],

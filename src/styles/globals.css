@@ -17,6 +17,7 @@
   --background-end-rgb: 255, 255, 255;
   /* font-family: "IBM Plex Mono", monospace; */
   /* font-family: "Nunito", sans-serif; */
+  background-color: rgb(172, 172, 49);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -41,4 +42,12 @@ body {
 
 .code {
   font-family: "IBM Plex Mono", "monospace";
+}
+
+.text-outline {
+  -webkit-text-stroke: 1px rgb(0, 0, 0); /* width and color of outline */
+}
+
+.text-outline-2 {
+  -webkit-text-stroke: 1px rgb(41, 41, 41); /* width and color of outline */
 }
