@@ -31,7 +31,7 @@ const PopUp: React.FC<PopProps> = ({ techUsed }) => {
           <div className="grid grid-cols-3 w-full h-full gap-2">
             {techUsed.map((item: string) => {
               return (
-                <div className="">
+                <div className="" key={item}>
                   <img src={item} alt="tech" className="w-12 h-12" />
                 </div>
               );
