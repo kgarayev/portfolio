@@ -18,7 +18,7 @@ const ContactForm = () => {
   return (
     <div className="relative min-w-[225px] max-w-[800px] mx-auto w-full">
       <div className="absolute top-1 left-1 bg-gray-800 rounded-2xl shadow-md w-full h-full"></div>
-      <div className="relative z-10 bg-white border-2 border-gray-800 rounded-2xl neo-brutalist hover:-translate-y-1 hover:-translate-x-1 transition-transform">
+      <div className="relative z-10 bg-white border-2 border-gray-800 rounded-2xl neo-brutalist transition-transform">
         <div className="flex items-center space-x-2 mb-4 mt-4 ml-4"></div>
         <form onSubmit={handleSubmit}>
           <div className="m-4 font-nunito flex flex-col gap-5 p-2">

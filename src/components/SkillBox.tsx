@@ -1,3 +1,6 @@
+import { useDispatch } from "react-redux";
+import { setScreenMode } from "@/store/mainSlice";
+
 import Image from "next/image";
 
 interface SkillBoxProps {
@@ -6,6 +9,12 @@ interface SkillBoxProps {
 }
 
 const SkillBox: React.FC<SkillBoxProps> = ({ iconLink, title }) => {
+  const dispatch = useDispatch();
+
+  const onClick = () => {
+    dispatch(setScreenMode(title[0]));
+  };
+
   return (
     <div className="relative mx-auto w-full">
       <div className="absolute top-1 left-1 bg-gray-800 rounded-full shadow-md w-full h-full p-3"></div>
@@ -43,7 +52,10 @@ const SkillBox: React.FC<SkillBoxProps> = ({ iconLink, title }) => {
               })}
             </div>
 
-            <div className="flex items-center gap-2 cursor-pointer hover:text-gray-500 font-bold ">
+            <div
+              onClick={onClick}
+              className="flex items-center gap-2 cursor-pointer hover:text-gray-500 font-bold "
+            >
               <a className="font-nunito">learn more</a>
 
               <svg
