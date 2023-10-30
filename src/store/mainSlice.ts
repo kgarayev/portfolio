@@ -6,7 +6,7 @@ const mainSlice = createSlice({
   initialState: {
     count: 0,
 
-    screenMode: "",
+    screenMode: "Frontend",
 
     projectList: [
       {
@@ -43,6 +43,7 @@ const mainSlice = createSlice({
       {
         title: ["Frontend", "Development"],
         iconLink: ["/frontend5.svg"],
+        techUsed: ["/ts.svg", "/js.svg", "/jest.svg", "/html.svg", "/css.svg"],
       },
       {
         title: ["Backend", "Development"],

@@ -6,9 +6,10 @@ import Image from "next/image";
 interface SkillBoxProps {
   iconLink: string[];
   title: string[];
+  techUsed: string[];
 }
 
-const SkillBox: React.FC<SkillBoxProps> = ({ iconLink, title }) => {
+const SkillBox: React.FC<SkillBoxProps> = ({ iconLink, title, techUsed }) => {
   const dispatch = useDispatch();
 
   const onClick = () => {
