@@ -1,7 +1,19 @@
+import { useDispatch } from "react-redux";
+import { setTargetId } from "@/store/mainSlice";
+
 const StickyFooter = () => {
+  const dispatch = useDispatch();
+
+  const scrollToSection = (targetId: string | null) => {
+    dispatch(setTargetId(targetId));
+  };
+
   return (
     <div className="z-20 flex justify-around items-center w-full h-20 border-t-2 fixed left-0 bottom-0 bg-white text-sm font-semibold">
-      <div className="flex flex-col items-center justify-center hover:text-gray-500 cursor-pointer">
+      <div
+        onClick={() => scrollToSection("about")}
+        className="flex flex-col items-center justify-center hover:text-gray-500 cursor-pointer"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -19,7 +31,10 @@ const StickyFooter = () => {
 
         <p className="text-md font-bold">about</p>
       </div>
-      <div className="flex flex-col items-center justify-center hover:text-gray-500 cursor-pointer">
+      <div
+        onClick={() => scrollToSection("work")}
+        className="flex flex-col items-center justify-center hover:text-gray-500 cursor-pointer"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -37,7 +52,10 @@ const StickyFooter = () => {
 
         <p className="text-md font-bold">what I do</p>
       </div>
-      <div className="flex flex-col items-center justify-center hover:text-gray-500 cursor-pointer">
+      <div
+        onClick={() => scrollToSection("projects")}
+        className="flex flex-col items-center justify-center hover:text-gray-500 cursor-pointer"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -55,7 +73,10 @@ const StickyFooter = () => {
 
         <p className="text-md font-bold">my work</p>
       </div>
-      <div className="flex flex-col items-center justify-center hover:text-gray-500 cursor-pointer">
+      <div
+        onClick={() => scrollToSection("contact")}
+        className="flex flex-col items-center justify-center hover:text-gray-500 cursor-pointer"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

@@ -57,6 +57,8 @@ const mainSlice = createSlice({
         iconLink: ["/target.svg"],
       },
     ],
+
+    targetId: null,
   },
 
   // these are functions
@@ -74,6 +76,10 @@ const mainSlice = createSlice({
       state.screenMode = action.payload;
     },
 
+    setTargetId: (state, action) => {
+      state.targetId = action.payload;
+    },
+
     // change password
     // changePassword: (state, action) => {
     //   state.passwordChange = action.payload;
@@ -86,11 +92,13 @@ const mainSlice = createSlice({
   },
 });
 
-export const { increment, decrement, setScreenMode } = mainSlice.actions;
+export const { increment, decrement, setScreenMode, setTargetId } =
+  mainSlice.actions;
 
 export const selectCount = (state: any) => state.count;
 export const selectProjectList = (state: any) => state.projectList;
 export const selectSkillsList = (state: any) => state.skillsList;
 export const selectScreenMode = (state: any) => state.screenMode;
+export const selectTargetId = (state: any) => state.targetId;
 
 export default mainSlice.reducer;
