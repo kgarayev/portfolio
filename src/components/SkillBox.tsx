@@ -31,7 +31,13 @@ const SkillBox: React.FC<SkillBoxProps> = ({ iconLink, title }) => {
                     className="h-full w-full flex justify-center items-center "
                     key={item}
                   >
-                    <img src={item} alt="icon" className="h-full w-full" />
+                    <Image
+                      src={item}
+                      alt="icon"
+                      className="h-full w-full"
+                      height={500}
+                      width={500}
+                    />
                   </div>
                 );
               })}

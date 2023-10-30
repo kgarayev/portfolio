@@ -28,7 +28,7 @@ const Box: React.FC<BoxProps> = ({
 
         <div className="m-4 font-nunito p-2">
           <h2 className="text-xl font-bold font-ibmPlexMono">{title}</h2>
-          <div className="aspect-w-1 aspect-h-1 ">
+          <div className="aspect-w-1 aspect-h-1">
             <img
               src={imageLink}
               alt="image"
