@@ -1,14 +1,14 @@
 const StickyFooter = () => {
   return (
     <div className="z-20 flex justify-around items-center w-full h-20 border-t-2 fixed left-0 bottom-0 bg-white text-sm font-semibold">
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center hover:text-gray-500 cursor-pointer">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-8 h-8"
+          className="w-7 h-7"
         >
           <path
             strokeLinecap="round"
@@ -19,14 +19,14 @@ const StickyFooter = () => {
 
         <p className="text-md font-bold">about</p>
       </div>
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center hover:text-gray-500 cursor-pointer">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-8 h-8"
+          className="w-7 h-7"
         >
           <path
             strokeLinecap="round"
@@ -37,14 +37,14 @@ const StickyFooter = () => {
 
         <p className="text-md font-bold">what I do</p>
       </div>
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center hover:text-gray-500 cursor-pointer">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-8 h-8"
+          className="w-7 h-7"
         >
           <path
             strokeLinecap="round"
@@ -55,14 +55,14 @@ const StickyFooter = () => {
 
         <p className="text-md font-bold">my work</p>
       </div>
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center hover:text-gray-500 cursor-pointer">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-8 h-8"
+          className="w-7 h-7"
         >
           <path
             strokeLinecap="round"
