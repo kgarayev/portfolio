@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Photo = () => {
   return (
     <div className="flex justify-center relative h-full w-full">

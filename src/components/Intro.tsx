@@ -32,8 +32,8 @@ const Intro = () => {
         <span className="text-xl font-bold font-ibmPlexMono text-blue-600">
           NoSQL
         </span>{" "}
-        databases, I'm all about creating practical solutions. Let's build
-        something together!
+        databases, I&apos;m all about creating practical solutions. Let&apos;s
+        build something together!
       </p>
       <div className="flex justify-center mt-5">
         <div className="max-h-[240px] max-w-[240px]">

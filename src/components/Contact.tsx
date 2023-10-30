@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { forwardRef } from "react";
 import ContactForm from "./ContactForm";
 
@@ -59,3 +60,5 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
 });
 
 export default Contact;
+
+Contact.displayName = "Contact";

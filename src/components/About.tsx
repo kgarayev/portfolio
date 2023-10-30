@@ -19,20 +19,21 @@ const About = forwardRef<HTMLDivElement>((props, ref) => {
         <p className="mb-8">
           In the realm of software, my skill set is extensive. I excel in both
           frontend and backend development, showing particular expertise in
-          TypeScript, JavaScript, Node.js, React, and Python. Additionally, I'm
-          proficient in managing both SQL and NoSQL databases. I'm all about
-          making sure every line of code I write not only works but works well
-          and lasts.
+          TypeScript, JavaScript, Node.js, React, and Python. Additionally,
+          I&apos;m proficient in managing both SQL and NoSQL databases. I&apos;m
+          all about making sure every line of code I write not only works but
+          works well and lasts.
         </p>
         <p className="mb-8">
-          At the Keller Group, I’ve utilised these skills to enhance our
+          At the Keller Group, I&apos;ve utilised these skills to enhance our
           projects and streamline operations. Yet, being a software engineer to
-          me means more than coding; it's about mentoring junior engineers and
-          contributing to their growth. Sharing knowledge, teaching, and
+          me means more than coding; it&apos;s about mentoring junior engineers
+          and contributing to their growth. Sharing knowledge, teaching, and
           coaching are as vital to me as building innovative software.
         </p>
         <p className="mb-8">
-          When I'm not coding, I love to share what I’ve learned with people.
+          When I&apos;m not coding, I love to share what I&apos;ve learned with
+          people.
         </p>
         <p className="mb-8">
           I love good design, hiking camping, travel and music.
@@ -43,3 +44,5 @@ const About = forwardRef<HTMLDivElement>((props, ref) => {
 });
 
 export default About;
+
+About.displayName = "About";
