@@ -1,8 +1,13 @@
+import { forwardRef } from "react";
 import ContactForm from "./ContactForm";
 
-const Contact = () => {
+const Contact = forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <div className="pt-20 pb-32 bg-cyan-50 flex flex-col justify-center items-center w-full">
+    <div
+      ref={ref}
+      id="contact"
+      className="pt-20 pb-32 bg-cyan-50 flex flex-col justify-center items-center w-full"
+    >
       <div className="w-full text-center p-5">
         <h2 className="text-3xl font-bold">Get in touch</h2>
       </div>
@@ -51,6 +56,6 @@ const Contact = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Contact;

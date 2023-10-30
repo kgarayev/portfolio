@@ -1,3 +1,4 @@
+import { forwardRef } from "react";
 import { useSelector } from "react-redux";
 import { selectSkillsList } from "../store/mainSlice";
 
@@ -8,11 +9,11 @@ interface SkillItem {
   iconLink: string[];
 }
 
-const Work = () => {
+const Work = forwardRef<HTMLDivElement>((props, ref) => {
   const skills = useSelector(selectSkillsList);
 
   return (
-    <div className="pt-20 pb-20 bg-fuchsia-100">
+    <div ref={ref} id="work" className="pt-20 pb-20 bg-fuchsia-100">
       <div className="w-full text-center p-5">
         <h2 className="text-3xl font-bold">What I do</h2>
       </div>
@@ -27,6 +28,6 @@ const Work = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Work;

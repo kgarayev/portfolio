@@ -1,3 +1,4 @@
+import { forwardRef } from "react";
 import Box from "./Box";
 import { useSelector } from "react-redux";
 import { selectProjectList } from "../store/mainSlice";
@@ -10,11 +11,11 @@ interface ProjectItem {
   imageLink: string;
 }
 
-const Projects = () => {
+const Projects = forwardRef<HTMLDivElement>((props, ref) => {
   const projectList = useSelector(selectProjectList);
 
   return (
-    <div className="pt-20 pb-20 bg-amber-50">
+    <div ref={ref} id="projects" className="pt-20 pb-20 bg-amber-50">
       <div className="w-full text-center p-5">
         <h2 className="text-3xl font-bold">Featured Projects</h2>
       </div>
@@ -34,6 +35,6 @@ const Projects = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Projects;

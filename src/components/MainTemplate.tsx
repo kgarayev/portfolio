@@ -16,11 +16,33 @@ import Contact from "./Contact";
 
 const MainTemplate = () => {
   const targetId = useSelector(selectTargetId);
-  const mySectionRef = useRef<HTMLDivElement>(null);
+  const workRef = useRef<HTMLDivElement>(null);
+  const projectsRef = useRef<HTMLDivElement>(null);
+  const aboutRef = useRef<HTMLDivElement>(null);
+  const contactRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (targetId === "about" && mySectionRef.current) {
-      mySectionRef.current.scrollIntoView({ behavior: "smooth" });
+    let selectedRef;
+
+    switch (targetId) {
+      case "work":
+        selectedRef = workRef.current;
+        break;
+      case "projects":
+        selectedRef = projectsRef.current;
+        break;
+      case "about":
+        selectedRef = aboutRef.current;
+        break;
+      case "contact":
+        selectedRef = contactRef.current;
+        break;
+      default:
+        selectedRef = null;
+    }
+
+    if (selectedRef) {
+      selectedRef.scrollIntoView({ behavior: "smooth" });
     }
   }, [targetId]);
 
@@ -29,10 +51,10 @@ const MainTemplate = () => {
       <Header></Header>
       <Intro></Intro>
 
-      <Work></Work>
-      <Projects></Projects>
-      <About ref={mySectionRef}></About>
-      <Contact></Contact>
+      <Work ref={workRef}></Work>
+      <Projects ref={projectsRef}></Projects>
+      <About ref={aboutRef}></About>
+      <Contact ref={contactRef}></Contact>
 
       <StickyFooter></StickyFooter>
     </div>
