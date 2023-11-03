@@ -16,14 +16,22 @@ interface SkillItem {
   techUsed: string[];
 }
 
-const PopUp: React.FC<PopProps> = ({ techUsed }) => {
+const PopUp = () => {
   const dispatch = useDispatch();
 
   const screenMode = useSelector(selectScreenMode);
   const skills = useSelector(selectSkillsList);
 
+  let techStack: string[] = [];
+
+  skills.forEach((item: SkillItem) => {
+    if (screenMode === item.title[0]) {
+      techStack = item.techUsed;
+    }
+  });
+
   return (
-    <div className="z-20 absolute border-2 w-5/6 h-[85vh] left-1/2 transform -translate-x-1/2">
+    <div className="z-20 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 border-2 w-5/6 h-[80vh] bg-white z-20">
       <div className="relative min-w-[225px] max-w-[600px] mx-auto w-full h-full">
         <div className="absolute top-1 left-1 bg-gray-800 rounded-2xl shadow-md w-full h-full"></div>
         <div className="relative z-10 bg-white border-2 border-gray-800 rounded-2xl h-full w-full neo-brutalist">
@@ -43,7 +51,7 @@ const PopUp: React.FC<PopProps> = ({ techUsed }) => {
             </div>
 
             <div className="grid grid-cols-3 w-full h-full gap-2">
-              {techUsed.map((item: string) => {
+              {techStack.map((item: string) => {
                 return (
                   <div className="" key={item}>
                     <img src={item} alt="tech" className="w-12 h-12" />
