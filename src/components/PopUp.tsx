@@ -34,34 +34,51 @@ const PopUp = () => {
 
   return (
     <div
-      className={`${visibilityClass} fixed z-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 border-2 w-5/6 h-[80vh] bg-white`}
+      className={`${visibilityClass} fixed z-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5/6 h-[75vh]`}
     >
       <div className="relative min-w-[225px] max-w-[600px] mx-auto w-full h-full">
         <div className="absolute top-1 left-1 bg-gray-800 rounded-2xl shadow-md w-full h-full"></div>
         <div className="relative z-10 bg-white border-2 border-gray-800 rounded-2xl h-full w-full neo-brutalist">
-          <div className="flex items-center space-x-2 mb-4 mt-4 ml-4"></div>
+          <div className="flex flex-col gap-5 font-nunito w-full">
+            <div className="justify-around items-center w-full p-2">
+              <div className="flex w-full justify-end">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="w-7 h-7 cursor-pointer hover:text-gray-500"
+                  onClick={() => {
+                    dispatch(setScreenMode(""));
+                  }}
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
 
-          <div className="flex flex-col gap-5 m-4 font-nunito p-2 w-full">
-            <div className="flex justify-around items-center">
-              <h2 className="text-xl font-bold font-ibmPlexMono">Tech used</h2>
-              <p
-                onClick={() => {
-                  dispatch(setScreenMode(""));
-                }}
-                className="font-bold text-2xl"
-              >
-                X
-              </p>
+              <div className="w-full flex justify-center">
+                <h2 className="text-xl font-bold font-ibmPlexMono">
+                  Tech used
+                </h2>
+              </div>
             </div>
 
-            <div className="grid grid-cols-3 w-full h-full gap-2">
-              {techStack.map((item: string) => {
-                return (
-                  <div className="" key={item}>
-                    <img src={item} alt="tech" className="w-12 h-12" />
-                  </div>
-                );
-              })}
+            <div className="flex justify-center items-center w-full h-full p-2">
+              <div className="grid grid-cols-3 gap-4 place-items-center">
+                {techStack.map((item: string) => {
+                  return (
+                    <div
+                      className="flex justify-center items-center"
+                      key={item}
+                    >
+                      <img src={item} alt="tech" className="w-12 h-12" />
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>

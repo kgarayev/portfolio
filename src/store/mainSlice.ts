@@ -48,14 +48,17 @@ const mainSlice = createSlice({
       {
         title: ["Backend", "Development"],
         iconLink: ["/backend4.svg"],
+        techUsed: ["/ts.svg", "/js.svg", "/jest.svg", "/html.svg", "/css.svg"],
       },
       {
         title: ["DevOps"],
         iconLink: ["/cloud3.svg"],
+        techUsed: ["/ts.svg", "/js.svg", "/jest.svg", "/html.svg", "/css.svg"],
       },
       {
         title: ["Coaching"],
         iconLink: ["/target.svg"],
+        techUsed: ["/ts.svg", "/js.svg", "/jest.svg", "/html.svg", "/css.svg"],
       },
     ],
 
