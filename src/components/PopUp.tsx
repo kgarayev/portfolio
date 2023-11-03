@@ -22,6 +22,8 @@ const PopUp = () => {
   const screenMode = useSelector(selectScreenMode);
   const skills = useSelector(selectSkillsList);
 
+  const visibilityClass = screenMode === "" ? "hidden" : "";
+
   let techStack: string[] = [];
 
   skills.forEach((item: SkillItem) => {
@@ -31,7 +33,9 @@ const PopUp = () => {
   });
 
   return (
-    <div className="z-20 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 border-2 w-5/6 h-[80vh] bg-white z-20">
+    <div
+      className={`${visibilityClass} fixed z-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 border-2 w-5/6 h-[80vh] bg-white`}
+    >
       <div className="relative min-w-[225px] max-w-[600px] mx-auto w-full h-full">
         <div className="absolute top-1 left-1 bg-gray-800 rounded-2xl shadow-md w-full h-full"></div>
         <div className="relative z-10 bg-white border-2 border-gray-800 rounded-2xl h-full w-full neo-brutalist">

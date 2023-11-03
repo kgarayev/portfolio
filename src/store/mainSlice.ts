@@ -6,7 +6,7 @@ const mainSlice = createSlice({
   initialState: {
     count: 0,
 
-    screenMode: "Frontend",
+    screenMode: "",
 
     projectList: [
       {
