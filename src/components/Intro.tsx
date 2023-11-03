@@ -9,27 +9,27 @@ const Intro = () => {
       <p className="mb-5 font-nunito font-semibold mt-6">
         Building things with code to solve real-world problems is what I enjoy
         most. Skilled in{" "}
-        <span className=" text-xl font-bold font-ibmPlexMono text-blue-600">
+        <span className=" text-xl font-bold font-ibmPlexMono  bg-emerald-200">
           Node
         </span>
         ,{" "}
-        <span className="text-xl font-bold font-ibmPlexMono text-blue-600">
+        <span className="text-xl font-bold font-ibmPlexMono  bg-emerald-200">
           React
         </span>
         ,{" "}
-        <span className="text-xl font-bold font-ibmPlexMono text-blue-600">
+        <span className="text-xl font-bold font-ibmPlexMono  bg-emerald-200">
           Python
         </span>
         ,{" "}
-        <span className="text-xl font-bold font-ibmPlexMono text-blue-600">
+        <span className="text-xl font-bold font-ibmPlexMono  bg-emerald-200">
           C
         </span>
         , and both{" "}
-        <span className="text-xl font-bold font-ibmPlexMono text-blue-600">
+        <span className="text-xl font-bold font-ibmPlexMono  bg-emerald-200">
           SQL
         </span>{" "}
         and{" "}
-        <span className="text-xl font-bold font-ibmPlexMono text-blue-600">
+        <span className="text-xl font-bold font-ibmPlexMono  bg-emerald-200">
           NoSQL
         </span>{" "}
         databases, I&apos;m all about creating practical solutions. Let&apos;s

@@ -25,7 +25,7 @@ const ContactForm = () => {
             <div>
               <h3 className="font-ibmPlexMono font-semibold text-lg">Name</h3>
               <input
-                className="w-full border-black border-2 p-2.5 focus:outline-none focus:shadow-[2px_2px_0px_rgba(0,0,0,1)] focus:bg-fuchsia-100 active:shadow-[2px_2px_0px_rgba(0,0,0,1)] rounded-md h-12"
+                className="w-full border-black border-2 p-2.5 focus:outline-none focus:shadow-[2px_2px_0px_rgba(0,0,0,1)] focus:bg-emerald-50 active:shadow-[2px_2px_0px_rgba(0,0,0,1)] rounded-md h-12"
                 placeholder="Rick Sanchez"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
@@ -35,7 +35,7 @@ const ContactForm = () => {
             <div>
               <h3 className="font-ibmPlexMono font-semibold text-lg">Email</h3>
               <input
-                className="w-full border-black border-2 p-2.5 focus:outline-none focus:shadow-[2px_2px_0px_rgba(0,0,0,1)] focus:bg-fuchsia-100 active:shadow-[2px_2px_0px_rgba(0,0,0,1)] rounded-md h-12"
+                className="w-full border-black border-2 p-2.5 focus:outline-none focus:shadow-[2px_2px_0px_rgba(0,0,0,1)] focus:bg-emerald-50 active:shadow-[2px_2px_0px_rgba(0,0,0,1)] rounded-md h-12"
                 placeholder="you@example.com"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -47,7 +47,7 @@ const ContactForm = () => {
                 Message
               </h3>
               <textarea
-                className="w-full border-black border-2 p-2.5 focus:outline-none focus:shadow-[2px_2px_0px_rgba(0,0,0,1)] focus:bg-fuchsia-100 active:shadow-[2px_2px_0px_rgba(0,0,0,1)] rounded-md"
+                className="w-full border-black border-2 p-2.5 focus:outline-none focus:shadow-[2px_2px_0px_rgba(0,0,0,1)] focus:bg-emerald-50 active:shadow-[2px_2px_0px_rgba(0,0,0,1)] rounded-md"
                 placeholder="Hello there..."
                 rows={8}
                 style={{ resize: "none" }}
@@ -57,7 +57,7 @@ const ContactForm = () => {
             </div>
 
             <div className="w-full flex justify-center font-ibmPlexMono font-bold">
-              <button className="h-12 border-black border-2 p-2.5 bg-cyan-100 hover:bg-cyan-300 hover:shadow-[2px_2px_0px_rgba(0,0,0,1)] active:bg-[#00E1EF] rounded-md w-32">
+              <button className="h-12 border-black border-2 p-2.5 bg-emerald-100 hover:bg-emerald-200 hover:shadow-[2px_2px_0px_rgba(0,0,0,1)] active:bg-emerald-300 rounded-md w-32">
                 Send
               </button>
             </div>

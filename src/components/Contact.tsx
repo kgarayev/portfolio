@@ -7,7 +7,7 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
     <div
       ref={ref}
       id="contact"
-      className="pt-8 pb-28 bg-cyan-50 flex flex-col justify-center items-center w-full"
+      className="pt-8 pb-28 flex flex-col justify-center items-center w-full"
     >
       <div className="w-full text-center p-5">
         <h2 className="text-3xl font-bold">Get in touch</h2>
@@ -31,7 +31,7 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
 
         <div className="relative mx-auto  h-16 w-16">
           <div className="absolute top-1 left-1 bg-gray-800 rounded-full shadow-md w-full h-full p-3"></div>
-          <div className="relative z-10 bg-white border-2 border-gray-800 rounded-full neo-brutalist hover:-translate-y-1 hover:-translate-x-1 transition-transform p-3 h-full w-full hover:bg-stone-200">
+          <div className="relative z-10 bg-white border-2 border-gray-800 rounded-full neo-brutalist hover:-translate-y-1 hover:-translate-x-1 transition-transform p-3 h-full w-full hover:bg-stone-300">
             <div className="flex items-center space-x-2"></div>
 
             <a href="https://github.com/kgarayev" target="_blank">
@@ -42,7 +42,7 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
 
         <div className="relative mx-auto h-16 w-16">
           <div className="absolute top-1 left-1 bg-gray-800 rounded-full shadow-md w-full h-full p-3"></div>
-          <div className="relative z-10 bg-white border-2 border-gray-800 rounded-full neo-brutalist hover:-translate-y-1 hover:-translate-x-1 transition-transform p-3 h-full w-full hover:bg-red-100">
+          <div className="relative z-10 bg-white border-2 border-gray-800 rounded-full neo-brutalist hover:-translate-y-1 hover:-translate-x-1 transition-transform p-3 h-full w-full hover:bg-red-200">
             <div className="flex items-center space-x-2"></div>
 
             <a
