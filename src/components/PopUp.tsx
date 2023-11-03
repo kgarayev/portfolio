@@ -1,5 +1,5 @@
-import { useDispatch } from "react-redux";
-import { setScreenMode } from "@/store/mainSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { setScreenMode, selectScreenMode } from "@/store/mainSlice";
 import Image from "next/image";
 
 interface PopProps {
@@ -8,6 +8,8 @@ interface PopProps {
 
 const PopUp: React.FC<PopProps> = ({ techUsed }) => {
   const dispatch = useDispatch();
+
+  const screenMode = useSelector(selectScreenMode);
 
   return (
     <div className="relative min-w-[225px] max-w-[600px] mx-auto w-full h-full">
