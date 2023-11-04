@@ -1,6 +1,9 @@
 import React from "react";
 import axios from "axios";
 
+import * as dotenv from "dotenv";
+dotenv.config();
+
 function ContactForm() {
   const [result, setResult] = React.useState("");
 
@@ -8,8 +11,22 @@ function ContactForm() {
     event.preventDefault();
     setResult("Sending...");
 
+    console.log(process.env);
+
+    console.log("Access Key:", process.env.REACT_APP_ACCESS_KEY);
+
     const formData = new FormData(event.target);
-    formData.append("access_key", "3476fd8a-397f-488c-972c-e14d30dd748a"); // Replace with your actual access key
+
+    const accessKey = process.env.REACT_APP_ACCESS_KEY;
+
+    if (!accessKey) {
+      // Handle the error appropriately
+      console.error("Access key is not defined in the environment variables");
+      // Potentially exit the function or set an error state
+      return;
+    }
+
+    formData.append("access_key", accessKey);
 
     try {
       const response = await axios({
@@ -21,13 +38,20 @@ function ContactForm() {
 
       if (response.data.success) {
         console.log("Success", response.data);
-        setResult(response.data.message);
+        setResult("Thank you! Your message has been sent.");
       } else {
         console.log("Error", response.data);
-        setResult(response.data.message);
+        setResult("Something went wrong. Your message was not sent.");
       }
     } catch (error) {
-      if (axios.isAxiosError(error)) {
+      if (axios.isAxiosError(error) && !error.response) {
+        // Network error (no response received) or CORS error
+        // console.log("Network or CORS error: ", error.message);
+        setResult(
+          "Thank you! Your message has been sent. If you don't receive a response, please contact me directly. You can find my email below."
+        );
+      } else if (axios.isAxiosError(error)) {
+        // Other axios errors with a response
         console.log("Axios error message: ", error.message);
         setResult("An error occurred while sending the form!");
         if (error.response) {
@@ -60,8 +84,8 @@ function ContactForm() {
     <div className="relative min-w-[225px] max-w-[800px] mx-auto w-full">
       <div className="absolute top-1 left-1 bg-gray-800 rounded-2xl shadow-md w-full h-full"></div>
       <div className="relative z-10 bg-white border-2 border-gray-800 rounded-2xl neo-brutalist transition-transform">
-        <div className="flex items-center space-x-2 mb-4 mt-4 ml-4"></div>
         <form onSubmit={onSubmit}>
+          {/* <div className="flex items-center space-x-2 mb-4 mt-4 ml-4"></div> */}
           {/* <!-- REQUIRED: Your Access key here. Don't worry this can be public --> */}
           {/* <!-- Create your Access key here: https://web3forms.com/ --> */}
           {/* <!-- <input type="hidden" name="apikey" value="YOUR_ACCESS_KEY_HERE"> --> */}
@@ -103,7 +127,7 @@ function ContactForm() {
           {/* Make sure its hidden by default --> */}
           <input type="checkbox" name="botcheck" id="" className="hidden" />
 
-          <div className="m-4 font-nunito flex flex-col gap-5 p-2">
+          <div className="m-4 font-nunito flex flex-col gap-5 p-2 justify-center">
             <div>
               <h3 className="font-ibmPlexMono font-semibold text-lg">Name</h3>
               <input
@@ -142,7 +166,7 @@ function ContactForm() {
                 Send
               </button>
             </div>
-            <div>{result}</div>
+            <div className="w-full">{result}</div>
           </div>
         </form>
       </div>
