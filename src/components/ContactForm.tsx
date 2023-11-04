@@ -219,7 +219,9 @@ function ContactForm() {
                 Send
               </button>
             </div>
-            <div className={`w-full text-center font-bold ${messageColor}`}>
+            <div
+              className={`text-center font-bold ${messageColor} inline-block`}
+            >
               {result}
             </div>
           </div>
