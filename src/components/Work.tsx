@@ -15,7 +15,7 @@ const Work = forwardRef<HTMLDivElement>((props, ref) => {
 
   return (
     // <div ref={ref} id="work" className="relative pt-8 pb-8 bg-fuchsia-100">
-    <div ref={ref} id="work" className="relative pt-8 pb-8 bg-emerald-50">
+    <div ref={ref} id="work" className="relative pt-8 pb-8">
       <div className="w-full text-center p-5">
         <h2 className="text-3xl font-bold">What I do</h2>
       </div>

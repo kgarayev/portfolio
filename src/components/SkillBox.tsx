@@ -44,7 +44,7 @@ const SkillBox: React.FC<SkillBoxProps> = ({ iconLink, title, techUsed }) => {
                     <Image
                       src={item}
                       alt="icon"
-                      className="h-full w-full"
+                      className="h-full w-full sepia"
                       height={500}
                       width={500}
                     />
