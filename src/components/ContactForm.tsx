@@ -9,29 +9,34 @@ function ContactForm() {
 
   const onSubmit = async (event: any) => {
     event.preventDefault();
-    setResult("Sending...");
+    setResult("Validating...");
 
-    console.log(process.env);
+    // console.log(process.env);
 
-    console.log("Access Key:", process.env.REACT_APP_ACCESS_KEY);
+    // console.log("Access Key:", process.env.REACT_APP_ACCESS_KEY);
 
     const formData = new FormData(event.target);
 
-    const accessKey = process.env.REACT_APP_ACCESS_KEY;
+    // const accessKey = process.env.REACT_APP_ACCESS_KEY;
 
-    if (!accessKey) {
-      // Handle the error appropriately
-      console.error("Access key is not defined in the environment variables");
-      // Potentially exit the function or set an error state
+    // Get individual field values
+    const name = formData.get("name") as string;
+    const email = formData.get("email") as string;
+    const message = formData.get("message") as string;
+
+    // Check if any of the fields are empty
+    if (!name.trim() || !email.trim() || !message.trim()) {
+      setResult("Please complete the form in full.");
       return;
     }
 
-    formData.append("access_key", accessKey);
+    // If all fields are filled, proceed to set the result to "Sending..."
+    setResult("Sending...");
 
     try {
       const response = await axios({
         method: "post",
-        url: "https://api.web3forms.com/submit",
+        url: "api/submitForm",
         data: formData,
         headers: { "Content-Type": "multipart/form-data" },
       });
@@ -166,7 +171,7 @@ function ContactForm() {
                 Send
               </button>
             </div>
-            <div className="w-full">{result}</div>
+            <div className="w-full text-center">{result}</div>
           </div>
         </form>
       </div>
