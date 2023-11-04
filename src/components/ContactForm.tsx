@@ -1,23 +1,39 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 import * as dotenv from "dotenv";
 dotenv.config();
 
 function ContactForm() {
-  const [result, setResult] = React.useState("");
+  const [result, setResult] = useState("");
+  const [messageColor, setMessageColor] = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  // This function will clear the result when clicking anywhere on the page
+  const clearResult = () => {
+    setResult("");
+  };
+
+  useEffect(() => {
+    // Attach the event listener for clicks on the window object
+    window.addEventListener("click", clearResult);
+
+    // Return a cleanup function to remove the event listener
+    return () => {
+      window.removeEventListener("click", clearResult);
+    };
+  }, []); // Empty dependency array ensures this effect runs only once
 
   const onSubmit = async (event: any) => {
     event.preventDefault();
+
+    setMessageColor("bg-yellow-100");
+
     setResult("Validating...");
 
-    // console.log(process.env);
-
-    // console.log("Access Key:", process.env.REACT_APP_ACCESS_KEY);
-
     const formData = new FormData(event.target);
-
-    // const accessKey = process.env.REACT_APP_ACCESS_KEY;
 
     // Get individual field values
     const name = formData.get("name") as string;
@@ -26,11 +42,13 @@ function ContactForm() {
 
     // Check if any of the fields are empty
     if (!name.trim() || !email.trim() || !message.trim()) {
+      setMessageColor("bg-red-100");
       setResult("Please complete the form in full.");
       return;
     }
 
     // If all fields are filled, proceed to set the result to "Sending..."
+    setMessageColor("bg-yellow-100");
     setResult("Sending...");
 
     try {
@@ -43,22 +61,38 @@ function ContactForm() {
 
       if (response.data.success) {
         console.log("Success", response.data);
+        setMessageColor("bg-emerald-200");
         setResult("Thank you! Your message has been sent.");
+        setName(""); // Resetting the state which will clear the form
+        setEmail("");
+        setMessage("");
       } else {
         console.log("Error", response.data);
+        setMessageColor("bg-red-100");
         setResult("Something went wrong. Your message was not sent.");
+        setName(""); // Resetting the state which will clear the form
+        setEmail("");
+        setMessage("");
       }
     } catch (error) {
       if (axios.isAxiosError(error) && !error.response) {
         // Network error (no response received) or CORS error
         // console.log("Network or CORS error: ", error.message);
+        setMessageColor("bg-emerald-200");
         setResult(
           "Thank you! Your message has been sent. If you don't receive a response, please contact me directly. You can find my email below."
         );
+        setName(""); // Resetting the state which will clear the form
+        setEmail("");
+        setMessage("");
       } else if (axios.isAxiosError(error)) {
         // Other axios errors with a response
         console.log("Axios error message: ", error.message);
+        setMessageColor("bg-red-100");
         setResult("An error occurred while sending the form!");
+        setName(""); // Resetting the state which will clear the form
+        setEmail("");
+        setMessage("");
         if (error.response) {
           // Handle the response error
           console.log(error.response.data);
@@ -74,13 +108,21 @@ function ContactForm() {
       } else if (error instanceof Error) {
         // Handle non-Axios errors
         console.log("Unexpected error", error.message);
+        setMessageColor("bg-red-100");
         setResult("An unexpected error occurred!");
+        setName(""); // Resetting the state which will clear the form
+        setEmail("");
+        setMessage("");
       } else {
         // Handle cases where error is not an instance of Error (very rare)
         console.log("An unexpected error occurred", error);
+        setMessageColor("bg-red-100");
         setResult(
           "An unexpected error occurred and we're unable to identify it."
         );
+        setName(""); // Resetting the state which will clear the form
+        setEmail("");
+        setMessage("");
       }
     }
   };
@@ -140,6 +182,8 @@ function ContactForm() {
                 placeholder="Rick Sanchez"
                 type="text"
                 name="name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
               />
             </div>
             <div>
@@ -149,6 +193,8 @@ function ContactForm() {
                 placeholder="you@example.com"
                 type="email"
                 name="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div>
@@ -161,6 +207,8 @@ function ContactForm() {
                 rows={8}
                 style={{ resize: "none" }}
                 name="message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
               />
             </div>
             <div className="w-full flex justify-center font-ibmPlexMono font-bold">
@@ -171,7 +219,9 @@ function ContactForm() {
                 Send
               </button>
             </div>
-            <div className="w-full text-center">{result}</div>
+            <div className={`w-full text-center font-bold ${messageColor}`}>
+              {result}
+            </div>
           </div>
         </form>
       </div>
