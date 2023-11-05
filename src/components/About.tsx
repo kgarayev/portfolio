@@ -1,4 +1,5 @@
 import { forwardRef } from "react";
+import Image from "next/image";
 
 const About = forwardRef<HTMLDivElement>((props, ref) => {
   return (
@@ -6,6 +7,20 @@ const About = forwardRef<HTMLDivElement>((props, ref) => {
       <div className="w-full p-5">
         <h2 className="text-3xl font-bold">About me</h2>
       </div>
+
+      <div className="pl-5 pr-5 w-full ">
+        <div className="relative max-w-[450px] max-h-[450px] mx-auto">
+          <div className="absolute top-1.5 left-1 bg-gray-800 rounded-2xl shadow-md aspect-w-1 aspect-h-1 w-full max-w-3xl overflow-hidden "></div>
+          <div className="aspect-w-1 aspect-h-1 w-full max-w-3xl overflow-hidden relative border-2 relative z-10 bg-white border-2 border-gray-800 rounded-2xl neo-brutalist transition-transform">
+            <img
+              src="/me5.jpg"
+              alt="Square Image"
+              className="min-w-full min-h-full absolute bottom-0 left-0 object-cover"
+            />
+          </div>
+        </div>
+      </div>
+
       <div className="p-5 font-nunito font-semibold">
         <p className="mb-8">
           My path to software engineering was anything but linear. Starting off

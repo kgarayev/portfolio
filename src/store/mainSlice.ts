@@ -43,7 +43,20 @@ const mainSlice = createSlice({
       {
         title: ["Frontend", "Development"],
         iconLink: ["/frontend5.svg"],
-        techUsed: ["/ts.svg", "/js.svg", "/jest.svg", "/html.svg", "/css.svg"],
+        techUsed: [
+          "/ts.svg",
+          "/js.svg",
+          "/react.svg",
+          "/redux.svg",
+          "/jest.svg",
+          "/next.svg",
+          "/d3.svg",
+          "/firebase.svg",
+          "/html.svg",
+          "/css.svg",
+          "/sass.svg",
+          "/tailwind.svg",
+        ],
       },
       {
         title: ["Backend", "Development"],
