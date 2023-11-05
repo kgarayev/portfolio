@@ -8,7 +8,7 @@ const Logo = () => {
         <Typewriter text="Kenan" delay={500} infinite={true} />
       </h1>
       {/* This is the shadow */}
-      <h1 className="absolute top-[3px] left-[5px] text-5xl font-ultra font-bold">
+      <h1 className="absolute top-[2px] left-[3px] text-5xl font-ultra font-bold">
         Kenan
       </h1>
     </div>

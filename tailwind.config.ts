@@ -20,11 +20,14 @@ const config: Config = {
       dark: { raw: "(prefers-color-scheme: dark)" },
     },
     extend: {
+      grayscale: {
+        20: "0.2",
+      },
       textColor: {
         DEFAULT: "#000000", // This sets the default text color to black
       },
       colors: {
-        mainBackground: "rgb(240, 240, 240)",
+        mainBackground: "rgb(245, 245, 245)",
       },
       fontFamily: {
         ibmPlexMono: ["IBM Plex Mono", "monospace"],
