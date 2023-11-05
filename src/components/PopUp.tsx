@@ -7,13 +7,13 @@ import {
 import Image from "next/image";
 
 interface PopProps {
-  techUsed: string[];
+  techUsed: any[];
 }
 
 interface SkillItem {
   title: string[];
   iconLink: string[];
-  techUsed: string[];
+  techUsed: any[];
 }
 
 const PopUp = () => {
@@ -24,7 +24,7 @@ const PopUp = () => {
 
   const visibilityClass = screenMode === "" ? "hidden" : "";
 
-  let techStack: string[] = [];
+  let techStack: any[] = [];
 
   skills.forEach((item: SkillItem) => {
     if (screenMode === item.title[0]) {
@@ -34,12 +34,12 @@ const PopUp = () => {
 
   return (
     <div
-      className={`${visibilityClass} fixed z-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5/6 h-[75vh]`}
+      className={`${visibilityClass} fixed z-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5/6 h-[80vh]`}
     >
       <div className="relative min-w-[225px] max-w-[600px] mx-auto w-full h-full">
         <div className="absolute top-1 left-1 bg-gray-800 rounded-2xl shadow-md w-full h-full"></div>
         <div className="relative z-10 bg-white border-2 border-gray-800 rounded-2xl h-full w-full neo-brutalist">
-          <div className="flex flex-col gap-5 font-nunito w-full">
+          <div className="flex flex-col font-nunito w-full">
             <div className="justify-around items-center w-full p-2">
               <div className="flex w-full justify-end">
                 <svg
@@ -66,15 +66,16 @@ const PopUp = () => {
               </div>
             </div>
 
-            <div className="flex justify-center items-center w-full h-full p-2">
-              <div className="grid grid-cols-3 gap-4 place-items-center">
-                {techStack.map((item: string) => {
+            <div className="flex justify-center items-center w-full h-full">
+              <div className="grid grid-cols-3 place-items-center">
+                {techStack.map((item) => {
                   return (
                     <div
-                      className="flex justify-center items-center"
+                      className="flex justify-center items-center flex-col w-24 h-24"
                       key={item}
                     >
-                      <img src={item} alt="tech" className="w-12 h-12" />
+                      <img src={item.link} alt="tech" className="w-12 h-12" />
+                      <p className="font-bold">{item.name}</p>
                     </div>
                   );
                 })}
