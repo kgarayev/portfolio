@@ -8,7 +8,7 @@ const Photo = () => {
         <Image
           src="/profile2.jpg"
           alt="Circular Image"
-          className="transform scale-110 translate-y-1 grayscale-20"
+          className="transform scale-110 translate-y-1 grayscale-20 brightness-105"
           width={1000}
           height={1000}
         />
