@@ -34,11 +34,11 @@ const PopUp = () => {
 
   return (
     <div
-      className={`${visibilityClass} fixed z-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/4 h-[80vh] overflow-y-auto`}
+      className={`${visibilityClass} fixed z-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/4 h-[80vh] `}
     >
-      <div className="relative min-w-[225px] max-w-[600px] mx-auto w-full h-full">
+      <div className="relative min-w-[225px] max-w-[600px] mx-auto w-full h-full ">
         <div className="absolute top-1 left-1 bg-gray-800 rounded-2xl shadow-md w-full h-full"></div>
-        <div className="relative z-10 bg-white border-2 border-gray-800 rounded-2xl h-full w-full neo-brutalist">
+        <div className="relative z-10 bg-white border-2 border-gray-800 rounded-2xl h-full w-full neo-brutalist overflow-y-auto">
           <div className="flex flex-col font-nunito w-full">
             <div className="justify-around items-center w-full p-2">
               <div className="flex w-full justify-end">
