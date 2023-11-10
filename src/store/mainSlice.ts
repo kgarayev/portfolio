@@ -56,7 +56,7 @@ const mainSlice = createSlice({
           { name: "D3.js", link: "/d3.svg" },
           { name: "HTML", link: "/html.svg" },
           { name: "CSS", link: "/css.svg" },
-          { name: "SCSS/SASS", link: "/sass.svg" },
+          { name: "SCSS", link: "/sass.svg" },
           { name: "Tailwind", link: "/tailwind.svg" },
           { name: "Material UI", link: "/mui.svg" },
         ],
