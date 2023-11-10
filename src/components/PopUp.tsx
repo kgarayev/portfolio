@@ -34,7 +34,7 @@ const PopUp = () => {
 
   return (
     <div
-      className={`${visibilityClass} fixed z-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/4 h-[80vh] `}
+      className={`${visibilityClass} fixed z-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5/6 h-[75vh] `}
     >
       <div className="relative min-w-[225px] max-w-[600px] mx-auto w-full h-full ">
         <div className="absolute top-1 left-1 bg-gray-800 rounded-2xl shadow-md w-full h-full"></div>
@@ -75,7 +75,7 @@ const PopUp = () => {
                       key={item}
                     >
                       <img src={item.link} alt="tech" className="w-12 h-12" />
-                      <p className="font-bold">{item.name}</p>
+                      <p className="text-sm font-semibold">{item.name}</p>
                     </div>
                   );
                 })}
