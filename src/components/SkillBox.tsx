@@ -55,9 +55,11 @@ const SkillBox: React.FC<SkillBoxProps> = ({ iconLink, title, techUsed }) => {
 
             <div
               onClick={onClick}
-              className="flex items-center gap-2 cursor-pointer hover:text-gray-500 font-bold "
+              className="flex items-center gap-2 cursor-pointer hover:text-gray-500 font-bold border"
             >
-              <a className="font-nunito">learn more</a>
+              <a className="font-nunito">
+                {title[0] === "Coaching" ? "contact me" : "learn more"}
+              </a>
 
               <svg
                 xmlns="http://www.w3.org/2000/svg"
