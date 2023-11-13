@@ -40,11 +40,11 @@ const PopUp = () => {
         <div className="absolute top-1 left-1 bg-gray-800 rounded-2xl shadow-md w-full h-full"></div>
         <div className="relative z-10 bg-white border-2 border-gray-800 rounded-2xl h-full w-full neo-brutalist overflow-y-auto custom-scrollbar overflow-x-hidden">
           <div className="flex flex-col font-nunito w-full">
-            <div className="justify-around items-center w-full p-2">
-              <div className="flex w-full justify-end">
+            <div className="justify-around items-center w-full p-1 m-0">
+              <div className="flex w-full justify-end mr-8">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
+                  viewBox="0 0 20 20"
                   fill="currentColor"
                   className="w-7 h-7 cursor-pointer hover:text-gray-500"
                   onClick={() => {
@@ -59,7 +59,7 @@ const PopUp = () => {
                 </svg>
               </div>
 
-              <div className="w-full flex justify-center">
+              <div className="w-full flex justify-center m-0 p-0">
                 <h2 className="text-xl font-bold font-ibmPlexMono">
                   Tech used
                 </h2>
