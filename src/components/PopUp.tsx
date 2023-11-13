@@ -35,9 +35,15 @@ const PopUp = () => {
   return (
     <div
       className={`${visibilityClass} fixed z-20 top-0 left-0 w-full h-full bg-white bg-opacity-80`}
+      onClick={() => {
+        dispatch(setScreenMode(""));
+      }}
     >
       <div
         className={`fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5/6 h-[75vh] `}
+        onClick={(e) => {
+          e.stopPropagation();
+        }}
       >
         <div className="relative min-w-[225px] max-w-[600px] mx-auto w-full h-full ">
           <div className="absolute top-1 left-1 bg-gray-800 rounded-2xl shadow-md w-full h-full"></div>
