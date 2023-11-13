@@ -10,6 +10,14 @@ const Intro = () => {
         Building things with code to solve real-world problems is what I enjoy
         most. Skilled in{" "}
         <span className=" text-xl font-bold font-ibmPlexMono  bg-emerald-200">
+          TS
+        </span>
+        ,{" "}
+        <span className=" text-xl font-bold font-ibmPlexMono  bg-emerald-200">
+          JS
+        </span>
+        ,{" "}
+        <span className=" text-xl font-bold font-ibmPlexMono  bg-emerald-200">
           Node
         </span>
         ,{" "}
