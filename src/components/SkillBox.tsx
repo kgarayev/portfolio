@@ -1,5 +1,6 @@
 import { useDispatch } from "react-redux";
 import { setScreenMode } from "@/store/mainSlice";
+import { setTargetId } from "@/store/mainSlice";
 
 import Image from "next/image";
 
@@ -14,6 +15,10 @@ const SkillBox: React.FC<SkillBoxProps> = ({ iconLink, title, techUsed }) => {
 
   const onClick = () => {
     dispatch(setScreenMode(title[0]));
+  };
+
+  const scrollToSection = (targetId: string | null) => {
+    dispatch(setTargetId(targetId));
   };
 
   return (
@@ -54,8 +59,12 @@ const SkillBox: React.FC<SkillBoxProps> = ({ iconLink, title, techUsed }) => {
             </div>
 
             <div
-              onClick={onClick}
-              className="flex items-center gap-2 cursor-pointer hover:text-gray-500 font-bold border"
+              onClick={
+                title[0] === "Coaching"
+                  ? () => scrollToSection("contact")
+                  : onClick
+              }
+              className="flex items-center gap-2 cursor-pointer hover:text-gray-500 font-bold"
             >
               <a className="font-nunito">
                 {title[0] === "Coaching" ? "contact me" : "learn more"}
