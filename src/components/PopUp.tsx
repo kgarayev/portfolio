@@ -34,7 +34,7 @@ const PopUp = () => {
 
   return (
     <div
-      className={`${visibilityClass} fixed z-20 top-0 left-0 w-full h-full bg-white`}
+      className={`${visibilityClass} fixed z-20 top-0 left-0 w-full h-full bg-white bg-opacity-80`}
     >
       <div
         className={`fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5/6 h-[75vh] `}
