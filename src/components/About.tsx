@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const About = forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <div ref={ref} id="about" className="pt-8 pb-8">
+    <div ref={ref} id="about" className="pt-4 pb-4">
       <div className="w-full p-5">
         <h2 className="text-3xl font-bold">About me</h2>
       </div>

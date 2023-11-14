@@ -15,7 +15,7 @@ const Projects = forwardRef<HTMLDivElement>((props, ref) => {
   const projectList = useSelector(selectProjectList);
 
   return (
-    <div ref={ref} id="projects" className="pt-8 pb-8">
+    <div ref={ref} id="projects" className="pt-4 pb-4">
       <div className="w-full text-center p-5">
         <h2 className="text-3xl font-bold">Featured Projects</h2>
       </div>
