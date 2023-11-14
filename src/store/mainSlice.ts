@@ -31,11 +31,11 @@ const mainSlice = createSlice({
         imageLink: "/ricks.png",
       },
       {
-        title: "Easy Nutrition",
-        description: "Food App",
-        tag: "js, react, rest, node",
+        title: "Chat App Backend",
+        description: "Realtime Chat App using WebSockets",
+        tag: "js, react, node",
         buttonText: "some link",
-        imageLink: "/js.png",
+        imageLink: "/websocketBack.png",
       },
     ],
 
