@@ -8,6 +8,8 @@ interface BoxProps {
   imageLink: string;
   code: string;
   live: string;
+  backend: string;
+  frontend: string;
 }
 
 const Box: React.FC<BoxProps> = ({
@@ -18,6 +20,8 @@ const Box: React.FC<BoxProps> = ({
   imageLink,
   code,
   live,
+  backend,
+  frontend,
 }) => {
   return (
     <div className="relative min-w-[225px] max-w-[600px] mx-auto w-full">
@@ -40,7 +44,13 @@ const Box: React.FC<BoxProps> = ({
             />
           </div>
 
-          <p className="mt-2">{description}</p>
+          <div>
+            <p className="mt-2">{description}</p>
+          </div>
+
+          <div>
+            <p className="mt-2">{tag}</p>
+          </div>
 
           <div className="mt-2 flex items-center justify-around ">
             {code === "" || !code ? (

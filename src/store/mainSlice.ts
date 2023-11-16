@@ -11,7 +11,12 @@ const mainSlice = createSlice({
     projectList: [
       {
         title: "Stash",
-        description: "fintech App",
+        description:
+          "A Fintech Progressive Web App (PWA) for account creation, transactions, and customisation.",
+        backend:
+          "Node, Express, Typescript, Token Auth, 3rd Party API Integration, Rate Limiting, MySQL, REST API, WebSockets, Validation",
+        frontend:
+          "React (Hooks), Redux Toolkit, AJAX, Axios, API Integration, Material UI, Figma, HTML, CSS, Joi Validation",
         tag: "ts, react, node",
         buttonText: "some link",
         imageLink: "/stash2.png",
