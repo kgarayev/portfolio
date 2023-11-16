@@ -20,6 +20,7 @@ const mainSlice: any = createSlice({
         imageLink: "/stash2.png",
         code: "https://github.com/kgarayev/stash_backend",
         live: "https://stash-uwns.onrender.com/",
+        color: "emerald-50",
       },
       {
         title: "Carbon Intensity Bot",

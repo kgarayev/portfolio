@@ -51,7 +51,11 @@ const Box: React.FC<BoxProps> = ({
           <div className="flex flex-wrap gap-2 mt-4 mb-4">
             {stackArr.length > 0 ? (
               stackArr.map((item) => {
-                return <div className=" bg-emerald-100 pl-1 pr-1">{item}</div>;
+                return (
+                  <div className=" bg-emerald-100 pl-1 pr-1 font-semibold">
+                    {item}
+                  </div>
+                );
               })
             ) : (
               <></>
