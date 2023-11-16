@@ -43,31 +43,39 @@ const Box: React.FC<BoxProps> = ({
           <p className="mt-2">{description}</p>
 
           <div className="mt-2 flex items-center justify-around ">
-            <div className="flex items-center gap-2 h-full cursor-pointer hover:opacity-50 font-bold ">
-              <Image
-                src="/github.svg"
-                alt="github"
-                className="w-6 h-6"
-                width={6}
-                height={6}
-              />
-              <a href={code} target="_blank" rel="noopener noreferrer">
-                code
-              </a>
-            </div>
+            {code === "" || !code ? (
+              <></>
+            ) : (
+              <div className="flex items-center gap-2 h-full cursor-pointer hover:opacity-50 font-bold ">
+                <Image
+                  src="/github.svg"
+                  alt="github"
+                  className="w-6 h-6"
+                  width={6}
+                  height={6}
+                />
+                <a href={code} target="_blank" rel="noopener noreferrer">
+                  code
+                </a>
+              </div>
+            )}
 
-            <div className="flex items-center gap-2 h-full cursor-pointer hover:opacity-50 font-bold ">
-              <Image
-                src="/internet.svg"
-                alt="internet"
-                className="w-6 h-6"
-                width={6}
-                height={6}
-              />
-              <a href={live} target="_blank" rel="noopener noreferrer">
-                live
-              </a>
-            </div>
+            {live === "" || !live ? (
+              <></>
+            ) : (
+              <div className="flex items-center gap-2 h-full cursor-pointer hover:opacity-50 font-bold ">
+                <Image
+                  src="/internet.svg"
+                  alt="internet"
+                  className="w-6 h-6"
+                  width={6}
+                  height={6}
+                />
+                <a href={live} target="_blank" rel="noopener noreferrer">
+                  live
+                </a>
+              </div>
+            )}
           </div>
         </div>
       </div>
