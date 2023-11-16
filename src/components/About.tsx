@@ -4,7 +4,7 @@ import Image from "next/image";
 const About = forwardRef<HTMLDivElement>((props, ref) => {
   return (
     <div ref={ref} id="about" className="pt-4 pb-4">
-      <div className="w-full p-5">
+      <div className="w-full p-5 pb-1">
         <h2 className="text-3xl font-bold">About me</h2>
       </div>
 
@@ -12,10 +12,12 @@ const About = forwardRef<HTMLDivElement>((props, ref) => {
         <div className="relative max-w-[450px] max-h-[450px] mx-auto">
           <div className="absolute top-1.5 left-1 bg-gray-800 rounded-2xl shadow-md aspect-w-1 aspect-h-1 w-full max-w-3xl overflow-hidden "></div>
           <div className="aspect-w-1 aspect-h-1 w-full max-w-3xl overflow-hidden relative border-2 relative z-10 bg-white border-2 border-gray-800 rounded-2xl neo-brutalist transition-transform">
-            <img
+            <Image
               src="/me5.jpg"
               alt="Square Image"
               className="min-w-full min-h-full absolute bottom-0 left-0 object-cover"
+              width={1000}
+              height={1000}
             />
           </div>
         </div>
