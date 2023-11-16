@@ -83,7 +83,13 @@ const PopUp = () => {
                         className="flex justify-center items-center flex-col w-24 h-24"
                         key={item.name}
                       >
-                        <img src={item.link} alt="tech" className="w-12 h-12" />
+                        <Image
+                          src={item.link}
+                          alt="tech"
+                          className="w-12 h-12"
+                          width={12}
+                          height={12}
+                        />
                         <p className="text-sm font-semibold">{item.name}</p>
                       </div>
                     );
