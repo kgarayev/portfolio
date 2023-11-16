@@ -9,7 +9,7 @@ const StickyFooter = () => {
   };
 
   return (
-    <div className="z-20 flex justify-around items-center w-full h-14 border-t-2 fixed left-0 bottom-0 bg-white text-sm font-semibold">
+    <div className="z-20 flex justify-around items-center w-full h-14 border-t-2 fixed left-0 bottom-0 bg-white text-sm font-semibold text-gray-700">
       <div
         onClick={() => scrollToSection("about")}
         className="flex flex-col items-center justify-center hover:text-gray-500 cursor-pointer"
@@ -20,7 +20,7 @@ const StickyFooter = () => {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-7 h-7"
+          className="w-7 h-7 opacity-90"
         >
           <path
             strokeLinecap="round"
@@ -41,7 +41,7 @@ const StickyFooter = () => {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-7 h-7"
+          className="w-7 h-7 opacity-90"
         >
           <path
             strokeLinecap="round"
@@ -62,7 +62,7 @@ const StickyFooter = () => {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-7 h-7"
+          className="w-7 h-7 opacity-90"
         >
           <path
             strokeLinecap="round"
@@ -83,7 +83,7 @@ const StickyFooter = () => {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-7 h-7"
+          className="w-7 h-7 opacity-90"
         >
           <path
             strokeLinecap="round"

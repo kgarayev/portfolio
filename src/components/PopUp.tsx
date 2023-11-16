@@ -46,8 +46,8 @@ const PopUp = () => {
         }}
       >
         <div className="relative z-30 min-w-[225px] max-w-[600px] mx-auto w-full h-full ">
-          <div className="absolute z-30 top-1 left-1 bg-gray-800 rounded-2xl shadow-md w-full h-full"></div>
-          <div className="relative z-30 bg-white border-2 border-gray-800 rounded-2xl h-full w-full neo-brutalist overflow-y-auto custom-scrollbar overflow-x-hidden">
+          <div className="absolute z-30 top-1 left-1 bg-gray-700 rounded-2xl shadow-md w-full h-full"></div>
+          <div className="relative z-30 bg-white border-2 border-gray-700 rounded-2xl h-full w-full neo-brutalist overflow-y-auto custom-scrollbar overflow-x-hidden">
             <div className="flex flex-col font-nunito w-full">
               <div className="justify-around items-center w-full p-1 mr-4">
                 <div className="flex w-full justify-end ">

@@ -11,14 +11,20 @@
 @import "tailwindcss/utilities";
 @import "daisyui/dist/full.css";
 
+/* * {
+  color: rgb(50, 50, 50);
+} */
+
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --foreground-rgb: 50, 50, 50;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
   /* font-family: "IBM Plex Mono", monospace; */
   /* font-family: "Nunito", sans-serif; */
   background-color: rgb(236, 236, 236);
   color-scheme: light;
+  color: rgb(50, 50, 50);
+  /* color: rgb(69, 69, 69); */
 }
 
 body {

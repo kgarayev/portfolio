@@ -129,8 +129,8 @@ function ContactForm() {
 
   return (
     <div className="relative min-w-[225px] max-w-[800px] mx-auto w-full">
-      <div className="absolute top-1 left-1 bg-gray-800 rounded-2xl shadow-md w-full h-full"></div>
-      <div className="relative z-10 bg-white border-2 border-gray-800 rounded-2xl neo-brutalist transition-transform">
+      <div className="absolute top-1 left-1 bg-gray-700 rounded-2xl shadow-md w-full h-full"></div>
+      <div className="relative z-10 bg-white border-2 border-gray-700 rounded-2xl neo-brutalist transition-transform">
         <form onSubmit={onSubmit}>
           {/* <div className="flex items-center space-x-2 mb-4 mt-4 ml-4"></div> */}
           {/* <!-- REQUIRED: Your Access key here. Don't worry this can be public --> */}
@@ -178,7 +178,7 @@ function ContactForm() {
             <div>
               <h3 className="font-ibmPlexMono font-semibold text-lg">Name</h3>
               <input
-                className="w-full border-black border-2 p-2 focus:outline-none focus:shadow-[2px_2px_0px_rgba(0,0,0,1)] focus:bg-emerald-50 active:shadow-[2px_2px_0px_rgba(0,0,0,1)] rounded-md h-12"
+                className="w-full border-gray-700 border-2 p-2 focus:outline-none focus:shadow-[2px_2px_0px_rgba(0,0,0,1)] focus:bg-emerald-50 active:shadow-[2px_2px_0px_rgba(0,0,0,1)] rounded-md h-12"
                 placeholder="Rick Sanchez"
                 type="text"
                 name="name"
@@ -189,7 +189,7 @@ function ContactForm() {
             <div>
               <h3 className="font-ibmPlexMono font-semibold text-lg">Email</h3>
               <input
-                className="w-full border-black border-2 p-2 focus:outline-none focus:shadow-[2px_2px_0px_rgba(0,0,0,1)] focus:bg-emerald-50 active:shadow-[2px_2px_0px_rgba(0,0,0,1)] rounded-md h-12"
+                className="w-full border-gray-700 border-2 p-2 focus:outline-none focus:shadow-[2px_2px_0px_rgba(0,0,0,1)] focus:bg-emerald-50 active:shadow-[2px_2px_0px_rgba(0,0,0,1)] rounded-md h-12"
                 placeholder="you@example.com"
                 type="email"
                 name="email"
@@ -202,7 +202,7 @@ function ContactForm() {
                 Message
               </h3>
               <textarea
-                className="resize-y w-full border-black border-2 p-2 focus:outline-none focus:shadow-[2px_2px_0px_rgba(0,0,0,1)] focus:bg-emerald-50 active:shadow-[2px_2px_0px_rgba(0,0,0,1)] rounded-md"
+                className="resize-y w-full border-gray-700 border-2 p-2 focus:outline-none focus:shadow-[2px_2px_0px_rgba(0,0,0,1)] focus:bg-emerald-50 active:shadow-[2px_2px_0px_rgba(0,0,0,1)] rounded-md"
                 placeholder="Hello there..."
                 rows={6}
                 name="message"
@@ -213,7 +213,7 @@ function ContactForm() {
             <div className="w-full flex justify-center font-ibmPlexMono font-bold">
               <button
                 type="submit"
-                className="h-12 border-black border-2 p-2 bg-emerald-100 hover:bg-emerald-200 hover:shadow-[2px_2px_0px_rgba(0,0,0,1)] active:bg-emerald-300 rounded-md w-32"
+                className="h-12 border-gray-700 border-2 p-2 bg-emerald-100 hover:bg-emerald-200 hover:shadow-[2px_2px_0px_rgba(50,50,50,1)] active:bg-emerald-300 rounded-md w-32"
               >
                 Send
               </button>

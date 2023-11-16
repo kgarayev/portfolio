@@ -25,22 +25,22 @@ const Box: React.FC<BoxProps> = ({
 
   return (
     <div className="relative min-w-[225px] max-w-[600px] mx-auto w-full">
-      <div className="absolute top-1 left-1 bg-gray-800 rounded-2xl shadow-md w-full h-full"></div>
-      <div className="relative z-10 bg-white border-2 border-gray-800 rounded-2xl neo-brutalist hover:-translate-y-1 hover:-translate-x-1 transition-transform">
-        <div className="flex items-center space-x-2 mb-4 mt-4 ml-4">
+      <div className="absolute top-1 left-1 bg-gray-700 rounded-2xl shadow-md w-full h-full"></div>
+      <div className="relative z-10 bg-white border-2 border-gray-700 rounded-2xl neo-brutalist hover:-translate-y-1 hover:-translate-x-1 transition-transform">
+        {/* <div className="flex items-center space-x-2 mb-4 mt-4 ml-4">
           <div className="w-3 h-3 bg-black rounded-full"></div>
           <div className="w-3 h-3 bg-black rounded-full"></div>
           <div className="w-3 h-3 bg-black rounded-full"></div>
         </div>
-        <div className="border-t-2 border-black mb-4"></div>
+        <div className="border-t-2 border-black mb-4"></div> */}
 
-        <div className="m-4 font-nunito p-2">
+        <div className="m-4 mt-2 font-nunito p-2">
           <h2 className="text-xl font-bold font-ibmPlexMono">{title}</h2>
           <div className="aspect-w-1 aspect-h-1">
             <img
               src={imageLink}
               alt="image"
-              className=" border-2 mt-2 mb-2 object-cover aspect-content"
+              className=" border-2 border-gray-700 mt-2 mb-2 object-cover aspect-content"
             />
           </div>
 
@@ -52,7 +52,10 @@ const Box: React.FC<BoxProps> = ({
             {stackArr.length > 0 ? (
               stackArr.map((item) => {
                 return (
-                  <div className=" bg-emerald-100 pl-1 pr-1 font-semibold">
+                  <div
+                    className=" bg-emerald-100 pl-1 pr-1 font-semibold"
+                    key={item + title}
+                  >
                     {item}
                   </div>
                 );
@@ -70,7 +73,7 @@ const Box: React.FC<BoxProps> = ({
                 <Image
                   src="/github.svg"
                   alt="github"
-                  className="w-6 h-6"
+                  className="w-6 h-6 opacity-70"
                   width={6}
                   height={6}
                 />
@@ -87,7 +90,7 @@ const Box: React.FC<BoxProps> = ({
                 <Image
                   src="/internet.svg"
                   alt="internet"
-                  className="w-6 h-6"
+                  className="w-6 h-6 opacity-70"
                   width={6}
                   height={6}
                 />

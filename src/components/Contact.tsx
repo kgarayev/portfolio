@@ -19,30 +19,30 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
 
       <div className="flex items-center gap-1 max-w-[500px] w-3/4">
         <div className="relative mx-auto  h-16 w-16">
-          <div className="absolute top-1 left-1 bg-gray-800 rounded-full shadow-md w-full h-full p-3"></div>
-          <div className="relative z-10 bg-white border-2 border-gray-800 rounded-full neo-brutalist hover:-translate-y-1 hover:-translate-x-1 transition-transform p-3 h-full w-full hover:bg-blue-200">
+          <div className="absolute top-1 left-1 bg-gray-700 rounded-full shadow-md w-full h-full p-3"></div>
+          <div className="relative z-10 bg-white border-2 border-gray-700 rounded-full neo-brutalist hover:-translate-y-1 hover:-translate-x-1 transition-transform p-3 h-full w-full hover:bg-blue-200">
             <div className="flex items-center space-x-2"></div>
 
             <a href="https://www.linkedin.com/in/garayevk/" target="_blank">
-              <img src="/linkedin2.svg" alt="linkedin" />
+              <img src="/linkedin2.svg" alt="linkedin" className="opacity-70" />
             </a>
           </div>
         </div>
 
         <div className="relative mx-auto  h-16 w-16">
-          <div className="absolute top-1 left-1 bg-gray-800 rounded-full shadow-md w-full h-full p-3"></div>
-          <div className="relative z-10 bg-white border-2 border-gray-800 rounded-full neo-brutalist hover:-translate-y-1 hover:-translate-x-1 transition-transform p-3 h-full w-full hover:bg-stone-300">
+          <div className="absolute top-1 left-1 bg-gray-700 rounded-full shadow-md w-full h-full p-3"></div>
+          <div className="relative z-10 bg-white border-2 border-gray-700 rounded-full neo-brutalist hover:-translate-y-1 hover:-translate-x-1 transition-transform p-3 h-full w-full hover:bg-stone-300">
             <div className="flex items-center space-x-2"></div>
 
             <a href="https://github.com/kgarayev" target="_blank">
-              <img src="/github2.svg" alt="github" />
+              <img src="/github2.svg" alt="github" className="opacity-70" />
             </a>
           </div>
         </div>
 
         <div className="relative mx-auto h-16 w-16">
-          <div className="absolute top-1 left-1 bg-gray-800 rounded-full shadow-md w-full h-full p-3"></div>
-          <div className="relative z-10 bg-white border-2 border-gray-800 rounded-full neo-brutalist hover:-translate-y-1 hover:-translate-x-1 transition-transform p-3 h-full w-full hover:bg-red-200">
+          <div className="absolute top-1 left-1 bg-gray-700 rounded-full shadow-md w-full h-full p-3"></div>
+          <div className="relative z-10 bg-white border-2 border-gray-700 rounded-full neo-brutalist hover:-translate-y-1 hover:-translate-x-1 transition-transform p-3 h-full w-full hover:bg-red-200">
             <div className="flex items-center space-x-2"></div>
 
             <a
@@ -50,7 +50,7 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/email.svg" alt="gmail" />
+              <img src="/email.svg" alt="gmail" className="opacity-70" />
             </a>
           </div>
         </div>

@@ -64,7 +64,7 @@ const SkillBox: React.FC<SkillBoxProps> = ({ iconLink, title, techUsed }) => {
                   ? () => scrollToSection("contact")
                   : onClick
               }
-              className="flex items-center gap-2 cursor-pointer hover:text-gray-500 font-bold"
+              className="flex items-center gap-2 cursor-pointer hover:text-gray-500 font-bold "
             >
               <a className="font-nunito">
                 {title[0] === "Coaching" ? "contact me" : "learn more"}
@@ -74,7 +74,7 @@ const SkillBox: React.FC<SkillBoxProps> = ({ iconLink, title, techUsed }) => {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                className="w-6 h-6"
+                className="w-6 h-6 opacity-80"
               >
                 <path
                   fillRule="evenodd"

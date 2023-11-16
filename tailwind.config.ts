@@ -24,7 +24,7 @@ const config: Config = {
         20: "0.2",
       },
       textColor: {
-        DEFAULT: "#000000", // This sets the default text color to black
+        DEFAULT: "#323232", // This sets the default text color to black
       },
       colors: {
         mainBackground: "rgb(245, 245, 245)",
