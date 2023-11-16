@@ -37,24 +37,27 @@ const Box: React.FC<BoxProps> = ({
           </div>
 
           <p className="mt-2">{description}</p>
-          <div className="mt-2 flex items-center justify-between ">
-            <div className="h-full flex">{/* <p className="">{tag}</p> */}</div>
-
-            <div className="flex items-center gap-2 h-full cursor-pointer hover:text-gray-500 font-bold ">
-              <a className="">see my work</a>
-
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
+          <div className="mt-2 flex items-center justify-around ">
+            <div className="flex items-center gap-2 h-full cursor-pointer hover:opacity-50 font-bold ">
+              <Image
+                src="/github.svg"
+                alt="github"
                 className="w-6 h-6"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
-                  clipRule="evenodd"
-                />
-              </svg>
+                width={6}
+                height={6}
+              />
+              <a className="">github repo</a>
+            </div>
+
+            <div className="flex items-center gap-2 h-full cursor-pointer hover:opacity-50 font-bold ">
+              <Image
+                src="/internet.svg"
+                alt="internet"
+                className="w-6 h-6"
+                width={6}
+                height={6}
+              />
+              <a className="">live preview</a>
             </div>
           </div>
         </div>
