@@ -7,13 +7,13 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
     <div
       ref={ref}
       id="contact"
-      className="pt-4 pb-28 flex flex-col justify-center items-center w-full"
+      className="pt-4 pb-24 flex flex-col justify-center items-center w-full"
     >
       <div className="w-full text-center p-5 pb-2">
         <h2 className="text-3xl font-bold">Get in touch</h2>
       </div>
 
-      <div className="mb-8 p-5 pt-0 w-full">
+      <div className="mb-4 p-5 pt-0 w-full">
         <ContactForm></ContactForm>
       </div>
 
