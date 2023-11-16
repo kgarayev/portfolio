@@ -174,11 +174,11 @@ function ContactForm() {
           {/* Make sure its hidden by default --> */}
           <input type="checkbox" name="botcheck" id="" className="hidden" />
 
-          <div className="m-4 font-nunito flex flex-col gap-5 p-2 justify-center">
+          <div className="m-3 font-nunito flex flex-col gap-3 p-2 justify-center">
             <div>
               <h3 className="font-ibmPlexMono font-semibold text-lg">Name</h3>
               <input
-                className="w-full border-black border-2 p-2.5 focus:outline-none focus:shadow-[2px_2px_0px_rgba(0,0,0,1)] focus:bg-emerald-50 active:shadow-[2px_2px_0px_rgba(0,0,0,1)] rounded-md h-12"
+                className="w-full border-black border-2 p-2 focus:outline-none focus:shadow-[2px_2px_0px_rgba(0,0,0,1)] focus:bg-emerald-50 active:shadow-[2px_2px_0px_rgba(0,0,0,1)] rounded-md h-12"
                 placeholder="Rick Sanchez"
                 type="text"
                 name="name"
@@ -189,7 +189,7 @@ function ContactForm() {
             <div>
               <h3 className="font-ibmPlexMono font-semibold text-lg">Email</h3>
               <input
-                className="w-full border-black border-2 p-2.5 focus:outline-none focus:shadow-[2px_2px_0px_rgba(0,0,0,1)] focus:bg-emerald-50 active:shadow-[2px_2px_0px_rgba(0,0,0,1)] rounded-md h-12"
+                className="w-full border-black border-2 p-2 focus:outline-none focus:shadow-[2px_2px_0px_rgba(0,0,0,1)] focus:bg-emerald-50 active:shadow-[2px_2px_0px_rgba(0,0,0,1)] rounded-md h-12"
                 placeholder="you@example.com"
                 type="email"
                 name="email"
@@ -202,10 +202,9 @@ function ContactForm() {
                 Message
               </h3>
               <textarea
-                className="w-full border-black border-2 p-2.5 focus:outline-none focus:shadow-[2px_2px_0px_rgba(0,0,0,1)] focus:bg-emerald-50 active:shadow-[2px_2px_0px_rgba(0,0,0,1)] rounded-md"
+                className="resize-y w-full border-black border-2 p-2 focus:outline-none focus:shadow-[2px_2px_0px_rgba(0,0,0,1)] focus:bg-emerald-50 active:shadow-[2px_2px_0px_rgba(0,0,0,1)] rounded-md"
                 placeholder="Hello there..."
-                rows={8}
-                style={{ resize: "none" }}
+                rows={6}
                 name="message"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
@@ -214,7 +213,7 @@ function ContactForm() {
             <div className="w-full flex justify-center font-ibmPlexMono font-bold">
               <button
                 type="submit"
-                className="h-12 border-black border-2 p-2.5 bg-emerald-100 hover:bg-emerald-200 hover:shadow-[2px_2px_0px_rgba(0,0,0,1)] active:bg-emerald-300 rounded-md w-32"
+                className="h-12 border-black border-2 p-2 bg-emerald-100 hover:bg-emerald-200 hover:shadow-[2px_2px_0px_rgba(0,0,0,1)] active:bg-emerald-300 rounded-md w-32"
               >
                 Send
               </button>

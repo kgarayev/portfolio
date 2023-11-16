@@ -7,8 +7,7 @@ const Intro = () => {
         I am a Software Engineer.
       </h1>
       <p className="mb-5 font-nunito font-semibold mt-6">
-        Building things with code to solve real-world problems is what I enjoy
-        most. Skilled in{" "}
+        Skilled in{" "}
         <span className=" text-xl font-bold font-ibmPlexMono  bg-emerald-200">
           TS
         </span>
@@ -40,8 +39,9 @@ const Intro = () => {
         <span className="text-xl font-bold font-ibmPlexMono  bg-emerald-200">
           NoSQL
         </span>{" "}
-        databases, I&apos;m all about creating practical solutions. Let&apos;s
-        build something together!
+        databases, I&apos;m all about building things with code to solve
+        real-world problems. Give me a shout, let&apos;s create something
+        together!
       </p>
       <div className="flex justify-center mt-5">
         <div className="max-h-[240px] max-w-[240px] mt-2">

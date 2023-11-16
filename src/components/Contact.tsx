@@ -13,7 +13,7 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
         <h2 className="text-3xl font-bold">Get in touch</h2>
       </div>
 
-      <div className="mb-8 p-5 w-full">
+      <div className="mb-8 p-5 pt-0 w-full">
         <ContactForm></ContactForm>
       </div>
 
