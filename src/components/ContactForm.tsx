@@ -219,7 +219,7 @@ function ContactForm() {
               </button>
             </div>
             <div
-              className={`text-center font-bold ${messageColor} inline-block border m-0 p-0`}
+              className={`text-center font-bold ${messageColor} inline-block m-0 p-0`}
             >
               {result === "" ? <></> : result}
             </div>
