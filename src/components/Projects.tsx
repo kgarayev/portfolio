@@ -9,6 +9,8 @@ interface ProjectItem {
   tag: string;
   buttonText: string;
   imageLink: string;
+  code: string;
+  live: string;
 }
 
 const Projects = forwardRef<HTMLDivElement>((props, ref) => {
@@ -29,6 +31,8 @@ const Projects = forwardRef<HTMLDivElement>((props, ref) => {
               buttonText={item.buttonText}
               imageLink={item.imageLink}
               key={item.title}
+              code={item.code}
+              live={item.live}
             />
           );
         })}

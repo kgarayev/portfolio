@@ -15,6 +15,8 @@ const mainSlice = createSlice({
         tag: "ts, react, node",
         buttonText: "some link",
         imageLink: "/stash2.png",
+        code: "https://github.com/kgarayev/stash_backend",
+        live: "https://stash-uwns.onrender.com/",
       },
       {
         title: "Carbon Intensity Bot",
@@ -22,6 +24,8 @@ const mainSlice = createSlice({
         tag: "js, vanilla, rest, node",
         buttonText: "some link",
         imageLink: "/carbon.png",
+        code: "something",
+        live: "",
       },
       {
         title: "Ricks & Morties",

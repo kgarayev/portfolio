@@ -6,6 +6,8 @@ interface BoxProps {
   tag: string;
   buttonText: string;
   imageLink: string;
+  code: string;
+  live: string;
 }
 
 const Box: React.FC<BoxProps> = ({
@@ -14,6 +16,8 @@ const Box: React.FC<BoxProps> = ({
   tag,
   buttonText,
   imageLink,
+  code,
+  live,
 }) => {
   return (
     <div className="relative min-w-[225px] max-w-[600px] mx-auto w-full">
@@ -37,6 +41,7 @@ const Box: React.FC<BoxProps> = ({
           </div>
 
           <p className="mt-2">{description}</p>
+
           <div className="mt-2 flex items-center justify-around ">
             <div className="flex items-center gap-2 h-full cursor-pointer hover:opacity-50 font-bold ">
               <Image
@@ -46,7 +51,9 @@ const Box: React.FC<BoxProps> = ({
                 width={6}
                 height={6}
               />
-              <a className="">github repo</a>
+              <a href={code} target="_blank" rel="noopener noreferrer">
+                code
+              </a>
             </div>
 
             <div className="flex items-center gap-2 h-full cursor-pointer hover:opacity-50 font-bold ">
@@ -57,7 +64,9 @@ const Box: React.FC<BoxProps> = ({
                 width={6}
                 height={6}
               />
-              <a className="">live preview</a>
+              <a href={live} target="_blank" rel="noopener noreferrer">
+                live
+              </a>
             </div>
           </div>
         </div>
