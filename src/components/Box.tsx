@@ -53,7 +53,7 @@ const Box: React.FC<BoxProps> = ({
               stackArr.map((item) => {
                 return (
                   <div
-                    className=" bg-emerald-100 pl-1 pr-1 font-semibold"
+                    className=" bg-emerald-100 pl-1 pr-1 font-semibold border border-gray-300 rounded-lg"
                     key={item + title}
                   >
                     {item}
