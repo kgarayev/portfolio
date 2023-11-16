@@ -8,8 +8,7 @@ interface BoxProps {
   imageLink: string;
   code: string;
   live: string;
-  backend: string;
-  frontend: string;
+  stack: string;
 }
 
 const Box: React.FC<BoxProps> = ({
@@ -20,9 +19,10 @@ const Box: React.FC<BoxProps> = ({
   imageLink,
   code,
   live,
-  backend,
-  frontend,
+  stack,
 }) => {
+  let stackArr = stack ? stack.split(", ").map((s) => s.trim()) : [];
+
   return (
     <div className="relative min-w-[225px] max-w-[600px] mx-auto w-full">
       <div className="absolute top-1 left-1 bg-gray-800 rounded-2xl shadow-md w-full h-full"></div>
@@ -44,12 +44,18 @@ const Box: React.FC<BoxProps> = ({
             />
           </div>
 
-          <div>
+          <div className="mt-4 mb-4">
             <p className="mt-2">{description}</p>
           </div>
 
-          <div>
-            <p className="mt-2">{tag}</p>
+          <div className="flex flex-wrap gap-2 mt-4 mb-4">
+            {stackArr.length > 0 ? (
+              stackArr.map((item) => {
+                return <div className=" bg-emerald-100 pl-1 pr-1">{item}</div>;
+              })
+            ) : (
+              <></>
+            )}
           </div>
 
           <div className="mt-2 flex items-center justify-around ">

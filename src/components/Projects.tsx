@@ -11,8 +11,7 @@ interface ProjectItem {
   imageLink: string;
   code: string;
   live: string;
-  backend: string;
-  frontend: string;
+  stack: string;
 }
 
 const Projects = forwardRef<HTMLDivElement>((props, ref) => {
@@ -35,8 +34,7 @@ const Projects = forwardRef<HTMLDivElement>((props, ref) => {
               key={item.title}
               code={item.code}
               live={item.live}
-              backend={item.backend}
-              frontend={item.frontend}
+              stack={item.stack}
             />
           );
         })}
