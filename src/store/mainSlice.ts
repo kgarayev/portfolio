@@ -30,6 +30,7 @@ const mainSlice: any = createSlice({
         imageLink: "/carbon.png",
         code: "something",
         live: "",
+        color: "emerald-50",
       },
       {
         title: "Ricks & Morties",

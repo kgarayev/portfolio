@@ -27,7 +27,7 @@ const config: Config = {
         DEFAULT: "#323232", // This sets the default text color to black
       },
       colors: {
-        mainBackground: "rgb(245, 245, 245)",
+        mainBackground: "rgb(250, 250, 250)",
       },
       fontFamily: {
         ibmPlexMono: ["IBM Plex Mono", "monospace"],
@@ -37,6 +37,9 @@ const config: Config = {
         ultra: ["Ultra", "serif"],
         erica: ["Erica One", "sans-serif"],
         darkerGrotesque: ["Darker Grotesque", "sans-serif"],
+        spaceMono: ["Space Mono", "monospace"],
+        lato: ["Lato", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
     },
   },
