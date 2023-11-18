@@ -4,7 +4,7 @@ const Logo = () => {
   return (
     <div className="relative h-12 mb-2">
       {/* This is the main text */}
-      <h1 className="relative z-10 text-5xl text-emerald-200 font-poppins font-extrabold text-outline">
+      <h1 className="relative z-10 text-5xl text-emerald-100 font-poppins font-extrabold text-outline">
         Kenan
         {/* <Typewriter text="Kenan" delay={600} infinite={true} /> */}
       </h1>

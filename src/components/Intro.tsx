@@ -8,35 +8,35 @@ const Intro = () => {
       </h1>
       <p className="mb-5 font-nunito font-semibold mt-6">
         Skilled in{" "}
-        <span className=" text-xl font-bold font-ibmPlexMono  bg-emerald-200">
+        <span className=" text-lg font-semibold font-ibmPlexMono  bg-emerald-100">
           TS
         </span>
         ,{" "}
-        <span className=" text-xl font-bold font-ibmPlexMono  bg-emerald-200">
+        <span className=" text-lg font-semibold font-ibmPlexMono  bg-emerald-100">
           JS
         </span>
         ,{" "}
-        <span className=" text-xl font-bold font-ibmPlexMono  bg-emerald-200">
+        <span className=" text-lg font-semibold font-ibmPlexMono  bg-emerald-100">
           Node
         </span>
         ,{" "}
-        <span className="text-xl font-bold font-ibmPlexMono  bg-emerald-200">
+        <span className="text-lg font-semibold font-ibmPlexMono  bg-emerald-100">
           React
         </span>
         ,{" "}
-        <span className="text-xl font-bold font-ibmPlexMono  bg-emerald-200">
+        <span className="text-lg font-semibold font-ibmPlexMono  bg-emerald-100">
           Python
         </span>
         ,{" "}
-        <span className="text-xl font-bold font-ibmPlexMono  bg-emerald-200">
+        <span className="text-lg font-semibold font-ibmPlexMono  bg-emerald-100">
           C
         </span>
         , and both{" "}
-        <span className="text-xl font-bold font-ibmPlexMono  bg-emerald-200">
+        <span className="text-lg font-semibold font-ibmPlexMono  bg-emerald-100">
           SQL
         </span>{" "}
         and{" "}
-        <span className="text-xl font-bold font-ibmPlexMono  bg-emerald-200">
+        <span className="text-lg font-semibold font-ibmPlexMono  bg-emerald-100">
           NoSQL
         </span>{" "}
         databases, I&apos;m all about building things with code to solve
