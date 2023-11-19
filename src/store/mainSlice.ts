@@ -17,17 +17,17 @@ const mainSlice: any = createSlice({
           "Typescript, Node, Express, React, Redux, Auth, 3rd Party API, Postgre, REST, WebSockets, Validation, Material UI",
         tag: "ts, react, node",
         buttonText: "some link",
-        imageLink: "/stash2.png",
+        imageLink: "/stash4.jpg",
         code: "https://github.com/kgarayev/stash_backend",
         live: "https://stash-uwns.onrender.com/",
         color: "emerald-50",
       },
       {
-        title: "Carbon Intensity Bot",
-        description: "cabron intensity bot",
+        title: "Easy Nutrition",
+        description: "easy nutrition",
         tag: "js, vanilla, rest, node",
         buttonText: "some link",
-        imageLink: "/carbon.png",
+        imageLink: "/easynutrition.jpg",
         code: "something",
         live: "",
         color: "emerald-50",
@@ -51,7 +51,7 @@ const mainSlice: any = createSlice({
     skillsList: [
       {
         title: ["Frontend", "Development"],
-        iconLink: ["/frontend5.svg"],
+        iconLink: ["/frontend2.svg"],
         techUsed: [
           { name: "Typescript", link: "/ts.svg" },
           { name: "Javascript", link: "/js.svg" },
@@ -72,7 +72,7 @@ const mainSlice: any = createSlice({
       },
       {
         title: ["Backend", "Development"],
-        iconLink: ["/backend4.svg"],
+        iconLink: ["/backend11.svg"],
         techUsed: [
           { name: "Typescript", link: "/ts.svg" },
           { name: "Javascript", link: "/js.svg" },

@@ -2,7 +2,7 @@ import Photo from "./Photo";
 
 const Intro = () => {
   return (
-    <div className="p-5 pt-0 pb-8">
+    <div className="p-5 pt-0 pb-4">
       <h1 className="mb-2 text-lg font-semibold mt-2">
         I am a Software Engineer.
       </h1>
@@ -18,8 +18,8 @@ const Intro = () => {
         I&apos;m all about building things with code to solve real-world
         problems. Give me a shout, let&apos;s create something together!
       </p>
-      <div className="flex justify-center mt-2">
-        <div className="max-h-[180px] max-w-[180px] mt-2">
+      <div className="flex justify-center mt-0">
+        <div className="max-h-[180px] max-w-[180px] mt-0">
           <Photo></Photo>
         </div>
       </div>
