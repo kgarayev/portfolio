@@ -2,23 +2,26 @@ import axios, { AxiosError } from "axios";
 import FormData from "form-data";
 
 // pages/api/submitForm.js
-export default async function handler(req: any, res: any) {
+export default async function submitForm(req: any, res: any) {
   if (req.method === "POST") {
-    const formData = new FormData();
+    // const formData = new FormData();
     // const formData = req.body;
 
-    console.log(process.env.REACT_APP_ACCESS_KEY);
+    const data = {
+      ...req.body,
+      access_key: process.env.REACT_APP_ACCESS_KEY,
+    };
+
+    // console.log(process.env.REACT_APP_ACCESS_KEY);
 
     // Append your secret API key server-side
-    formData.append("access_key", process.env.REACT_APP_ACCESS_KEY);
+    // formData.append("access_key", process.env.REACT_APP_ACCESS_KEY);
 
     try {
-      const response = await axios({
-        method: "post",
-        url: "https://api.web3forms.com/submit",
-        data: formData,
-        headers: { "Content-Type": "multipart/form-data" },
-      });
+      const response = await axios.post(
+        "https://api.web3forms.com/submit",
+        data
+      );
 
       // Forward the response from the external API back to the client
       res.status(200).json(response.data);

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import submitForm from "@/pages/api/submitForm";
 
 import * as dotenv from "dotenv";
 dotenv.config();
@@ -34,11 +35,14 @@ function ContactForm() {
     setResult("Validating...");
 
     const formData = new FormData(event.target);
+    const formObject = Object.fromEntries(formData.entries());
 
     // Get individual field values
     const name = formData.get("name") as string;
     const email = formData.get("email") as string;
     const message = formData.get("message") as string;
+
+    // console.log(name, email, message);
 
     // Check if any of the fields are empty
     if (!name.trim() || !email.trim() || !message.trim()) {
@@ -52,15 +56,10 @@ function ContactForm() {
     setResult("Sending...");
 
     try {
-      const response = await axios({
-        method: "post",
-        url: "api/submitForm",
-        data: formData,
-        headers: { "Content-Type": "multipart/form-data" },
-      });
+      const response = await axios.post("/api/submitForm", formObject);
 
       if (response.data.success) {
-        console.log("Success", response.data);
+        console.log("Success", response.data, formData);
         setMessageColor("bg-emerald-50");
         setResult("Thank you! Your message has been sent.");
         setName(""); // Resetting the state which will clear the form
@@ -190,7 +189,7 @@ function ContactForm() {
               <h3 className="font-ibmPlexMono font-bold">Email</h3>
               <input
                 className="w-full border-gray-700 border p-2 focus:outline-none focus:shadow-[2px_2px_0px_rgba(0,0,0,1)] focus:bg-emerald-50 active:shadow-[2px_2px_0px_rgba(0,0,0,1)] rounded-md h-12"
-                placeholder="you@example.com"
+                placeholder="You@example.com"
                 type="email"
                 name="email"
                 value={email}
