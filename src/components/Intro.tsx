@@ -6,7 +6,7 @@ const Intro = () => {
       <h1 className="mb-5 text-2xl font-semibold mt-2">
         I am a Software Engineer.
       </h1>
-      <p className="mb-5 font-nunito font-semibold mt-6">
+      <p className="mb-2 font-nunito font-semibold mt-6">
         Skilled in{" "}
         <span className=" text-lg font-semibold font-ibmPlexMono  bg-emerald-100">
           TS
@@ -43,8 +43,8 @@ const Intro = () => {
         real-world problems. Give me a shout, let&apos;s create something
         together!
       </p>
-      <div className="flex justify-center mt-5">
-        <div className="max-h-[240px] max-w-[240px] mt-2">
+      <div className="flex justify-center mt-2">
+        <div className="max-h-[180px] max-w-[180px] mt-2">
           <Photo></Photo>
         </div>
       </div>
