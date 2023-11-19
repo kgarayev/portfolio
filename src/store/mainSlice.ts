@@ -50,7 +50,7 @@ const mainSlice: any = createSlice({
 
     skillsList: [
       {
-        title: ["Frontend", "Development"],
+        title: ["Frontend"],
         iconLink: ["/frontend2.svg"],
         techUsed: [
           { name: "Typescript", link: "/ts.svg" },
@@ -71,7 +71,7 @@ const mainSlice: any = createSlice({
         ],
       },
       {
-        title: ["Backend", "Development"],
+        title: ["Backend"],
         iconLink: ["/backend11.svg"],
         techUsed: [
           { name: "Typescript", link: "/ts.svg" },

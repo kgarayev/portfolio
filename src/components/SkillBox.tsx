@@ -24,14 +24,14 @@ const SkillBox: React.FC<SkillBoxProps> = ({ iconLink, title, techUsed }) => {
   return (
     <div className="relative mx-auto w-full">
       <div className="absolute top-1 left-1 bg-gray-700 rounded-full shadow-md w-full h-full p-3"></div>
-      <div className="relative z-10 bg-white border-2 border-gray-700 rounded-full neo-brutalist hover:-translate-y-1 hover:-translate-x-1 transition-transform p-3 h-[240px]">
+      <div className="relative z-10 bg-white border border-gray-700 rounded-full neo-brutalist hover:-translate-y-1 hover:-translate-x-1 transition-transform p-3 h-[240px]">
         <div className="flex items-center space-x-2"></div>
 
         <div className="flex flex-col items-center justify-between h-full w-full">
-          <div className="text-center mb-3">
+          <div className="text-center mt-4">
             {title.map((item) => {
               return (
-                <h2 className="text-lg font-semibold" key={item}>
+                <h2 className="text-md font-bold" key={item}>
                   {item}
                 </h2>
               );
@@ -66,7 +66,7 @@ const SkillBox: React.FC<SkillBoxProps> = ({ iconLink, title, techUsed }) => {
               }
               className="flex items-center gap-2 cursor-pointer hover:text-gray-500 font-bold "
             >
-              <a className="font-nunito">
+              <a className="font-nunito text-sm">
                 {title[0] === "Coaching" ? "contact me" : "learn more"}
               </a>
 
