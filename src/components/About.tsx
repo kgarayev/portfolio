@@ -19,6 +19,10 @@ const About = forwardRef<HTMLDivElement>((props, ref) => {
 
       <div className="p-5 font-nunito">
         <p className="mb-8">
+          Hey, I'm Kenan Garayev. I'm an ex-civil engineer turned software
+          developer.
+        </p>
+        <p className="mb-8">
           My path to software engineering was anything but linear. Starting off
           with a degree from UCL, I became a Chartered Engineer and project
           manager in civil engineering, accumulating over 7 years of experience.
@@ -46,9 +50,32 @@ const About = forwardRef<HTMLDivElement>((props, ref) => {
           When I&apos;m not coding, I love to share what I&apos;ve learned with
           people.
         </p>
-        <p className="mb-4">
+        <p className="mb-8">
           I love good design, hiking camping, travel and music.
         </p>
+        <h5 className="font-bold text-lg mb-4">Quick Facts About Me</h5>
+        <ol className="list-decimal pl-5 flex flex-col gap-4 mb-4">
+          <li>
+            I started coding with Pascal when I was 12 to participate in
+            competitive programming Olympiads.
+          </li>
+          <li>
+            I studied civil engineering at University College London (UCL),
+            graduating in 2016.
+          </li>
+          <li>
+            I have been developing professional web apps for the past 4 years.
+          </li>
+          <li>
+            I spent 7 years working as a Civil Engineer and Project Manager in
+            the UK. I am also a Chartered Civil Engineer.
+          </li>
+          <li>
+            I am originally from Azerbaijan. I have been in the UK for more than
+            10 years.
+          </li>
+          <li>I speak English, Turkish, Azerbaijani and Russian.</li>
+        </ol>
       </div>
     </div>
   );

@@ -49,17 +49,17 @@ const mainSlice: any = createSlice({
         color: "bg-fuchsia-100",
       },
       {
-        title: "AI Solutions",
+        title: "AI",
         description:
-          "A nutritional data app for with smart multiple food item entry, sorting, filtering, and favourite-saving functionality.",
+          "Provides real-time, location-specific carbon intensity and electricity mix data in the UK.",
         tag: "js, react, rest, node",
         stack:
-          "Javascript, Node, Express, MySQL, React, Redux, Caching, REST, Validation, API Integration",
+          "Python, Flask, Cookies, SQLite, Javascript, Jinja, 3rd Party APIs, REST, Geolocation, Realtime, Validation",
         buttonText: "some link",
-        imageLink: "/aisolutions.jpg",
-        code: "https://github.com/kgarayev/easy_nutrition",
-        live: "https://easy-nutrition.netlify.app/",
-        color: "bg-emerald-200",
+        imageLink: "/easynutrition.jpg",
+        code: "https://github.com/kgarayev/carbon_intensity",
+        live: "https://gb-carbon-intensity.netlify.app/",
+        color: "bg-blue-100",
       },
     ],
 

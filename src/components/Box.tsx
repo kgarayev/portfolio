@@ -25,6 +25,8 @@ const Box: React.FC<BoxProps> = ({
 }) => {
   let stackArr = stack ? stack.split(", ").map((s) => s.trim()) : [];
 
+  console.log(color);
+
   return (
     <div className="relative min-w-[225px] max-w-[600px] mx-auto w-full">
       <div className="absolute top-1 left-1 bg-gray-700 rounded-2xl shadow-md w-full h-full"></div>
@@ -45,7 +47,6 @@ const Box: React.FC<BoxProps> = ({
               className=" border rounded-2xl border-gray-700 mt-2 mb-2 object-cover aspect-content"
             />
           </div>
-
           <div className="mt-4 mb-4">
             <p className="mt-2">{description}</p>
           </div>
@@ -66,7 +67,6 @@ const Box: React.FC<BoxProps> = ({
               <></>
             )}
           </div>
-
           <div className="mt-2 flex items-center justify-around ">
             {code === "" || !code ? (
               <></>
