@@ -176,7 +176,7 @@ function ContactForm() {
 
           <div className="m-3 font-nunito flex flex-col gap-3 p-2 justify-center">
             <div>
-              <h3 className="font-ibmPlexMono font-semibold text-lg">Name</h3>
+              <h3 className="font-ibmPlexMono font-bold">Name</h3>
               <input
                 className="w-full border-gray-700 border p-2 focus:outline-none focus:shadow-[2px_2px_0px_rgba(0,0,0,1)] focus:bg-emerald-50 active:shadow-[2px_2px_0px_rgba(0,0,0,1)] rounded-md h-12"
                 placeholder="Rick Sanchez"
@@ -187,7 +187,7 @@ function ContactForm() {
               />
             </div>
             <div>
-              <h3 className="font-ibmPlexMono font-semibold text-lg">Email</h3>
+              <h3 className="font-ibmPlexMono font-bold">Email</h3>
               <input
                 className="w-full border-gray-700 border p-2 focus:outline-none focus:shadow-[2px_2px_0px_rgba(0,0,0,1)] focus:bg-emerald-50 active:shadow-[2px_2px_0px_rgba(0,0,0,1)] rounded-md h-12"
                 placeholder="you@example.com"
@@ -198,9 +198,7 @@ function ContactForm() {
               />
             </div>
             <div>
-              <h3 className="font-ibmPlexMono font-semibold text-lg">
-                Message
-              </h3>
+              <h3 className="font-ibmPlexMono font-bold">Message</h3>
               <textarea
                 className="resize-y w-full border-gray-700 border p-2 focus:outline-none focus:shadow-[2px_2px_0px_rgba(0,0,0,1)] focus:bg-emerald-50 active:shadow-[2px_2px_0px_rgba(0,0,0,1)] rounded-md"
                 placeholder="Hello there..."

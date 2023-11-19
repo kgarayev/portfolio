@@ -35,7 +35,7 @@ const Box: React.FC<BoxProps> = ({
         <div className="border-t-2 border-black mb-4"></div> */}
 
         <div className="m-4 mt-2 font-nunito p-2">
-          <h2 className="text-xl font-bold font-ibmPlexMono">{title}</h2>
+          <h2 className="text-lg font-semibold font-ibmPlexMono">{title}</h2>
           <div className="aspect-w-1 aspect-h-1 rounded-2xl">
             <img
               src={imageLink}
@@ -53,7 +53,7 @@ const Box: React.FC<BoxProps> = ({
               stackArr.map((item) => {
                 return (
                   <div
-                    className=" bg-emerald-100 pl-1 pr-1 font-semibold border border-gray-300 rounded-lg"
+                    className=" bg-emerald-100 pl-1 pr-1 text-sm border border-gray-300 rounded-lg"
                     key={item + title}
                   >
                     {item}
@@ -69,15 +69,20 @@ const Box: React.FC<BoxProps> = ({
             {code === "" || !code ? (
               <></>
             ) : (
-              <div className="flex items-center gap-2 h-full cursor-pointer hover:opacity-50 font-bold ">
+              <div className="flex items-center gap-2 h-full cursor-pointer hover:opacity-50 text-sm font-bold ">
                 <Image
                   src="/github.svg"
                   alt="github"
-                  className="w-6 h-6 opacity-70"
-                  width={6}
-                  height={6}
+                  className="w-5 h-5 opacity-70"
+                  width={5}
+                  height={5}
                 />
-                <a href={code} target="_blank" rel="noopener noreferrer">
+                <a
+                  href={code}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=""
+                >
                   code
                 </a>
               </div>
@@ -86,13 +91,13 @@ const Box: React.FC<BoxProps> = ({
             {live === "" || !live ? (
               <></>
             ) : (
-              <div className="flex items-center gap-2 h-full cursor-pointer hover:opacity-50 font-bold ">
+              <div className="flex items-center gap-2 h-full cursor-pointer hover:opacity-50 text-sm font-bold ">
                 <Image
                   src="/internet.svg"
                   alt="internet"
-                  className="w-6 h-6 opacity-70"
-                  width={6}
-                  height={6}
+                  className="w-5 h-5 opacity-70"
+                  width={5}
+                  height={5}
                 />
                 <a href={live} target="_blank" rel="noopener noreferrer">
                   live

@@ -6,18 +6,18 @@ const About = forwardRef<HTMLDivElement>((props, ref) => {
   return (
     <div ref={ref} id="about" className="pt-2 pb-2 bg-cyan-50">
       <div className="w-full p-5 pb-2 text-center">
-        <h2 className="text-3xl font-bold">About me</h2>
+        <h2 className="text-2xl font-semibold">About me</h2>
       </div>
 
       <div className="pl-5 pr-5 w-full ">
         <div className="flex justify-center mt-0">
-          <div className="max-h-[300px] max-w-[300px] mt-0">
+          <div className="max-h-[400px] max-w-[400px] mt-0">
             <Photo></Photo>
           </div>
         </div>
       </div>
 
-      <div className="p-5 font-nunito font-semibold">
+      <div className="p-5 font-nunito">
         <p className="mb-8">
           My path to software engineering was anything but linear. Starting off
           with a degree from UCL, I became a Chartered Engineer and project
