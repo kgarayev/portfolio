@@ -18,11 +18,11 @@ const Intro = () => {
         I&apos;m all about building things with code to solve real-world
         problems. Give me a shout, let&apos;s create something together!
       </p>
-      <div className="flex justify-center mt-0">
+      {/* <div className="flex justify-center mt-0">
         <div className="max-h-[180px] max-w-[180px] mt-0">
           <Photo></Photo>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

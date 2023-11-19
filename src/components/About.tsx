@@ -1,24 +1,18 @@
 import { forwardRef } from "react";
 import Image from "next/image";
+import Photo from "./Photo";
 
 const About = forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <div ref={ref} id="about" className="pt-2 pb-2">
+    <div ref={ref} id="about" className="pt-2 pb-2 bg-cyan-50">
       <div className="w-full p-5 pb-2 text-center">
         <h2 className="text-3xl font-bold">About me</h2>
       </div>
 
       <div className="pl-5 pr-5 w-full ">
-        <div className="relative max-w-[450px] max-h-[450px] mx-auto">
-          <div className="absolute top-1.5 left-1 bg-gray-700 rounded-2xl shadow-md aspect-w-1 aspect-h-1 w-full max-w-3xl overflow-hidden "></div>
-          <div className="aspect-w-1 aspect-h-1 w-full max-w-3xl overflow-hidden relative border-2 relative z-10 bg-white border-2 border-gray-700 rounded-2xl neo-brutalist transition-transform">
-            <Image
-              src="/me5.jpg"
-              alt="Square Image"
-              className="min-w-full min-h-full absolute bottom-0 left-0 object-cover"
-              width={1000}
-              height={1000}
-            />
+        <div className="flex justify-center mt-0">
+          <div className="max-h-[300px] max-w-[300px] mt-0">
+            <Photo></Photo>
           </div>
         </div>
       </div>
