@@ -7,41 +7,16 @@ const Intro = () => {
         I am a Software Engineer.
       </h1>
       <p className="mb-2 font-nunito font-semibold mt-0 text-md">
-        Skilled in{" "}
-        <span className=" text-lg font-semibold font-ibmPlexMono  bg-emerald-100">
-          TS
-        </span>
-        ,{" "}
-        <span className=" text-lg font-semibold font-ibmPlexMono  bg-emerald-100">
-          JS
-        </span>
-        ,{" "}
-        <span className=" text-lg font-semibold font-ibmPlexMono  bg-emerald-100">
-          Node
-        </span>
-        ,{" "}
-        <span className="text-lg font-semibold font-ibmPlexMono  bg-emerald-100">
-          React
-        </span>
-        ,{" "}
-        <span className="text-lg font-semibold font-ibmPlexMono  bg-emerald-100">
-          Python
-        </span>
-        ,{" "}
-        <span className="text-lg font-semibold font-ibmPlexMono  bg-emerald-100">
-          C
-        </span>
-        , and both{" "}
-        <span className="text-lg font-semibold font-ibmPlexMono  bg-emerald-100">
-          SQL
-        </span>{" "}
-        and{" "}
-        <span className="text-lg font-semibold font-ibmPlexMono  bg-emerald-100">
-          NoSQL
-        </span>{" "}
-        databases, I&apos;m all about building things with code to solve
-        real-world problems. Give me a shout, let&apos;s create something
-        together!
+        Skilled in <span className=" font-bold bg-emerald-100">TS</span>,{" "}
+        <span className="font-bold  bg-emerald-100">JS</span>,{" "}
+        <span className="font-bold bg-emerald-100">Node</span>,{" "}
+        <span className="font-bold bg-emerald-100">React</span>,{" "}
+        <span className="font-bold  bg-emerald-100">Python</span>,{" "}
+        <span className="font-bold  bg-emerald-100">C</span>, and both{" "}
+        <span className="font-bold  bg-emerald-100">SQL</span> and{" "}
+        <span className="font-bold  bg-emerald-100">NoSQL</span> databases,
+        I&apos;m all about building things with code to solve real-world
+        problems. Give me a shout, let&apos;s create something together!
       </p>
       <div className="flex justify-center mt-2">
         <div className="max-h-[180px] max-w-[180px] mt-2">
