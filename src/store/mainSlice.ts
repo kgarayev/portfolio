@@ -12,39 +12,54 @@ const mainSlice: any = createSlice({
       {
         title: "Stash",
         description:
-          "A Fintech Progressive Web App (PWA) for account creation, transactions, and customisation.",
+          "A fintech app for account creation, transactions, obtaining macroeconomic data, user customisation and live chat.",
         stack:
-          "Typescript, Node, Express, React, Redux, Auth, 3rd Party API, Postgre, REST, WebSockets, Validation, Material UI",
+          "Typescript, Node, Express, React, Redux, Auth, 3rd Party API, PostgreSQL, REST, WebSockets, Validation, Material UI",
         tag: "ts, react, node",
         buttonText: "some link",
         imageLink: "/stash4.jpg",
         code: "https://github.com/kgarayev/stash_backend",
         live: "https://stash-uwns.onrender.com/",
-        color: "emerald-50",
+        color: "bg-emerald-100",
+      },
+      {
+        title: "UK Electric Grid Carbon Intensity Bot",
+        description:
+          "Provides real-time, location-specific carbon intensity and electricity mix data in the UK.",
+        tag: "js, react, rest, node",
+        stack:
+          "Python, Flask, Cookies, SQLite, Javascript, Jinja, 3rd Party APIs, REST, Geolocation, Realtime, Validation",
+        buttonText: "some link",
+        imageLink: "/easynutrition.jpg",
+        code: "https://github.com/kgarayev/carbon_intensity",
+        live: "https://gb-carbon-intensity.netlify.app/",
+        color: "bg-yellow-50",
       },
       {
         title: "Easy Nutrition",
-        description: "easy nutrition",
+        description:
+          "A nutritional data app for with smart multiple food item entry, sorting, filtering, and favourite-saving functionality.",
         tag: "js, react, rest, node",
+        stack:
+          "Javascript, Node, Express, MySQL, React, Redux, Caching, REST, Validation, API Integration",
         buttonText: "some link",
         imageLink: "/easynutrition.jpg",
-        code: "something",
-        live: "",
-        color: "emerald-50",
+        code: "https://github.com/kgarayev/easy_nutrition",
+        live: "https://easy-nutrition.netlify.app/",
+        color: "bg-fuchsia-100",
       },
       {
-        title: "Ricks & Morties",
-        description: "fan App",
+        title: "AI Solutions",
+        description:
+          "A nutritional data app for with smart multiple food item entry, sorting, filtering, and favourite-saving functionality.",
         tag: "js, react, rest, node",
-        buttonText: "some link",
-        imageLink: "/ricks.png",
-      },
-      {
-        title: "AI Solutions App",
-        description: "AI solutions",
-        tag: "js, react, node",
+        stack:
+          "Javascript, Node, Express, MySQL, React, Redux, Caching, REST, Validation, API Integration",
         buttonText: "some link",
         imageLink: "/aisolutions.jpg",
+        code: "https://github.com/kgarayev/easy_nutrition",
+        live: "https://easy-nutrition.netlify.app/",
+        color: "bg-emerald-200",
       },
     ],
 

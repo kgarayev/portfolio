@@ -12,6 +12,7 @@ interface ProjectItem {
   code: string;
   live: string;
   stack: string;
+  color: string;
 }
 
 const Projects = forwardRef<HTMLDivElement>((props, ref) => {
@@ -35,6 +36,7 @@ const Projects = forwardRef<HTMLDivElement>((props, ref) => {
               code={item.code}
               live={item.live}
               stack={item.stack}
+              color={item.color}
             />
           );
         })}

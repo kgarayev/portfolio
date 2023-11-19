@@ -9,6 +9,7 @@ interface BoxProps {
   code: string;
   live: string;
   stack: string;
+  color: string;
 }
 
 const Box: React.FC<BoxProps> = ({
@@ -20,6 +21,7 @@ const Box: React.FC<BoxProps> = ({
   code,
   live,
   stack,
+  color,
 }) => {
   let stackArr = stack ? stack.split(", ").map((s) => s.trim()) : [];
 
@@ -53,7 +55,7 @@ const Box: React.FC<BoxProps> = ({
               stackArr.map((item) => {
                 return (
                   <div
-                    className=" bg-emerald-100 pl-1 pr-1 text-sm border border-gray-300 rounded-lg"
+                    className={`pl-2 pr-2 text-sm border border-gray-300 rounded-lg ${color}`}
                     key={item + title}
                   >
                     {item}
