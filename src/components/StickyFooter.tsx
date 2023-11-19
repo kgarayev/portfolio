@@ -9,10 +9,10 @@ const StickyFooter = () => {
   };
 
   return (
-    <div className="z-20 flex justify-around items-center w-full h-14 border-t-2 fixed left-0 bottom-0 bg-white text-sm font-semibold text-gray-700">
+    <div className="z-20 flex justify-around items-center w-full h-14 border-t fixed left-0 bottom-0 bg-white text-sm font-semibold text-gray-700">
       <div
         onClick={() => scrollToSection("about")}
-        className="flex flex-col items-center justify-center hover:text-gray-500 cursor-pointer"
+        className="flex flex-col items-center justify-center hover:text-gray-400 cursor-pointer"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -29,11 +29,11 @@ const StickyFooter = () => {
           />
         </svg>
 
-        <p className="text-md font-bold">about</p>
+        <p className="text-md font-semibold">about</p>
       </div>
       <div
         onClick={() => scrollToSection("work")}
-        className="flex flex-col items-center justify-center hover:text-gray-500 cursor-pointer"
+        className="flex flex-col items-center justify-center hover:text-gray-400 cursor-pointer"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -50,11 +50,11 @@ const StickyFooter = () => {
           />
         </svg>
 
-        <p className="text-md font-bold">what I do</p>
+        <p className="text-md font-semibold">what I do</p>
       </div>
       <div
         onClick={() => scrollToSection("projects")}
-        className="flex flex-col items-center justify-center hover:text-gray-500 cursor-pointer"
+        className="flex flex-col items-center justify-center hover:text-gray-400 cursor-pointer"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -71,11 +71,11 @@ const StickyFooter = () => {
           />
         </svg>
 
-        <p className="text-md font-bold">my work</p>
+        <p className="text-md font-semibold">my work</p>
       </div>
       <div
         onClick={() => scrollToSection("contact")}
-        className="flex flex-col items-center justify-center hover:text-gray-500 cursor-pointer"
+        className="flex flex-col items-center justify-center hover:text-gray-400 cursor-pointer"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -92,7 +92,7 @@ const StickyFooter = () => {
           />
         </svg>
 
-        <p className="text-md font-bold">contact</p>
+        <p className="text-md font-semibold">contact</p>
       </div>
     </div>
   );

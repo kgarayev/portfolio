@@ -26,7 +26,7 @@ const Box: React.FC<BoxProps> = ({
   return (
     <div className="relative min-w-[225px] max-w-[600px] mx-auto w-full">
       <div className="absolute top-1 left-1 bg-gray-700 rounded-2xl shadow-md w-full h-full"></div>
-      <div className="relative z-10 bg-white border-2 border-gray-700 rounded-2xl neo-brutalist hover:-translate-y-1 hover:-translate-x-1 transition-transform">
+      <div className="relative z-10 bg-white border border-gray-700 rounded-2xl neo-brutalist hover:-translate-y-1 hover:-translate-x-1 transition-transform">
         {/* <div className="flex items-center space-x-2 mb-4 mt-4 ml-4">
           <div className="w-3 h-3 bg-black rounded-full"></div>
           <div className="w-3 h-3 bg-black rounded-full"></div>
@@ -40,7 +40,7 @@ const Box: React.FC<BoxProps> = ({
             <img
               src={imageLink}
               alt="image"
-              className=" border-2 rounded-2xl border-gray-700 mt-2 mb-2 object-cover aspect-content"
+              className=" border rounded-2xl border-gray-700 mt-2 mb-2 object-cover aspect-content"
             />
           </div>
 

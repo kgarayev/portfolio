@@ -25,7 +25,7 @@ const mainSlice: any = createSlice({
       {
         title: "Easy Nutrition",
         description: "easy nutrition",
-        tag: "js, vanilla, rest, node",
+        tag: "js, react, rest, node",
         buttonText: "some link",
         imageLink: "/easynutrition.jpg",
         code: "something",
@@ -40,11 +40,11 @@ const mainSlice: any = createSlice({
         imageLink: "/ricks.png",
       },
       {
-        title: "Chat App Backend",
-        description: "Realtime Chat App using WebSockets",
+        title: "AI Solutions App",
+        description: "AI solutions",
         tag: "js, react, node",
         buttonText: "some link",
-        imageLink: "/websocketBack.png",
+        imageLink: "/aisolutions.jpg",
       },
     ],
 
