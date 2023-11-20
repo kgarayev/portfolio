@@ -40,7 +40,7 @@ const PopUp = () => {
       }}
     >
       <div
-        className={`fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5/6 h-[75vh] `}
+        className={`fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[85vw] h-[80vh] sm:w-[375px]`}
         onClick={(e) => {
           e.stopPropagation();
         }}
@@ -69,18 +69,18 @@ const PopUp = () => {
                 </div>
 
                 <div className="w-full flex justify-center m-0 p-0">
-                  <h2 className="text-xl font-bold font-ibmPlexMono m-0 p-0">
+                  <h2 className="text-lg font-bold font-ibmPlexMono m-0 p-0">
                     Tech used
                   </h2>
                 </div>
               </div>
 
               <div className="flex justify-center items-center w-full h-full">
-                <div className="grid grid-cols-3 place-items-center">
+                <div className="grid grid-cols-3 gap-1 place-items-center sm:gap-2">
                   {techStack.map((item) => {
                     return (
                       <div
-                        className="flex justify-center items-center flex-col w-24 h-24"
+                        className="flex justify-center items-center flex-col w-28 h-24"
                         key={item.name}
                       >
                         <Image
@@ -90,7 +90,9 @@ const PopUp = () => {
                           width={12}
                           height={12}
                         />
-                        <p className="text-sm font-semibold">{item.name}</p>
+                        <div className="text-sm font-semibold w-full text-center min-w-[75px]">
+                          {item.name}
+                        </div>
                       </div>
                     );
                   })}
