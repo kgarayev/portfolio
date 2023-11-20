@@ -57,14 +57,16 @@ const About = forwardRef<HTMLDivElement>((props, ref) => {
         <ol className="list-decimal pl-5 flex flex-col gap-4 mb-4">
           <li>
             I started coding with Pascal when I was 12 to participate in
-            competitive programming Olympiads.
+            competitive programming Olympiads. This was then followed up by
+            undertaking lab work and creating CLI tools using C.
           </li>
           <li>
             I studied civil engineering at University College London (UCL),
             graduating in 2016.
           </li>
           <li>
-            I have been developing professional web apps for the past 4 years.
+            Having learnt Python and Web Development, I have been developing
+            professional web apps for the past 4 years.
           </li>
           <li>
             I spent 7 years working as a Civil Engineer and Project Manager in
