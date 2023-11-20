@@ -65,27 +65,6 @@ const mainSlice: any = createSlice({
 
     skillsList: [
       {
-        title: ["Frontend"],
-        iconLink: ["/frontend2.svg"],
-        techUsed: [
-          { name: "Typescript", link: "/ts.svg" },
-          { name: "Javascript", link: "/js.svg" },
-          { name: "React.js", link: "/react.svg" },
-          { name: "Redux", link: "/redux.svg" },
-          { name: "Jest", link: "/jest.svg" },
-          { name: "Cypress", link: "/cypress.svg" },
-          { name: "Next.js", link: "/next.svg" },
-          { name: "GraphQL", link: "/graphql.svg" },
-          { name: "Firebase", link: "/firebase.svg" },
-          { name: "D3.js", link: "/d3.svg" },
-          { name: "HTML", link: "/html.svg" },
-          { name: "CSS", link: "/css.svg" },
-          { name: "SCSS", link: "/sass.svg" },
-          { name: "Tailwind", link: "/tailwind.svg" },
-          { name: "Material UI", link: "/mui.svg" },
-        ],
-      },
-      {
         title: ["Backend"],
         iconLink: ["/backend11.svg"],
         techUsed: [
@@ -104,6 +83,27 @@ const mainSlice: any = createSlice({
           { name: "Socket.io", link: "/socket.svg" },
           { name: "GraphQL", link: "/graphql.svg" },
           { name: "Apache", link: "/apache.svg" },
+        ],
+      },
+      {
+        title: ["Frontend"],
+        iconLink: ["/frontend2.svg"],
+        techUsed: [
+          { name: "Typescript", link: "/ts.svg" },
+          { name: "Javascript", link: "/js.svg" },
+          { name: "React.js", link: "/react.svg" },
+          { name: "Redux", link: "/redux.svg" },
+          { name: "Jest", link: "/jest.svg" },
+          { name: "Cypress", link: "/cypress.svg" },
+          { name: "Next.js", link: "/next.svg" },
+          { name: "GraphQL", link: "/graphql.svg" },
+          { name: "Firebase", link: "/firebase.svg" },
+          { name: "D3.js", link: "/d3.svg" },
+          { name: "HTML", link: "/html.svg" },
+          { name: "CSS", link: "/css.svg" },
+          { name: "SCSS", link: "/sass.svg" },
+          { name: "Tailwind", link: "/tailwind.svg" },
+          { name: "Material UI", link: "/mui.svg" },
         ],
       },
       {

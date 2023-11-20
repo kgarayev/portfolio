@@ -22,7 +22,7 @@ const Work = forwardRef<HTMLDivElement>((props, ref) => {
       <div className="flex justify-center items-center p-5 pt-0 ">
         <div className=" xs:grid xs:gap-2 xs:grid-cols-1 sm:grid-cols-2 place-items-center justify-items-center content-center justify-content-center w-full lg:flex lg:justify-center lg:items-center lg:gap-8">
           {skills.map((item: SkillItem) => (
-            <div className="w-[245px] h-[240px] m-2" key={item.title[0]}>
+            <div className="w-full h-full m-2" key={item.title[0]}>
               <SkillBox
                 title={item.title}
                 iconLink={item.iconLink}
