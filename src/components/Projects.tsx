@@ -20,10 +20,10 @@ const Projects = forwardRef<HTMLDivElement>((props, ref) => {
 
   return (
     <div ref={ref} id="projects" className="pt-2 pb-2">
-      <div className="w-full text-center p-5 pb-2">
+      <div className="w-full p-5 pb-4">
         <h2 className="text-2xl font-semibold">Projects</h2>
       </div>
-      <div className="mb-4 grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-10 p-5 pt-2">
+      <div className="mb-4 grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-10 p-5 pt-0">
         {projectList.map((item: ProjectItem) => {
           return (
             <Box

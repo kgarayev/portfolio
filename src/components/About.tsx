@@ -5,11 +5,11 @@ import Photo from "./Photo";
 const About = forwardRef<HTMLDivElement>((props, ref) => {
   return (
     <div ref={ref} id="about" className="pt-2 pb-2">
-      <div className="w-full p-5 pb-2 text-center">
+      <div className="w-full p-5 pb-4">
         <h2 className="text-2xl font-semibold">About me</h2>
       </div>
 
-      <div className="pl-5 pr-5 w-full ">
+      <div className="pl-5 pr-5 w-full pt-0 ">
         <div className="flex justify-center mt-0">
           <div className="max-h-[400px] max-w-[400px] mt-0">
             <Photo></Photo>
