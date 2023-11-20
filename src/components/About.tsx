@@ -4,7 +4,7 @@ import Photo from "./Photo";
 
 const About = forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <div ref={ref} id="about" className="pt-2 pb-2 bg-cyan-50">
+    <div ref={ref} id="about" className="pt-2 pb-2">
       <div className="w-full p-5 pb-2 text-center">
         <h2 className="text-2xl font-semibold">About me</h2>
       </div>
