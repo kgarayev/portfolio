@@ -65,27 +65,6 @@ const mainSlice: any = createSlice({
 
     skillsList: [
       {
-        title: ["Backend"],
-        iconLink: ["/backend11.svg"],
-        techUsed: [
-          { name: "Typescript", link: "/ts.svg" },
-          { name: "Javascript", link: "/js.svg" },
-          { name: "Python", link: "/python.svg" },
-          { name: "C", link: "/c.svg" },
-          { name: "Node", link: "/node.svg" },
-          { name: "Express", link: "/express.svg" },
-          { name: "Flask", link: "/flask.svg" },
-          { name: "Django", link: "/django.svg" },
-          { name: "MySQL", link: "/mysql.svg" },
-          { name: "Postgre", link: "/postgres.svg" },
-          { name: "MongoBD", link: "/mongo.svg" },
-          { name: "Redis", link: "/redis.svg" },
-          { name: "Socket.io", link: "/socket.svg" },
-          { name: "GraphQL", link: "/graphql.svg" },
-          { name: "Apache", link: "/apache.svg" },
-        ],
-      },
-      {
         title: ["Frontend"],
         iconLink: ["/frontend2.svg"],
         techUsed: [
@@ -104,6 +83,27 @@ const mainSlice: any = createSlice({
           { name: "SCSS", link: "/sass.svg" },
           { name: "Tailwind", link: "/tailwind.svg" },
           { name: "Material UI", link: "/mui.svg" },
+        ],
+      },
+      {
+        title: ["Backend"],
+        iconLink: ["/backend11.svg"],
+        techUsed: [
+          { name: "Typescript", link: "/ts.svg" },
+          { name: "Javascript", link: "/js.svg" },
+          { name: "Python", link: "/python.svg" },
+          { name: "C", link: "/c.svg" },
+          { name: "Node", link: "/node.svg" },
+          { name: "Express", link: "/express.svg" },
+          { name: "Flask", link: "/flask.svg" },
+          { name: "Django", link: "/django.svg" },
+          { name: "MySQL", link: "/mysql.svg" },
+          { name: "Postgre", link: "/postgres.svg" },
+          { name: "MongoBD", link: "/mongo.svg" },
+          { name: "Redis", link: "/redis.svg" },
+          { name: "Socket.io", link: "/socket.svg" },
+          { name: "GraphQL", link: "/graphql.svg" },
+          { name: "Apache", link: "/apache.svg" },
         ],
       },
       {
