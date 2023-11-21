@@ -9,10 +9,17 @@ const About = forwardRef<HTMLDivElement>((props, ref) => {
         <h2 className="text-xl font-extrabold">About me</h2>
       </div>
 
-      <div className="pl-5 pr-5 w-full pt-0 ">
-        <div className="flex justify-center mt-0">
-          <div className="max-h-[400px] max-w-[400px] mt-0">
-            <Photo></Photo>
+      <div className="pl-5 pr-5 w-full ">
+        <div className="relative max-w-[450px] max-h-[450px] mx-auto">
+          <div className="absolute top-1.5 left-1 bg-gray-700 rounded-2xl shadow-md aspect-w-1 aspect-h-1 w-full max-w-3xl overflow-hidden "></div>
+          <div className="aspect-w-1 aspect-h-1 w-full max-w-3xl overflow-hidden relative border-2 relative z-10 bg-white border-2 border-gray-700 rounded-2xl neo-brutalist transition-transform">
+            <Image
+              src="/photo.jpg"
+              alt="Square Image"
+              className="min-w-full min-h-full absolute bottom-0 left-0 object-cover"
+              width={1000}
+              height={1000}
+            />
           </div>
         </div>
       </div>
