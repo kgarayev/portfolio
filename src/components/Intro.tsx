@@ -3,9 +3,7 @@ import Photo from "./Photo";
 const Intro = () => {
   return (
     <div className="p-5 pt-0 pb-4">
-      <h1 className="mb-4 text-lg font-semibold mt-2">
-        I am a Software Engineer.
-      </h1>
+      <h1 className="mb-4 text-lg font-bold mt-2">I am a Software Engineer.</h1>
       <p className="mb-2 font-nunito mt-0">
         Skilled in <span className=" font-semibold bg-emerald-100">TS</span>,{" "}
         <span className="font-semibold  bg-emerald-100">JS</span>,{" "}

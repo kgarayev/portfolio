@@ -69,7 +69,7 @@ const PopUp = () => {
                 </div>
 
                 <div className="w-full flex justify-center m-0 p-0">
-                  <h2 className="text-lg font-bold font-ibmPlexMono m-0 p-0">
+                  <h2 className="text-lg font-extrabold m-0 p-0 font-ibmPlexMono">
                     Tech used
                   </h2>
                 </div>
@@ -90,7 +90,7 @@ const PopUp = () => {
                           width={12}
                           height={12}
                         />
-                        <div className="text-sm font-semibold w-full text-center min-w-[75px]">
+                        <div className="text-sm font-semibold w-full text-center min-w-[75px] mt-2">
                           {item.name}
                         </div>
                       </div>

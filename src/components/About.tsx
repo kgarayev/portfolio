@@ -6,7 +6,7 @@ const About = forwardRef<HTMLDivElement>((props, ref) => {
   return (
     <div ref={ref} id="about" className="pt-2 pb-2">
       <div className="w-full p-5 pb-4">
-        <h2 className="text-2xl font-semibold">About me</h2>
+        <h2 className="text-xl font-extrabold">About me</h2>
       </div>
 
       <div className="pl-5 pr-5 w-full pt-0 ">
@@ -19,8 +19,8 @@ const About = forwardRef<HTMLDivElement>((props, ref) => {
 
       <div className="p-5 font-nunito">
         <p className="mb-8">
-          Hey, I&apos;m Kenan Garayev. I&apos;m an ex-civil engineer turned software
-          developer.
+          Hey, I&apos;m Kenan Garayev. I&apos;m an ex-civil engineer turned
+          software developer.
         </p>
         <p className="mb-8">
           My path to software engineering was anything but linear. Starting off
@@ -53,7 +53,9 @@ const About = forwardRef<HTMLDivElement>((props, ref) => {
         <p className="mb-8">
           I love good design, hiking camping, travel and music.
         </p>
-        <h5 className="font-bold text-lg mb-4">Quick Facts About Me</h5>
+        <h5 className="font-semibold text-lg mb-4 font-ibmPlexMono">
+          Quick Facts About Me
+        </h5>
         <ol className="list-decimal pl-5 flex flex-col gap-4 mb-4">
           <li>
             I started coding with Pascal when I was 12 to participate in

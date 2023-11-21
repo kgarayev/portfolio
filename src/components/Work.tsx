@@ -17,7 +17,7 @@ const Work = forwardRef<HTMLDivElement>((props, ref) => {
     // <div ref={ref} id="work" className="relative pt-8 pb-8 bg-fuchsia-100">
     <div ref={ref} id="work" className="relative pt-0 pb-2">
       <div className="w-full p-5 pb-4">
-        <h2 className="text-2xl font-semibold">What I do</h2>
+        <h2 className="text-xl font-extrabold">What I do</h2>
       </div>
       <div className="flex justify-center items-center p-5 pt-0 w-full">
         <div className="w-full grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
