@@ -25,7 +25,7 @@ const SkillBox: React.FC<SkillBoxProps> = ({ iconLink, title, techUsed }) => {
     // <div className="border h-[120px] w-full"> hello</div>
     <div className="relative w-full">
       <div className="absolute top-1 left-1 bg-gray-700 rounded-2xl shadow-md w-full h-full p-3"></div>
-      <div className="relative z-10 bg-white border border-gray-700 rounded-2xl neo-brutalist hover:-translate-y-1 hover:-translate-x-1 transition-transform p-3 h-[110px]">
+      <div className="relative z-10 bg-white border border-gray-700 rounded-2xl neo-brutalist transition-transform p-3 h-[110px]">
         <div className="flex items-center space-x-2"></div>
 
         <div className="flex items-center justify-left h-full w-full gap-4 pl-3">
