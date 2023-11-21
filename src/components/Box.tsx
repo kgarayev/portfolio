@@ -28,7 +28,7 @@ const Box: React.FC<BoxProps> = ({
   console.log(color);
 
   return (
-    <div className="relative min-w-[225px] max-w-[600px] mx-auto w-full">
+    <div className="relative min-w-[200px] max-w-[800px] ml-0 w-full">
       <div className="absolute top-1 left-1 bg-gray-700 rounded-2xl shadow-md w-full h-full"></div>
       <div className="relative z-10 bg-white border border-gray-700 rounded-2xl neo-brutalist hover:-translate-y-1 hover:-translate-x-1 transition-transform">
         {/* <div className="flex items-center space-x-2 mb-4 mt-4 ml-4">

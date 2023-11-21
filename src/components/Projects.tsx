@@ -23,7 +23,8 @@ const Projects = forwardRef<HTMLDivElement>((props, ref) => {
       <div className="w-full p-5 pb-4">
         <h2 className="text-xl font-extrabold">Projects</h2>
       </div>
-      <div className="mb-4 grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-10 p-5 pt-0">
+
+      <div className="mb-4 grid grid-cols-1 items-start sm2:grid-cols-2 gap-4 p-5 pt-0">
         {projectList.map((item: ProjectItem) => {
           return (
             <Box
