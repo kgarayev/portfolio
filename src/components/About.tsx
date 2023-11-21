@@ -19,7 +19,7 @@ const About = forwardRef<HTMLDivElement>((props, ref) => {
 
       <div className="p-5 font-nunito">
         <p className="mb-8">
-          Hey, I'm Kenan Garayev. I'm an ex-civil engineer turned software
+          Hey, I&apos;m Kenan Garayev. I&apos;m an ex-civil engineer turned software
           developer.
         </p>
         <p className="mb-8">
