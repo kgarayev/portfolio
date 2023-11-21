@@ -9,7 +9,7 @@ const StickyFooter = () => {
   };
 
   return (
-    <div className="z-20 flex justify-around items-center w-full h-14 border-t fixed left-0 bottom-0 bg-white text-sm font-normal text-gray-700">
+    <div className="z-20 flex justify-around items-center w-full h-14 border-t fixed left-0 bottom-0 bg-white text-sm font-normal text-gray-700 md:hidden">
       <div
         onClick={() => scrollToSection("about")}
         className="flex flex-col items-center justify-center hover:text-gray-400 cursor-pointer"
