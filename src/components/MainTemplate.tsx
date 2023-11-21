@@ -47,14 +47,16 @@ const MainTemplate = () => {
   }, [targetId]);
 
   return (
-    <div className="w-full">
+    <div className="w-full p-5">
       <Header></Header>
       <Intro></Intro>
 
       <Work ref={workRef}></Work>
       <Projects ref={projectsRef}></Projects>
-      <About ref={aboutRef}></About>
-      <Contact ref={contactRef}></Contact>
+      <div className="lg:flex items-start">
+        <About ref={aboutRef}></About>
+        <Contact ref={contactRef}></Contact>
+      </div>
 
       <StickyFooter></StickyFooter>
     </div>

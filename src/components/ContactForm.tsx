@@ -127,7 +127,7 @@ function ContactForm() {
   };
 
   return (
-    <div className="relative min-w-[225px] max-w-[800px] mx-auto w-full">
+    <div className="relative min-w-[225px] w-full lg:h-full">
       <div className="absolute top-1 left-1 bg-gray-700 rounded-2xl shadow-md w-full h-full"></div>
       <div className="relative z-10 bg-white border border-gray-700 rounded-2xl neo-brutalist transition-transform">
         <form onSubmit={onSubmit}>

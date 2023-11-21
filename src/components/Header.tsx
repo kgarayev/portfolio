@@ -18,7 +18,7 @@ const Header = () => {
         <Logo></Logo>
       </div>
 
-      <div className="hidden md:flex flex-end min-w-[425px] justify-between font-semibold items-end pb-2">
+      <div className="hidden md:flex flex-end min-w-[425px] justify-between font-semibold items-end pb-2 pr-10">
         <div
           onClick={() => scrollToSection("about")}
           className="hover:underline hover:font-bold cursor-pointer"
