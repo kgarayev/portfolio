@@ -20,7 +20,7 @@ const mainSlice: any = createSlice({
         imageLink: "/stash4.jpg",
         code: "https://github.com/kgarayev/stash_backend",
         live: "https://stash-uwns.onrender.com/",
-        color: "emerald",
+        color: "rgb(219, 250, 237)",
       },
       {
         title: "Carbon Intensity Bot",
@@ -33,7 +33,7 @@ const mainSlice: any = createSlice({
         imageLink: "/carbonintensity.jpg",
         code: "https://github.com/kgarayev/carbon_intensity",
         live: "https://gb-carbon-intensity.netlify.app/",
-        color: "light yellow",
+        color: "rgb(255, 254, 236)",
       },
       {
         title: "Easy Nutrition",
@@ -46,7 +46,7 @@ const mainSlice: any = createSlice({
         imageLink: "/easynutrition.jpg",
         code: "https://github.com/kgarayev/easy_nutrition",
         live: "https://easy-nutrition.netlify.app/",
-        color: "bg-fuchsia-100",
+        color: "rgb(255, 242, 255)",
       },
       {
         title: "Ricks & Morties",
@@ -59,7 +59,7 @@ const mainSlice: any = createSlice({
         imageLink: "/ricksandmorties.jpg",
         code: "https://github.com/kgarayev/rick_and_morty",
         live: "https://some-ricks-and-some-mortys.netlify.app/",
-        color: "",
+        color: "rgb(234, 255, 227)",
       },
 
       {
@@ -73,7 +73,7 @@ const mainSlice: any = createSlice({
         imageLink: "/savemymarriage.jpg",
         code: "https://github.com/kgarayev/anniversary-reminder",
         live: "https://save-my-marriage-team-rocket.netlify.app/",
-        color: "bg-indigo-50",
+        color: "rgb(238, 246, 255)",
       },
       {
         title: "Claims Management",
@@ -84,7 +84,7 @@ const mainSlice: any = createSlice({
         tag: "ts, react, node",
         buttonText: "some link",
         imageLink: "/claimsmanagement.jpg",
-        color: "bg-emerald-50",
+        color: "rgb(255, 242, 255)",
       },
       {
         title: "TheCEng",
@@ -97,7 +97,7 @@ const mainSlice: any = createSlice({
         imageLink: "/theceng.jpg",
         code: "https://github.com/kgarayev/theceng",
         live: "https://www.youtube.com/watch?v=snF_QyvRu6Y&feature=youtu.be",
-        color: "bg-emerald-50",
+        color: "rgb(255, 250, 234)",
       },
       {
         title: "Investment App",
@@ -110,7 +110,7 @@ const mainSlice: any = createSlice({
         imageLink: "/investmentapp.jpg",
         code: "https://github.com/kgarayev/investment_app",
         live: "https://finance.cs50.net/login",
-        color: "bg-emerald-50",
+        color: "rgb(238, 246, 255)",
       },
       {
         title: "Fake Airbnb",
@@ -123,7 +123,7 @@ const mainSlice: any = createSlice({
         imageLink: "/fakeairbnb.jpg",
         code: "https://github.com/kgarayev/airbnb_clone",
         live: "https://fake-airbnb-kg.netlify.app/",
-        color: "bg-emerald-50",
+        color: "rgb(255, 240, 239)",
       },
     ],
 
