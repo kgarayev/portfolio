@@ -92,7 +92,7 @@ const Box: React.FC<BoxProps> = ({
                   rel="noopener noreferrer"
                   className=""
                 >
-                  code
+                  view code
                 </a>
               </div>
             )}
@@ -117,7 +117,7 @@ const Box: React.FC<BoxProps> = ({
                   height={5}
                 />
                 <a href={live} target="_blank" rel="noopener noreferrer">
-                  live
+                  visit app
                 </a>
               </div>
             )}
