@@ -27,6 +27,8 @@ const Box: React.FC<BoxProps> = ({
 
   // console.log(color);
 
+  const bColor = "bg-" + color + "-100";
+
   return (
     <div className="relative min-w-[200px] max-w-[800px] ml-0 w-full">
       <div className="absolute top-1 left-1 bg-gray-700 rounded-2xl shadow-md w-full h-full"></div>
@@ -56,8 +58,9 @@ const Box: React.FC<BoxProps> = ({
               stackArr.map((item) => {
                 return (
                   <div
-                    className={`pl-2 pr-2 text-sm border h-6 border-gray-300 rounded-lg ${color}`}
+                    className={`pl-2 pr-2 text-sm border h-6 border-gray-300 rounded-lg`}
                     key={item + title}
+                    style={{ backgroundColor: color }}
                   >
                     {item}
                   </div>

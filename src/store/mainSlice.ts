@@ -12,7 +12,7 @@ const mainSlice: any = createSlice({
       {
         title: "Stash",
         description:
-          "A fintech app for account creation, transactions, obtaining macroeconomic data, user customisation and live chat.",
+          "A mobile-first fintech app allowing account creation, seamless transactions, live chat, obtaining macroeconomic data and personalised user customisation.",
         stack:
           "Typescript, Node, Express, React, Redux, Auth, 3rd Party API, PostgreSQL, REST, WebSockets, Validation, Material UI",
         tag: "ts, react, node",
@@ -20,28 +20,28 @@ const mainSlice: any = createSlice({
         imageLink: "/stash4.jpg",
         code: "https://github.com/kgarayev/stash_backend",
         live: "https://stash-uwns.onrender.com/",
-        color: "bg-emerald-50",
+        color: "emerald",
       },
       {
         title: "Carbon Intensity Bot",
         description:
-          "Provides real-time, location-specific carbon intensity and electricity mix data in the UK.",
+          "Progressive web app that delivers accurate real-time, location-based carbon intensity, and varied electricity generation mix data to users.",
         tag: "js, react, rest, node",
         stack:
-          "Python, Flask, Cookies, SQLite, Javascript, Jinja, 3rd Party APIs, REST, Geolocation, Realtime, Validation",
+          "Python, Javascript, Flask, Cookies, SQLite, Jinja, 3rd Party API Integration, REST, Geolocation, Realtime, Validation",
         buttonText: "some link",
         imageLink: "/carbonintensity.jpg",
         code: "https://github.com/kgarayev/carbon_intensity",
         live: "https://gb-carbon-intensity.netlify.app/",
-        color: "bg-yellow-50",
+        color: "light yellow",
       },
       {
         title: "Easy Nutrition",
         description:
-          "A nutritional data app for with smart multiple food item entry, sorting, filtering, and favourite-saving functionality.",
+          "A nutritional app providing data for multiple food items, with sorting, filtering, and local storage capabilities for favourites.",
         tag: "js, react, rest, node",
         stack:
-          "Javascript, Node, Express, MySQL, React, Redux, Caching, REST, Validation, API Integration",
+          "Javascript, Node, Express, MySQL, React, Redux, Caching, REST, Validation, 3rd Party API Integration",
         buttonText: "some link",
         imageLink: "/easynutrition.jpg",
         code: "https://github.com/kgarayev/easy_nutrition",
@@ -51,14 +51,54 @@ const mainSlice: any = createSlice({
       {
         title: "Ricks & Morties",
         description:
-          " A fan web app providing the ability to select, view, sort, filter, like, remove, and reset characters from Rick & Morty.",
+          "A fan web app providing the ability to select, view, sort, filter, like, remove, and reset characters from Rick & Mory.",
         tag: "js, react, rest, node",
         stack:
-          "Javascript, Node, Express, MySQL, REST API, Joi Validation, Functional React (Hooks), Redux Toolkit, AJAX, Axios, API Integration, Figma, HTML, CSS, Joi Validation",
+          "Javascript, Node, Express, MongoDB, React, Redux, REST, 3rd Party API Integration, Figma, Validation",
         buttonText: "some link",
         imageLink: "/ricksandmorties.jpg",
         code: "https://github.com/kgarayev/rick_and_morty",
         live: "https://some-ricks-and-some-mortys.netlify.app/",
+        color: "green",
+      },
+
+      {
+        title: "Save My Marriage",
+        description:
+          "A mobile first progressive web app with reminders for relationship milestones, promoting healthier relationships. Developed at a hackathon.",
+        stack:
+          "Typescript, Next.js, React, Redux Toolkit, AJAX, Axios, Datetime, 3rd Party API Integration, Tailwind, Firebase, Validation",
+        tag: "ts, react, node",
+        buttonText: "some link",
+        imageLink: "/savemymarriage.jpg",
+        code: "https://github.com/kgarayev/anniversary-reminder",
+        live: "https://save-my-marriage-team-rocket.netlify.app/",
+        color: "bg-indigo-50",
+      },
+      {
+        title: "TheCEng",
+        description:
+          "A website which offers help to civil engineers who want to become professionally qualified. It has register and login functionality, and ecommerce service with payment integration.",
+        stack:
+          "Python, Javascript, Flask, jQuery, Auth, Sessions, 3rd Party Payment API, SQLite, SSR, Jinja, Ecommerce, Tailwind",
+        tag: "ts, react, node",
+        buttonText: "some link",
+        imageLink: "/theceng.jpg",
+        code: "https://github.com/kgarayev/theceng",
+        live: "https://www.youtube.com/watch?v=snF_QyvRu6Y&feature=youtu.be",
+        color: "bg-emerald-50",
+      },
+      {
+        title: "Investment App",
+        description:
+          "The Investment App is a web application that allows users to manage their investments and trade shares. Allows resgistration and log in, uses local storage and cookies for ecommerce functionality.",
+        stack:
+          "Python, Javascript, Flask, jQuery, Auth, Cookies, 3rd Party Payment API, SQLite, SSR, Jinja, Ecommerce, Bootstrap",
+        tag: "ts, react, node",
+        buttonText: "some link",
+        imageLink: "/investmentapp.jpg",
+        code: "https://github.com/kgarayev/investment_app",
+        live: "https://finance.cs50.net/login",
         color: "bg-emerald-50",
       },
     ],
