@@ -53,28 +53,31 @@ const Box: React.FC<BoxProps> = ({
             <p className="mt-2">{description}</p>
           </div>
 
-          <div className="flex flex-wrap gap-2 mt-4 mb-4 border">
-            {stackArr.length > 0 ? (
-              stackArr.map((item) => {
-                return (
-                  <div
-                    className={`pl-2 pr-2 text-sm border h-6 border-gray-300 rounded-lg`}
-                    key={item + title}
-                    style={{ backgroundColor: color }}
-                  >
-                    {item}
-                  </div>
-                );
-              })
-            ) : (
-              <></>
-            )}
+          <div className="border sm2:h-[180px] md:h-[150px] 2md:h-[120px] lg2:h-[160px]">
+            <div className="flex flex-wrap justify-start items-start gap-2 mt-4 mb-4 ">
+              {stackArr.length > 0 ? (
+                stackArr.map((item) => {
+                  return (
+                    <div
+                      className={`pl-2 pr-2 text-sm border h-6 border-gray-300 rounded-lg`}
+                      key={item + title}
+                      style={{ backgroundColor: color }}
+                    >
+                      {item}
+                    </div>
+                  );
+                })
+              ) : (
+                <></>
+              )}
+            </div>
           </div>
-          <div className="mt-2 flex items-center justify-around ">
+
+          <div className="mt-2 flex items-center justify-around h-8">
             {code === "" || !code ? (
               <></>
             ) : (
-              <div className="flex items-center gap-2 h-full cursor-pointer hover:opacity-50 text-sm font-bold ">
+              <div className="flex items-center gap-2 h-full cursor-pointer hover:opacity-50 text-sm font-bold">
                 <Image
                   src="/github.svg"
                   alt="github"
@@ -91,6 +94,14 @@ const Box: React.FC<BoxProps> = ({
                   code
                 </a>
               </div>
+            )}
+
+            {code === "" || !code ? (
+              <div className="flex items-center gap-2 h-full cursor-pointer hover:opacity-50 text-sm font-bold">
+                <p>internal use only</p>
+              </div>
+            ) : (
+              <></>
             )}
 
             {live === "" || !live ? (

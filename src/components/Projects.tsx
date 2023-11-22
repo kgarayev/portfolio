@@ -21,10 +21,11 @@ const Projects = forwardRef<HTMLDivElement>((props, ref) => {
   return (
     <div ref={ref} id="projects" className="pt-2 pb-2">
       <div className="w-full p-5 pb-4">
-        <h2 className="text-xl font-extrabold">Recent Personal Projects</h2>
+        <h2 className="text-xl font-extrabold">Recent Projects</h2>
         <p className="font-nunito mt-4 mb-2">
-          These are only a few of my recent projects. For more examples, visit
-          my{" "}
+          These are only a few of my recent projects that could be visualised. I
+          have many more backend only projects and CLI only tools that I have
+          developed. For more examples, visit my{" "}
           <a
             href="https://github.com/kgarayev"
             className="hover:underline"

@@ -76,6 +76,17 @@ const mainSlice: any = createSlice({
         color: "bg-indigo-50",
       },
       {
+        title: "Claims Management",
+        description:
+          "Internal tool for efficiently managing project variation claims. It tracks vital information such as intended margin, claim value, liability, payments and outstanding balances. For internal use only. No public code.",
+        stack:
+          "Typescript, Node, Express, React, Redux, Auth, Token Auth, JWT, MySQL, Validation, Tailwind, Material UI",
+        tag: "ts, react, node",
+        buttonText: "some link",
+        imageLink: "/claimsmanagement.jpg",
+        color: "bg-emerald-50",
+      },
+      {
         title: "TheCEng",
         description:
           "A website which offers help to civil engineers who want to become professionally qualified. It has register and login functionality, and ecommerce service with payment integration.",
@@ -99,6 +110,19 @@ const mainSlice: any = createSlice({
         imageLink: "/investmentapp.jpg",
         code: "https://github.com/kgarayev/investment_app",
         live: "https://finance.cs50.net/login",
+        color: "bg-emerald-50",
+      },
+      {
+        title: "Fake Airbnb",
+        description:
+          "A one-to-one pixel perfect replica of Airbnb.co.uk website. Fully responsive and both mobile and desktop friendly. Developed through comprehensive testing, and the tools such as Figma and Sass.",
+        stack:
+          "Javascript, Vanilla, HTML, CSS, SCSS, Sass, Figma, SSG, Responsive, Mobile-friendly, Git, MVP",
+        tag: "ts, react, node",
+        buttonText: "some link",
+        imageLink: "/fakeairbnb.jpg",
+        code: "https://github.com/kgarayev/airbnb_clone",
+        live: "https://fake-airbnb-kg.netlify.app/",
         color: "bg-emerald-50",
       },
     ],
