@@ -59,7 +59,7 @@ const mainSlice: any = createSlice({
         imageLink: "/ricksandmorties.jpg",
         code: "https://github.com/kgarayev/rick_and_morty",
         live: "https://some-ricks-and-some-mortys.netlify.app/",
-        color: "green",
+        color: "",
       },
 
       {
@@ -78,7 +78,7 @@ const mainSlice: any = createSlice({
       {
         title: "Claims Management",
         description:
-          "Internal tool for efficiently managing project variation claims. It tracks vital information such as intended margin, claim value, liability, payments and outstanding balances. For internal use only. No public code.",
+          "Internal tool for efficiently managing project variation claims. It tracks vital information such as intended margin, claim value, liability, payments and outstanding balances. For internal use only.",
         stack:
           "Typescript, Node, Express, React, Redux, Auth, Token Auth, JWT, MySQL, Validation, Tailwind, Material UI",
         tag: "ts, react, node",

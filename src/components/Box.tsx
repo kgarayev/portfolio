@@ -40,21 +40,22 @@ const Box: React.FC<BoxProps> = ({
         </div>
         <div className="border-t-2 border-black mb-4"></div> */}
 
-        <div className="m-4 mt-2 font-nunito p-2">
+        <div className="m-4 mt-4 font-nunito p-2">
           <h2 className="text-lg font-semibold font-ibmPlexMono">{title}</h2>
-          <div className="aspect-w-1 aspect-h-1 rounded-2xl">
+          <div className="aspect-w-1 aspect-h-1 rounded-2xl mt-2">
             <img
               src={imageLink}
               alt="image"
               className=" border rounded-2xl border-gray-700 mt-2 mb-2 object-cover aspect-content"
             />
           </div>
-          <div className="mt-4 mb-4 sm:h-[180px] border">
+
+          <div className="mt-4 mb-0 sm2:h-[180px] 2md:h-[140px] lg:h-[120px] flex items-center">
             <p className="mt-2">{description}</p>
           </div>
 
-          <div className="border sm2:h-[180px] md:h-[150px] 2md:h-[120px] lg2:h-[160px]">
-            <div className="flex flex-wrap justify-start items-start gap-2 mt-4 mb-4 ">
+          <div className="flex items-center sm2:h-[180px] md:h-[140px] 2md:h-[120px] lg2:h-[160px] xl:h-[120px] 2xl:h-[100px]">
+            <div className="flex flex-wrap items-center gap-2 mt-4 mb-4 ">
               {stackArr.length > 0 ? (
                 stackArr.map((item) => {
                   return (
@@ -98,7 +99,7 @@ const Box: React.FC<BoxProps> = ({
 
             {code === "" || !code ? (
               <div className="flex items-center gap-2 h-full cursor-pointer hover:opacity-50 text-sm font-bold">
-                <p>internal use only</p>
+                <p>Internal use only. No public code.</p>
               </div>
             ) : (
               <></>
