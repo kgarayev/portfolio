@@ -19,6 +19,9 @@ const SkillBox: React.FC<SkillBoxProps> = ({ iconLink, title, techUsed }) => {
 
   const scrollToSection = (targetId: string | null) => {
     dispatch(setTargetId(targetId));
+    setTimeout(() => {
+      dispatch(setTargetId(""));
+    }, 1);
   };
 
   return (
