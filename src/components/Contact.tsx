@@ -46,7 +46,7 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
             <div className="flex items-center space-x-2"></div>
 
             <a
-              href="mailto:someone@example.com?Subject=Hello"
+              href="mailto:kenangarayev@gmail.com?Subject=Hello"
               target="_blank"
               rel="noopener noreferrer"
             >

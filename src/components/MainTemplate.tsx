@@ -13,6 +13,7 @@ import Projects from "./Projects";
 import Work from "./Work";
 import About from "./About";
 import Contact from "./Contact";
+import ToTop from "./ToTop";
 
 const MainTemplate = () => {
   const targetId = useSelector(selectTargetId);
@@ -20,6 +21,7 @@ const MainTemplate = () => {
   const projectsRef = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
+  const headerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     let selectedRef;
@@ -47,7 +49,7 @@ const MainTemplate = () => {
   }, [targetId]);
 
   return (
-    <div className="w-full p-5">
+    <div className="w-full p-3 md:p-5">
       <Header></Header>
       <Intro></Intro>
 
@@ -57,6 +59,8 @@ const MainTemplate = () => {
         <About ref={aboutRef}></About>
         <Contact ref={contactRef}></Contact>
       </div>
+
+      <ToTop></ToTop>
 
       <StickyFooter></StickyFooter>
     </div>

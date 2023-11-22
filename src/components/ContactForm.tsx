@@ -208,10 +208,7 @@ function ContactForm() {
               />
             </div>
             <div className="w-full flex justify-center font-ibmPlexMono font-bold">
-              <button
-                type="submit"
-                className="h-12 border-gray-700 border p-2  hover:bg-emerald-100 hover:shadow-[2px_2px_0px_rgba(50,50,50,1)] active:bg-emerald-200 rounded-md w-full bg-emerald-50"
-              >
+              <button className="h-12 border-gray-700 border p-2  hover:bg-emerald-100 hover:shadow-[2px_2px_0px_rgba(50,50,50,1)] active:bg-emerald-200 rounded-md w-full bg-emerald-50">
                 Send
               </button>
             </div>
