@@ -29,12 +29,14 @@ const Projects = forwardRef<HTMLDivElement>((props, ref) => {
       <div className="w-full p-5 pb-4">
         <h2 className="text-xl font-extrabold">Recent Projects</h2>
         <p className="font-nunito mt-4 mb-2">
-          These are only a few of my recent projects that could be visualised. I
-          have many more backend only projects and CLI only tools that I have
-          developed. For more examples, visit my{" "}
+          These are only a few of my recent projects. In addition to these apps,
+          I have developed many more backend services and command-line interface
+          tools. Though not as visually compelling, these projects demonstrate
+          my experience in server-side programming, databases, and tool
+          development. For more examples, visit my{" "}
           <a
             href="https://github.com/kgarayev"
-            className="hover:underline"
+            className="hover:underline font-bold"
             target="_blank"
             rel="noopener noreferrer"
           >
