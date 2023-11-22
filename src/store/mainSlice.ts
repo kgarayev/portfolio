@@ -20,7 +20,7 @@ const mainSlice: any = createSlice({
         imageLink: "/stash4.jpg",
         code: "https://github.com/kgarayev/stash_backend",
         live: "https://stash-uwns.onrender.com/",
-        color: "bg-emerald-100",
+        color: "bg-emerald-50",
       },
       {
         title: "Carbon Intensity Bot",
@@ -30,7 +30,7 @@ const mainSlice: any = createSlice({
         stack:
           "Python, Flask, Cookies, SQLite, Javascript, Jinja, 3rd Party APIs, REST, Geolocation, Realtime, Validation",
         buttonText: "some link",
-        imageLink: "/easynutrition.jpg",
+        imageLink: "/carbonintensity.jpg",
         code: "https://github.com/kgarayev/carbon_intensity",
         live: "https://gb-carbon-intensity.netlify.app/",
         color: "bg-yellow-50",
@@ -49,17 +49,17 @@ const mainSlice: any = createSlice({
         color: "bg-fuchsia-100",
       },
       {
-        title: "AI",
+        title: "Ricks & Morties",
         description:
-          "Provides real-time, location-specific carbon intensity and electricity mix data in the UK.",
+          " A fan web app providing the ability to select, view, sort, filter, like, remove, and reset characters from Rick & Morty.",
         tag: "js, react, rest, node",
         stack:
-          "Python, Flask, Cookies, SQLite, Javascript, Jinja, 3rd Party APIs, REST, Geolocation, Realtime, Validation",
+          "Javascript, Node, Express, MySQL, REST API, Joi Validation, Functional React (Hooks), Redux Toolkit, AJAX, Axios, API Integration, Figma, HTML, CSS, Joi Validation",
         buttonText: "some link",
-        imageLink: "/easynutrition.jpg",
-        code: "https://github.com/kgarayev/carbon_intensity",
-        live: "https://gb-carbon-intensity.netlify.app/",
-        color: "bg-blue-100",
+        imageLink: "/ricksandmorties.jpg",
+        code: "https://github.com/kgarayev/rick_and_morty",
+        live: "https://some-ricks-and-some-mortys.netlify.app/",
+        color: "bg-emerald-50",
       },
     ],
 
