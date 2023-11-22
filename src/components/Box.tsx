@@ -98,7 +98,7 @@ const Box: React.FC<BoxProps> = ({
             )}
 
             {code === "" || !code ? (
-              <div className="flex items-center gap-2 h-full cursor-pointer hover:opacity-50 text-sm font-bold">
+              <div className="flex items-center gap-2 h-full text-sm font-bold">
                 <p>Internal use only. No public code.</p>
               </div>
             ) : (
