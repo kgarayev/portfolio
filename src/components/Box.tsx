@@ -49,7 +49,7 @@ const Box: React.FC<BoxProps> = ({
               className=" border rounded-2xl border-gray-700 mt-2 mb-2 object-cover aspect-content"
             />
           </div>
-          <div className="mt-4 mb-4 sm:h-[140px] border">
+          <div className="mt-4 mb-4 sm:h-[180px] border">
             <p className="mt-2">{description}</p>
           </div>
 

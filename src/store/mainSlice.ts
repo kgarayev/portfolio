@@ -25,7 +25,7 @@ const mainSlice: any = createSlice({
       {
         title: "Carbon Intensity Bot",
         description:
-          "Progressive web app that delivers accurate real-time, location-based carbon intensity, and varied electricity generation mix data to users.",
+          "A progressive web app that delivers accurate real-time, location-based carbon intensity, and varied electricity generation mix data to users. Integrates with National Grid API.",
         tag: "js, react, rest, node",
         stack:
           "Python, Javascript, Flask, Cookies, SQLite, Jinja, 3rd Party API Integration, REST, Geolocation, Realtime, Validation",
@@ -38,10 +38,10 @@ const mainSlice: any = createSlice({
       {
         title: "Easy Nutrition",
         description:
-          "A nutritional app providing data for multiple food items, with sorting, filtering, and local storage capabilities for favourites.",
+          "A nutritional web app that provides data for multiple food item entries, with sorting, filtering, and local storage capabilities for favourites. Integrates with a smart 3rd party machine learning model.",
         tag: "js, react, rest, node",
         stack:
-          "Javascript, Node, Express, MySQL, React, Redux, Caching, REST, Validation, 3rd Party API Integration",
+          "Javascript, Node, Express, Next.js, MySQL, React, Redux, Caching, REST, Validation, 3rd Party API Integration",
         buttonText: "some link",
         imageLink: "/easynutrition.jpg",
         code: "https://github.com/kgarayev/easy_nutrition",
@@ -51,7 +51,7 @@ const mainSlice: any = createSlice({
       {
         title: "Ricks & Morties",
         description:
-          "A fan web app providing the ability to select, view, sort, filter, like, remove, and reset characters from Rick & Mory.",
+          "A fan web app providing the ability to select, view, sort, filter, like, remove, and reset characters. Shows all Rick & Morty characters from different multiverses that have appeared in the show.",
         tag: "js, react, rest, node",
         stack:
           "Javascript, Node, Express, MongoDB, React, Redux, REST, 3rd Party API Integration, Figma, Validation",
@@ -65,9 +65,9 @@ const mainSlice: any = createSlice({
       {
         title: "Save My Marriage",
         description:
-          "A mobile first progressive web app with reminders for relationship milestones, promoting healthier relationships. Developed at a hackathon.",
+          "A mobile first progressive web app with reminders for relationship milestones, promoting healthier relationships and primarily aimed to save marriages. Developed at a hackathon.",
         stack:
-          "Typescript, Next.js, React, Redux Toolkit, AJAX, Axios, Datetime, 3rd Party API Integration, Tailwind, Firebase, Validation",
+          "Typescript, Next.js, React, Redux, Axios, Datetime, 3rd Party API Integration, Tailwind, Firebase, Validation",
         tag: "ts, react, node",
         buttonText: "some link",
         imageLink: "/savemymarriage.jpg",
