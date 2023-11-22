@@ -25,7 +25,7 @@ const Box: React.FC<BoxProps> = ({
 }) => {
   let stackArr = stack ? stack.split(", ").map((s) => s.trim()) : [];
 
-  console.log(color);
+  // console.log(color);
 
   return (
     <div className="relative min-w-[200px] max-w-[800px] ml-0 w-full">
@@ -47,16 +47,16 @@ const Box: React.FC<BoxProps> = ({
               className=" border rounded-2xl border-gray-700 mt-2 mb-2 object-cover aspect-content"
             />
           </div>
-          <div className="mt-4 mb-4">
+          <div className="mt-4 mb-4 sm:h-[140px] border">
             <p className="mt-2">{description}</p>
           </div>
 
-          <div className="flex flex-wrap gap-2 mt-4 mb-4">
+          <div className="flex flex-wrap gap-2 mt-4 mb-4 border">
             {stackArr.length > 0 ? (
               stackArr.map((item) => {
                 return (
                   <div
-                    className={`pl-2 pr-2 text-sm border border-gray-300 rounded-lg ${color}`}
+                    className={`pl-2 pr-2 text-sm border h-6 border-gray-300 rounded-lg ${color}`}
                     key={item + title}
                   >
                     {item}
