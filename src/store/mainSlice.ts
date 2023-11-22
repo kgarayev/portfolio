@@ -23,7 +23,7 @@ const mainSlice: any = createSlice({
         color: "bg-emerald-100",
       },
       {
-        title: "UK Electric Grid Carbon Intensity Bot",
+        title: "Carbon Intensity Bot",
         description:
           "Provides real-time, location-specific carbon intensity and electricity mix data in the UK.",
         tag: "js, react, rest, node",
