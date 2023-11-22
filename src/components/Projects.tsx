@@ -17,6 +17,12 @@ interface ProjectItem {
 
 const Projects = forwardRef<HTMLDivElement>((props, ref) => {
   const projectList = useSelector(selectProjectList);
+  const L = projectList.length;
+  let newList: ProjectItem[] = [];
+
+  for (let i = 0; i < L - 1; i++) {
+    newList.push(projectList[i]);
+  }
 
   return (
     <div ref={ref} id="projects" className="pt-2 pb-2">
@@ -38,8 +44,27 @@ const Projects = forwardRef<HTMLDivElement>((props, ref) => {
         </p>
       </div>
 
-      <div className="mb-4 grid grid-cols-1 items-start sm2:grid-cols-2 lg2:grid-cols-3 gap-4 p-5 pt-0">
+      <div className="mb-4 grid grid-cols-1 items-start sm2:hidden lg2:grid lg2:grid-cols-3 gap-4 p-5 pt-0">
         {projectList.map((item: ProjectItem) => {
+          return (
+            <Box
+              title={item.title}
+              description={item.description}
+              tag={item.tag}
+              buttonText={item.buttonText}
+              imageLink={item.imageLink}
+              key={item.title}
+              code={item.code}
+              live={item.live}
+              stack={item.stack}
+              color={item.color}
+            />
+          );
+        })}
+      </div>
+
+      <div className="hidden mb-4 grid grid-cols-1 items-start sm2:grid sm2:grid-cols-2 lg2:hidden gap-4 p-5 pt-0">
+        {newList.map((item: ProjectItem) => {
           return (
             <Box
               title={item.title}
