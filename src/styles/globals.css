@@ -37,6 +37,7 @@
 }
 
 body {
+  overflow-x: hidden;
   /* font-family: "IBM Plex Mono", monospace; */
   /* font-family: "Nunito", sans-serif; */
   color: rgb(var(--foreground-rgb));

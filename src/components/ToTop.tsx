@@ -7,10 +7,10 @@ const ToTop = () => {
   };
 
   return (
-    <div className="w-full flex justify-center m-2">
+    <div className="w-full flex justify-center m-4 mb-20 md:mb-6">
       <div
         onClick={scrollToTop}
-        className="flex flex-col justify-center items-center cursor-pointer"
+        className="flex justify-center gap-2 items-center cursor-pointer hover:underline hover:font-bold"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -26,7 +26,7 @@ const ToTop = () => {
             d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5"
           />
         </svg>
-        <p className="font-bold w-full text-center hover:underline">
+        <p className="font-semibold w-full text-center hover:font-bold">
           back to top
         </p>
       </div>
