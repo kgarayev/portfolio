@@ -1,6 +1,17 @@
 import Photo from "./Photo";
+import { useDispatch } from "react-redux";
+import { setTargetId } from "@/store/mainSlice";
 
 const Intro = () => {
+  const dispatch = useDispatch();
+
+  const scrollToSection = (targetId: string | null) => {
+    dispatch(setTargetId(targetId));
+    setTimeout(() => {
+      dispatch(setTargetId(""));
+    }, 1);
+  };
+
   return (
     <div className="p-5 pt-0 pb-4">
       <h1 className="mb-4 text-lg font-bold mt-2">I am a Software Engineer.</h1>
@@ -14,7 +25,14 @@ const Intro = () => {
         <span className="font-semibold  bg-emerald-100">SQL</span> and{" "}
         <span className="font-semibold  bg-emerald-100">NoSQL</span> databases,
         I&apos;m all about building things with code to solve real-world
-        problems. Give me a shout, let&apos;s create something together!
+        problems.{" "}
+        <span
+          className="cursor-pointer hover:underline font-bold"
+          onClick={() => scrollToSection("contact")}
+        >
+          Give me a shout
+        </span>
+        , let&apos;s create something together!
       </p>
       {/* <div className="flex justify-center mt-0">
         <div className="max-h-[180px] max-w-[180px] mt-0">
