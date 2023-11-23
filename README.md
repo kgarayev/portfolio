@@ -1,40 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# :art: Kenan Garayev's Portfolio Website :computer:
 
-## Getting Started
+## :computer: Tech Stack
 
-First, run the development server:
+- **Frontend**: Next.js, React.js with TypeScript for robust, scalable applications.
+- **State Management**: Efficient state handling using Redux.
+- **Styling**: Tailwind CSS for responsive design, supplemented with custom CSS for unique aesthetics.
+- **Version Control**: Managed with Git, ensuring streamlined development and collaboration.
+- **Markup**: Semantic HTML5, ensuring accessibility and SEO-friendly structure.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## :book: About the Website
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Kenan Garayev's portfolio website is a professional showcase of his skills and projects. It's a dynamic, user-centric platform that exhibits Kenan's expertise in software development. This website stands as a personal testament to his proficiency in Next.js, React, and other modern web technologies.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## :gear: Core Features
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- **Project Showcase**: Highlights Kenan's diverse range of projects with detailed descriptions and links.
+- **Responsive Design**: Seamlessly adapts to different screen sizes, ensuring a great user experience on any device.
+- **Professional Aesthetics**: A clean, modern design implemented using Tailwind CSS and custom styling.
+- **Navigation**: Intuitive and smooth, guiding visitors through Kenan's professional journey and skill set.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## :art: Design & Usability
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The website is designed with a focus on usability and aesthetic appeal. It leverages the capabilities of Tailwind CSS for a sleek, modern look, while maintaining functionality and ease of navigation. The custom CSS touches add a personal flair, reflecting Kenan's attention to detail.
 
-## Learn More
+## :link: Explore Kenan's World
 
-To learn more about Next.js, take a look at the following resources:
+### :star: [Kenan Garayev's Portfolio](https://kgarayev.com/) :star:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### :sparkles: Highlights:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Showcases Kenan's journey and expertise in software development.
+- Utilises a modern tech stack for a high-performance, scalable web experience.
+- Demonstrates Kenan's skills in both frontend and backend development.
+- Personalised design reflecting Kenan's unique style and approach.
