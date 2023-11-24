@@ -4,6 +4,22 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        {/* Google Analytics */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-87XFY2X9NB"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-87XFY2X9NB');
+              `,
+          }}
+        />
+
         <title>Kenan Garayev</title>
         <meta property="og:title" content="Kenan Garayev" />
         <meta
