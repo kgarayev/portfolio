@@ -40,7 +40,7 @@ const PopUp = () => {
       }}
     >
       <div
-        className={`fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[85vw] h-[75vh] sm:min-h-[20vh] sm:max-h-[80vh] sm:w-[375px]`}
+        className={`fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[85vw] min-h-[75vh] sm:min-h-[10vh] sm:max-h-[70vh] sm:w-[375px]`}
         onClick={(e) => {
           e.stopPropagation();
         }}
