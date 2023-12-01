@@ -1,4 +1,5 @@
 import Photo from "./Photo";
+import TopContacts from "./TopContacts";
 import { useDispatch } from "react-redux";
 import { setTargetId } from "@/store/mainSlice";
 
@@ -34,6 +35,9 @@ const Intro = () => {
         </span>
         , let&apos;s create something together!
       </p>
+
+      <TopContacts></TopContacts>
+
       {/* <div className="flex justify-center mt-0">
         <div className="max-h-[180px] max-w-[180px] mt-0">
           <Photo></Photo>
