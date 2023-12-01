@@ -1,9 +1,9 @@
 const TopContacts = () => {
   return (
     <>
-      <div className="flex">
-        <div className="border h-20 min-w-32">Hello</div>
-        <div>World</div>
+      <div className="flex gap-2">
+        <div className="border h-12 w-full max-w-32">Hello</div>
+        <div className="border h-12 w-full max-w-32">World</div>
       </div>
     </>
   );
