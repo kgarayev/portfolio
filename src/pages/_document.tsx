@@ -22,16 +22,12 @@ export default function Document() {
 
         <title>Kenan Garayev</title>
         <meta property="og:title" content="Kenan Garayev" />
-        <meta
-          property="og:description"
-          content="Kenan Garayev's Portfolio Site"
-        />
-        <meta
-          property="og:image"
-          content="http://kgarayev.netlify.app/thumbnail.png"
-        />
-        <meta property="og:url" content="http://kgarayev.netlify.app" />
+        <meta property="og:description" content="Kenan Garayev's Website" />
+        <meta property="og:site_name" content="Kenan Garayev's Website"></meta>
+        <meta property="og:image" content="http://kgarayev.com/thumbnail.png" />
+        <meta property="og:url" content="http://kgarayev.com" />
         <meta property="og:type" content="website" />
+        <link rel="canonical" href="http://kgarayev.com" />
 
         {/* Twitter Card tags */}
         <meta name="twitter:card" content="summary_large_image" />
