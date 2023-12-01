@@ -62,6 +62,10 @@ const MainTemplate = () => {
 
       <ToTop></ToTop>
 
+      <div className="text-xs w-full mb-14 ml-6 text-center md:mb-0">
+        Copyright © 2023 Kenan Garayev. All rights reserved.
+      </div>
+
       <StickyFooter></StickyFooter>
     </div>
   );
