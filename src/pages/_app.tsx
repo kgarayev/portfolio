@@ -5,6 +5,7 @@ import type { AppProps } from "next/app";
 import ReactGA from "react-ga4";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -32,6 +33,9 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <Provider store={store}>
+      <Head>
+        <title>Kenan Garayev</title>
+      </Head>
       <Component {...pageProps} />
     </Provider>
   );

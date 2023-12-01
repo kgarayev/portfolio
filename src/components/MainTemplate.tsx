@@ -14,6 +14,7 @@ import Work from "./Work";
 import About from "./About";
 import Contact from "./Contact";
 import ToTop from "./ToTop";
+import SocialMedia from "./SocialMedia";
 
 const MainTemplate = () => {
   const targetId = useSelector(selectTargetId);
@@ -60,9 +61,11 @@ const MainTemplate = () => {
         <Contact ref={contactRef}></Contact>
       </div>
 
+      <SocialMedia></SocialMedia>
+
       <ToTop></ToTop>
 
-      <div className="text-xs w-full mb-14 ml-6 text-center md:mb-0">
+      <div className="text-xs w-full mb-14 text-center md:mb-0">
         Copyright © 2023 Kenan Garayev. All rights reserved.
       </div>
 

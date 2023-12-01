@@ -20,7 +20,7 @@ export default function Document() {
           }}
         />
 
-        <title>Kenan Garayev</title>
+        {/* <title>Kenan Garayev</title> */}
         <meta property="og:title" content="Kenan Garayev" />
         <meta property="og:description" content="Kenan Garayev's Website" />
         <meta property="og:site_name" content="Kenan Garayev's Website"></meta>

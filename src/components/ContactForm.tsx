@@ -201,7 +201,7 @@ function ContactForm() {
               <textarea
                 className="resize-y w-full border-gray-700 border p-2 focus:outline-none focus:shadow-[2px_2px_0px_rgba(0,0,0,1)] focus:bg-emerald-50 active:shadow-[2px_2px_0px_rgba(0,0,0,1)] rounded-md"
                 placeholder="Hello there..."
-                rows={6}
+                rows={4}
                 name="message"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
