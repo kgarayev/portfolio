@@ -27,11 +27,11 @@ const TopContacts = () => {
               href={`tel:${phoneNumber}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="border"
+              className=""
             >
               call
             </a>
-            <button className="border">copy</button>
+            <button className="">copy</button>
           </div>
         </div>
         <div className="border h-16 w-full max-w-32 rounded-md flex justify-center items-center text-sm gap-2">
@@ -59,7 +59,7 @@ const TopContacts = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              message
+              send
             </a>
             <button>copy</button>
           </div>
