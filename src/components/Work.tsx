@@ -45,7 +45,7 @@ const Work = forwardRef<HTMLDivElement>((props, ref) => {
         out my{" "}
         <span className="cursor-pointer hover:underline font-bold">
           <a
-            href="https://drive.google.com/file/d/1jmAhqchoWilZGeD0z68yB20lUvDR25gS/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1VHmsikdHAB8qZUVTjCuxZoOSbgJU-aVG/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
           >
