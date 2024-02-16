@@ -83,7 +83,7 @@ const mainSlice: any = createSlice({
           "Typescript, Node, Express, React, Redux, Auth, Token Auth, JWT, MySQL, Validation, Tailwind, Material UI",
         tag: "ts, react, node",
         buttonText: "some link",
-        imageLink: "/claimsmanagement.jpg",
+        imageLink: "/claimsmanagement2.jpg",
         color: "rgb(255, 242, 255)",
       },
       {
