@@ -33,7 +33,7 @@ const About = forwardRef<HTMLDivElement>((props, ref) => {
             </p>
             <p className="mb-4">
               I excel in both frontend and backend development, with particular
-              expertise in TypeScript, JavaScript, and Python. Additionally,
+              expertise in TypeScript/JavaScript, Python and Go. Additionally,
               I&apos;m proficient in building and managing both SQL and NoSQL
               databases. I&apos;m all about making sure every line of code I
               write not only works but works well and lasts.
@@ -48,7 +48,7 @@ const About = forwardRef<HTMLDivElement>((props, ref) => {
           people.
         </p>
         <p className="mb-6">
-          I love good design, hiking camping, travel, and music.
+          I love good design, hiking, camping, travelling, and music.
         </p>
         <h5 className="font-bold text-md mb-4 font-ibmPlexMono">
           Quick Facts About Me
@@ -65,10 +65,10 @@ const About = forwardRef<HTMLDivElement>((props, ref) => {
           </li>
           <li>
             I have been developing professional apps for a variety of clients
-            for the past 4 years.
+            for the past 5 years.
           </li>
           <li>
-            I spent 7 years working as a Civil Engineer and Project Manager in
+            I spent 6 years working as a Civil Engineer and Project Manager in
             the UK. I am also a Chartered Civil Engineer.
           </li>
           <li>
