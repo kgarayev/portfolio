@@ -40,7 +40,7 @@ const Work = forwardRef<HTMLDivElement>((props, ref) => {
         </div>
       </div>
 
-      <div className="font-nunito pl-5">
+{/*       <div className="font-nunito pl-5">
         For a more detailed look at my skills and experience, feel free to check
         out my{" "}
         <span className="cursor-pointer hover:underline font-bold">
@@ -53,7 +53,7 @@ const Work = forwardRef<HTMLDivElement>((props, ref) => {
           </a>
         </span>
         .
-      </div>
+      </div> */}
     </div>
   );
 });
