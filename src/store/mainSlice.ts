@@ -28,7 +28,7 @@ const mainSlice: any = createSlice({
           "A progressive web app that delivers accurate real-time, location-based carbon intensity, and varied electricity generation mix data to users. Integrates with National Grid API.",
         tag: "js, react, rest, node",
         stack:
-          "Python, Javascript, Flask, Cookies, SQLite, Jinja, 3rd Party API Integration, REST, Geolocation, Realtime, Validation",
+          "Python, Javascript, Django, Cookies, Postgres SQL, 3rd Party API Integration, REST, Geolocation, Realtime, Validation",
         buttonText: "some link",
         imageLink: "/carbonintensity.jpg",
         code: "https://github.com/kgarayev/carbon_intensity",
@@ -41,7 +41,7 @@ const mainSlice: any = createSlice({
           "A nutritional web app that provides data for multiple food item entries, with sorting, filtering, and local storage capabilities for favourites. Integrates with a smart 3rd party machine learning model.",
         tag: "js, react, rest, node",
         stack:
-          "Javascript, Node, Express, Next.js, MySQL, React, Redux, Caching, REST, Validation, 3rd Party API Integration",
+          "Javascript, Python, Django, Next.js, MySQL, React, Redux, Caching, REST, Validation, 3rd Party API Integration",
         buttonText: "some link",
         imageLink: "/easynutrition.jpg",
         code: "https://github.com/kgarayev/easy_nutrition",
