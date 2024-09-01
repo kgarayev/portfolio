@@ -33,7 +33,7 @@ const About = forwardRef<HTMLDivElement>((props, ref) => {
             </p>
             <p className="mb-4">
               I excel in both frontend and backend development, with particular
-              expertise in TypeScript/JavaScript, Python and Go. Additionally,
+              expertise in Python, TypeScript/JavaScript and Go. Additionally,
               I&apos;m proficient in building and managing both SQL and NoSQL
               databases. I&apos;m all about making sure every line of code I
               write not only works but works well and lasts.
@@ -55,7 +55,7 @@ const About = forwardRef<HTMLDivElement>((props, ref) => {
         </h5>
         <ol className="list-decimal pl-5 flex flex-col gap-4 mb-4">
           <li>
-            I started coding with Pascal when I was 12 to participate in
+            I started coding with Pascal and C when I was 12 to participate in
             competitive programming Olympiads. This was then followed up by
             creating CLI tools using C.
           </li>
