@@ -18,10 +18,10 @@ const Intro = () => {
       <h1 className="mb-4 text-lg font-bold mt-2">I am a Software Engineer.</h1>
       <p className="mb-2 font-nunito mt-0">
         Skilled in{" "}
+        <span className="font-semibold  bg-emerald-100">Python</span>,{" "}
         <span className=" font-semibold bg-emerald-100">Typescript</span>,{" "}
         <span className="font-semibold  bg-emerald-100">Javascript</span>,{" "}
-        <span className="font-semibold  bg-emerald-100">Python</span>,{" "}
-        <span className="font-semibold  bg-emerald-100">C</span>, and both{" "}
+        <span className="font-semibold  bg-emerald-100">Go</span>, and both{" "}
         <span className="font-semibold  bg-emerald-100">SQL</span> and{" "}
         <span className="font-semibold  bg-emerald-100">NoSQL</span> databases,
         I&apos;m all about building things with code to solve real-world
